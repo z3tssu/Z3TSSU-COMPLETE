@@ -1,0 +1,4 @@
+### Boot.dev
+
+- [https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbDFkN21OWXlUVFE1WThlbHdrbkF4dXdqSnJvQXxBQ3Jtc0tuUXJ5a0pSdm9zdUpWSkxka2tFQjNZU1NwQnRYWHZmaUY2R2w2QlprZ3Fub05zbkpYZTRSX0RhWVREdzlWX3I1QmpBc1RtVTBjQlVJaWpOOFE4U2tiZEdPNHF3M2h0Rlhpc3RXWl9CMm5ScTI4VmE1SQ&q=https%3A%2F%2Fsponsr.is%2Fbootdev_Bog&v=p2bbJ4ViZSI](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbDFkN21OWXlUVFE1WThlbHdrbkF4dXdqSnJvQXxBQ3Jtc0tuUXJ5a0pSdm9zdUpWSkxka2tFQjNZU1NwQnRYWHZmaUY2R2w2QlprZ3Fub05zbkpYZTRSX0RhWVREdzlWX3I1QmpBc1RtVTBjQlVJaWpOOFE4U2tiZEdPNHF3M2h0Rlhpc3RXWl9CMm5ScTI4VmE1SQ&q=https%3A%2F%2Fsponsr.is%2Fbootdev_Bog&v=p2bbJ4ViZSI)
+- Register on the platform May 27, 2025

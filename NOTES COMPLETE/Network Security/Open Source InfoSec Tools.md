@@ -1,0 +1,51 @@
+
+- # Vulnerability Scanning Tools
+	- OpenVAS
+		- Authenticate the computers on a network and checks for vulnerabilities
+		- Rate the Vulnerabilities based on order
+	- Nessus
+		- Vulnerability scanning that's much better
+- # Asset and Endpoint Management
+	- Qualys 
+		- The free version can be used for asset management
+		- Install agents on hosts and it reports to the cloud dashboard
+		- Details on applications that need to be patched etc.
+	- [Itarian](https://www.itarian.com/)
+		- Manage Endpoint device updates
+	- [NinjaOne](https://www.ninjaone.com/)
+	- [ManageEngine Endpoint Central](https://www.manageengine.com/products/desktop-central/)
+- # Antivirus 
+	- [ClamAV](https://www.clamav.net/downloads)
+		- Block typical malware
+	- Open-Source Firewall
+		- Free or Paid
+- # Firewall
+	- Pfsense
+		- Firewall and Network security tool
+	- Host Based Firewall
+		- Try to find an Open Source one
+		- ![[Pasted image 20230831205357.png]]
+- # EDR 
+		- [OpenEDR](https://www.openedr.com/)
+- # Security Awareness Training
+	- Wizer
+		- Trains employees of cybersecurity threats
+		- Especially for Email and Social Engineering Attacks
+- # SIEM
+	- ElkStak
+	- SecurityOnion
+	- HybridHunter
+	- Wazuh
+- # Network Access Control
+	- PacketFence
+		- Network access control software
+			- Can create captive portals for employee logins - authorized by AD
+		- Creating a VPN for remote management
+- # Security Testing
+	- Atomic Red Team Framework
+		- Testing security defenses
+		- A library of tests to see what your defenses can detect.
+- # Network Monitoring
+	- Uptime Kuma
+- # IDS/IPS
+		SNORT

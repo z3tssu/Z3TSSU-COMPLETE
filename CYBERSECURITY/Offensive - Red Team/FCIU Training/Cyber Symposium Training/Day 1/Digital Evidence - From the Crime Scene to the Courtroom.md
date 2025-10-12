@@ -1,0 +1,9 @@
+- Nigeria - Evidence Act - have a look
+- How to get the tool admissible in court?
+    - Background of the tool
+    - Usage of the tool on an international level
+    - global recognition of the tool
+- Qualify and Certification of Tools and Report
+    - The court may question your qualification to justify your usage of Tools and investigations
+- Forensic Standard: ISO/IEC 27027
+- Develop an Sop (For Cryptocurrency Investigation Types) March 13, 2025 6:00 PM

@@ -1,0 +1,1 @@
+![[destcert-printable-cissp-mindmaps.pdf]]

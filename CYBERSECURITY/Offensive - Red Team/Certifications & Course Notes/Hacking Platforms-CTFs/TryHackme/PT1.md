@@ -1,0 +1,1 @@
+[https://tryhackme.com/certification/junior-penetration-tester?utm_source=youtube&utm_medium=social&utm_campaign=Tyler_PT1](https://tryhackme.com/certification/junior-penetration-tester?utm_source=youtube&utm_medium=social&utm_campaign=Tyler_PT1)

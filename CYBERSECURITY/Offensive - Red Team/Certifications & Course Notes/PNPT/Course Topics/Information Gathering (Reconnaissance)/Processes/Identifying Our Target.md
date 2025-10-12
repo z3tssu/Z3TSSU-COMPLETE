@@ -1,0 +1,1 @@
+1. Go to Bugcrowd to find Websites to perform Bug Bounty

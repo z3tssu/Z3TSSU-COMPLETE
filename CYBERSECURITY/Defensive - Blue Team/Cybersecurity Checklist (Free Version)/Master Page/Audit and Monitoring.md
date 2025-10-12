@@ -1,0 +1,10 @@
+#### Master Sheet
+
+|![](https://www.notion.so/icons/checkmark-square_gray.svg)Property|![](https://www.notion.so/icons/font_gray.svg)Name|![](https://www.notion.so/icons/formula_gray.svg)Bang-for-your-Buck Score|![](https://www.notion.so/icons/hashtag_gray.svg)How important?|![](https://www.notion.so/icons/list_gray.svg)Category|![](https://www.notion.so/icons/hashtag_gray.svg)How easy?|![](https://www.notion.so/icons/arrow-northeast_gray.svg)🪵 How to Start Relation|
+|---|---|---|---|---|---|---|
+|[ ]|[[Network, IT systems, physical environments, and personnel activity for monitored]]|🔥🔥|4|Audit and Monitoring|2|[[Z3TSSU COMPLETE/CYBERSECURITY/Defensive - Blue Team/Cybersecurity Checklist (Free Version)/Master Page/Audit and Monitoring]]|
+|[x]|[[Privileged accounts and audit-log records are reviewed]]|🔥🔥🔥|4|Audit and Monitoring|4|[[Z3TSSU COMPLETE/CYBERSECURITY/Defensive - Blue Team/Cybersecurity Checklist (Free Version)/Master Page/Audit and Monitoring]]|
+|[ ]|[[Incident alert thresholds are configured]]|🔥🔥|3|Audit and Monitoring|3|[[Z3TSSU COMPLETE/CYBERSECURITY/Defensive - Blue Team/Cybersecurity Checklist (Free Version)/Master Page/Audit and Monitoring]]|
+|[ ]|[[Alert systems for anomalies are applied]]|🔥🔥|4|Audit and Monitoring|2|[[Z3TSSU COMPLETE/CYBERSECURITY/Defensive - Blue Team/Cybersecurity Checklist (Free Version)/Master Page/Audit and Monitoring]]|
+|[ ]|[[Penetration tests, vulnerability scans, and simulated phishing attacks are performed]]|🔥|3|Audit and Monitoring|1|[[Z3TSSU COMPLETE/CYBERSECURITY/Defensive - Blue Team/Cybersecurity Checklist (Free Version)/Master Page/Audit and Monitoring]]|
+|[ ]|[[Detected events are analyzed regularly]]|🔥🔥|3|Audit and Monitoring|3|[[Z3TSSU COMPLETE/CYBERSECURITY/Defensive - Blue Team/Cybersecurity Checklist (Free Version)/Master Page/Audit and Monitoring]]|

@@ -1,0 +1,12 @@
+|![](https://www.notion.so/icons/font_gray.svg)Process|![](https://www.notion.so/icons/list_gray.svg)Tools|![](https://www.notion.so/icons/description_gray.svg)Select|
+|---|---|---|
+|[[Z3TSSU COMPLETE/CYBERSECURITY/Offensive - Red Team/Certifications & Course Notes/PNPT/Course Topics/Information Gathering (Reconnaissance)/Processes/Identifying Our Target\|Identifying Our Target]]|||
+|[[Z3TSSU COMPLETE/CYBERSECURITY/Offensive - Red Team/Certifications & Course Notes/PNPT/Course Topics/Information Gathering (Reconnaissance)/Processes/Discovering Email Addresses\|Discovering Email Addresses]]||Email OSINT|
+|[[Z3TSSU COMPLETE/CYBERSECURITY/Offensive - Red Team/Certifications & Course Notes/PNPT/Course Topics/Information Gathering (Reconnaissance)/Processes/Gathering Breached Credentials with Breach-Parse\|Gathering Breached Credentials with Breach-Parse]]|Breach-Parse|breached passwords \| OSINT|
+|[[Z3TSSU COMPLETE/CYBERSECURITY/Offensive - Red Team/Certifications & Course Notes/PNPT/Course Topics/Information Gathering (Reconnaissance)/Processes/Hunting Breached Credentials with DeHashed\|Hunting Breached Credentials with DeHashed]]|DeHashed, hashes.org||
+|[[Z3TSSU COMPLETE/CYBERSECURITY/Offensive - Red Team/Certifications & Course Notes/PNPT/Course Topics/Information Gathering (Reconnaissance)/Processes/Hunting Sub-Domains\|Hunting Sub-Domains]]|OWASP Amass, crt.sh, sublist3r|Sub domain hunting|
+|[[Z3TSSU COMPLETE/CYBERSECURITY/Offensive - Red Team/Certifications & Course Notes/PNPT/Course Topics/Information Gathering (Reconnaissance)/Processes/Identifying Website Technologies\|Identifying Website Technologies]]|||
+|[[Z3TSSU COMPLETE/CYBERSECURITY/Offensive - Red Team/Certifications & Course Notes/PNPT/Course Topics/Information Gathering (Reconnaissance)/Processes/Information Gathering with Burp Suite\|Information Gathering with Burp Suite]]|burpsuite||
+|[[Z3TSSU COMPLETE/CYBERSECURITY/Offensive - Red Team/Certifications & Course Notes/PNPT/Course Topics/Information Gathering (Reconnaissance)/Processes/Google Fu\|Google Fu]]|||
+|[[Z3TSSU COMPLETE/CYBERSECURITY/Offensive - Red Team/Certifications & Course Notes/PNPT/Course Topics/Information Gathering (Reconnaissance)/Processes/Utilizing Social Media\|Utilizing Social Media]]|||
+|[[Z3TSSU COMPLETE/CYBERSECURITY/Offensive - Red Team/Certifications & Course Notes/PNPT/Course Topics/Information Gathering (Reconnaissance)/Processes/OSINT Fundamentals\|OSINT Fundamentals]]|||

@@ -1,0 +1,1 @@
+[https://medium.com/@0xkhaled/how-i-passed-oscp-in-two-months-14685a324e83](https://medium.com/@0xkhaled/how-i-passed-oscp-in-two-months-14685a324e83)

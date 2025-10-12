@@ -1,0 +1,1 @@
+[https://safing.io/download/](https://safing.io/download/)

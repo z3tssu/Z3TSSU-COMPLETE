@@ -1,0 +1,24 @@
+- CIS (Center for Internet Security)
+	- Help improve the security posture of your organization
+- NIST RMF
+	- Risk management framework
+		- Six Steps
+			- Categorize
+			- Select
+			- Implement
+			- Assess
+			- Authorize
+			- Monitor
+- NISF CSF
+	- ![[Pasted image 20230928204500.png]]
+- ISO/IEC Framework
+	- ISO/IEC 27001
+		- Standard for ISMS
+	- ISO/IEC 27002
+		- code of practise for ISMS
+	- ISO/IEC 27701
+		- Privacy information management system
+	- ISO/IEC 31000
+		- standards for risk management practises
+- SSAE SOC 2 Type I/II
+	- 

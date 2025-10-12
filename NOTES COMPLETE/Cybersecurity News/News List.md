@@ -1,0 +1,6 @@
+- https://www.bleepingcomputer.com/
+- https://thehackernews.com/
+- https://threatpost.com/
+- https://www.securityweek.com/
+- https://www.helpnetsecurity.com/
+- https://www.zdnet.com/

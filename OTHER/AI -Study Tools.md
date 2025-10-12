@@ -1,0 +1,5 @@
+1. [https://notebooklm.google.com/](https://notebooklm.google.com/)
+2. [https://ankiweb.net/about](https://ankiweb.net/about)
+3. [https://aistudio.google.com/prompts/new_chat](https://aistudio.google.com/prompts/new_chat)
+4. [https://excalidraw.com/](https://excalidraw.com/)
+5. [https://texteditor.co/](https://texteditor.co/)

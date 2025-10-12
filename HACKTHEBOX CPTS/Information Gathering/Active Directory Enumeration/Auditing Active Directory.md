@@ -1,0 +1,185 @@
+# Additional AD Auditing Techniques
+Provide clients with info to prove/fix issues (e.g., for funding). Tools here: Visualize/output data for audits.
+
+## Creating an AD Snapshot with Active Directory Explorer
+https://docs.microsoft.com/en-us/sysinternals/downloads/adexplorer
+Part of Sysinternals Suite: Advanced AD viewer/editor. Navigate DB, favorites, view props/attrs (no dialogs), edit perms, view schema, sophisticated searches (save/re-run). Save snapshots for offline viewing/comparison (before/after changes in objs/attrs/perms).
+
+### Logging In
+Prompt for creds or load snapshot. Use any valid domain user.
+![[Pasted image 20251009195806.png]]
+- Connect window: Fields - Connect to, User, Password, Path; options to save connection.
+- Diagram: AD Explorer connection window.
+
+Once logged: Browse AD, view all objs.
+![[Pasted image 20251009195819.png]]
+- Window: Directory structure + attrs for DC=INLANEFREIGHT,DC=LOCAL.
+
+### Create Snapshot
+File > Create Snapshot; enter name. Move offline for analysis.
+![[Pasted image 20251009195828.png]]
+- Dialog: Fields - description, path, server utilization settings.
+- Diagram: AD Explorer window w/ snapshot dialog.
+
+## PingCastle
+Evaluates AD sec posture; results in maps/graphs. Helps inventory hosts (if none exists) via domain map. Diff from PowerView/BloodHound: Provides enum data + detailed sec report based on risk assessment/maturity framework (CMMI scoring).
+
+### Help Menu
+Run w/ --help:
+```
+C:\htb> PingCastle.exe --help
+```
+Output:
+```
+switch:
+  --help              : display this message
+  --interactive       : force the interactive mode
+  --log               : generate a log file
+  --log-console       : add log to the console
+  --log-samba <option>: enable samba login (example: 10)
+
+Common options when connecting to the AD
+  --server <server>   : use this server (default: current domain controller)
+                        the special value * or *.forest do the healthcheck for all domains
+  --port <port>       : the port to use for ADWS or LDAP (default: 9389 or 389)
+  --user <user>       : use this user (default: integrated authentication)
+  --password <pass>   : use this password (default: asked on a secure prompt)
+  --protocol <proto>  : selection the protocol to use among LDAP or ADWS (fastest)
+                      : ADWSThenLDAP (default), ADWSOnly, LDAPOnly, LDAPThenADWS
+
+<SNIP>
+```
+Note: If issues starting, change system date to before 7/31/2023 (Control Panel > Set time/date). End of support: 7/31/2023.
+
+### Running PingCastle
+Run: `PingCastle.exe` (or click exe) > interactive mode (TUI menu).
+```
+|:.      PingCastle (Version 2.10.1.0     1/19/2022 8:12:02 AM)
+|  #:.   Get Active Directory Security at 80% in 20% of the time
+# @@  >  End of support: 7/31/2023
+| @@@:
+: .#                                 Vincent LE TOUX (contact@pingcastle.com)
+  .:       twitter: @mysmartlogon                    https://www.pingcastle.com
+What do you want to do?
+=======================
+Using interactive mode.
+Do not forget that there are other command line switches like --help that you can use
+  1-healthcheck-Score the risk of a domain
+  2-conso      -Aggregate multiple reports into a single one
+  3-carto      -Build a map of all interconnected domains
+  4-scanner    -Perform specific security checks on workstations
+  5-export     -Export users or computers
+  6-advanced   -Open the advanced menu
+  0-Exit
+==============================
+```
+Main: Healthcheck (baseline overview, misconfigs/vulns). Reports: Recent vulns, shares, trusts, delegation, user/computer states.
+
+### Scanner Options
+Under Scanner (4):
+```
+|:.      PingCastle (Version 2.10.1.0     1/19/2022 8:12:02 AM)
+|  #:.   Get Active Directory Security at 80% in 20% of the time
+# @@  >  End of support: 7/31/2023
+| @@@:
+: .#                                 Vincent LE TOUX (contact@pingcastle.com)
+  .:       twitter: @mysmartlogon                    https://www.pingcastle.com
+Select a scanner
+================
+What scanner whould you like to run ?
+WARNING: Checking a lot of workstations may raise security alerts.
+  1-aclcheck                                                  9-oxidbindings
+  2-antivirus                                                 a-remote
+  3-computerversion                                           b-share
+  4-foreignusers                                              c-smb
+  5-laps_bitlocker                                            d-smb3querynetwork
+  6-localadmin                                                e-spooler
+  7-nullsession                                               f-startup
+  8-nullsession-trust                                         g-zerologon
+  0-Exit
+==============================
+Check authorization related to users or groups. Default to everyone, authenticated users and domain users
+```
+
+### Viewing The Report
+Sections: Domain/user/group/trust info; "anomalies" table (immediate issues); overall risk score.
+
+- GIF: Report generated by PingCastle.
+
+Thorough enum w/ other tools; quick sec posture analysis for clients/self-assess/hardening. Explore reports/maps on Inlanefreight domain.
+
+## Group Policy (Group3r)
+Audits GPO settings for holes (large part of AD mgmt).
+
+Group3r: Finds vulns in AD Group Policy. Run from domain-joined host w/ domain user (no admin needed), or runas /netonly.
+
+### Basic Usage
+```
+C:\htb> group3r.exe -f <filepath-name.log> 
+```
+Must specify -s (stdout) or -f (file). More: -h or docs.
+
+### Reading Output
+- Indents: No = GPO; 1 = policy settings; 2+ = findings.
+- Screenshot: GPO settings 'Disallow LM Hash' + 'Default Domain Controllers Policy' (creation/mod, registry).
+
+### Example Finding
+```
+Command prompt showing registry updates for LDAPServerIntegrity, RequireSignOrSeal, RequireSecuritySignature, and EnableSecuritySignature, with user rights assignment details.
+```
+Linked to setting; defines interesting portion + reason. Run if possible; finds overlooked paths/objs.
+
+## ADRecon
+Gathers large AD data at once. For non-stealth assessments: Run/analyze for missed items.
+
+### Running ADRecon
+```
+PS C:\htb> .\ADRecon.ps1
+```
+Output:
+```
+[*] ADRecon v1.1 by Prashant Mahajan (@prashant3535)
+[*] Running on INLANEFREIGHT.LOCAL\MS01 - Member Server
+[*] Commencing - 03/28/2022 09:24:58
+[-] Domain
+[-] Forest
+[-] Trusts
+[-] Sites
+[-] Subnets
+[-] SchemaHistory - May take some time
+[-] Default Password Policy
+[-] Fine Grained Password Policy - May need a Privileged Account
+[-] Domain Controllers
+[-] Users and SPNs - May take some time
+[-] PasswordAttributes - Experimental
+[-] Groups and Membership Changes - May take some time
+[-] Group Memberships - May take some time
+[-] OrganizationalUnits (OUs)
+[-] GPOs
+[-] gPLinks - Scope of Management (SOM)
+[-] DNS Zones and Records
+[-] Printers
+[-] Computers and SPNs - May take some time
+[-] LAPS - Needs Privileged Account
+[-] BitLocker Recovery Keys - Needs Privileged Account
+[-] GPOReport - May take some time
+[*] Total Execution Time (mins): 11.05
+[*] Output Directory: C:\Tools\ADRecon-Report-20220328092458
+```
+Drops report in new folder: HTML + CSV folder. Needs Excel installed for auto-report; else just CSVs. For GPO output: Need GroupPolicy PS module. Gen Excel later: -GenExcel + report folder.
+
+### Reporting
+```
+PS C:\htb> ls
+
+    Directory: C:\Tools\ADRecon-Report-20220328092458
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----         3/28/2022  12:42 PM                CSV-Files
+-a----         3/28/2022  12:42 PM        2758736 GPO-Report.html
+-a----         3/28/2022  12:42 PM         392780 GPO-Report.xml
+```
+
+## Closing Thoughts
+Tools/tactics covered; audit ways shown. Actions purposeful; goal: Improve client sec. More evidence: Convincing reports; tools for fix/sec domain.

@@ -1,0 +1,1 @@
+[https://microsoft.github.io/PartnerResources/skilling/microsoft-security-academy/certifications](https://microsoft.github.io/PartnerResources/skilling/microsoft-security-academy/certifications)

@@ -1,0 +1,1 @@
+[https://citizendevelopmentacademy.com/blog/power-automate-word-template/](https://citizendevelopmentacademy.com/blog/power-automate-word-template/)
