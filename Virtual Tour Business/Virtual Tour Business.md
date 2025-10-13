@@ -1,6 +1,6 @@
 # Virtual Tour Business
 
-> **📍 See:** [[📍 INDEX - Virtual Tour Business]] for complete navigation
+> **📍 See:** [[INDEX - Virtual Tour Business]] for complete navigation
 
 ---
 
@@ -98,7 +98,7 @@ Follow the complete checklist: [[Breakdown of how to do the Virtual Tour Website
 
 ## Next Steps
 
-- [ ] Review [[📍 INDEX - Virtual Tour Business|Master Index]]
+- [ ] Review [[INDEX - Virtual Tour Business|Master Index]]
 - [ ] Study [[Virtual Tour Software]] options
 - [ ] Watch [[Tutorials#3DVista Training|essential tutorials]]
 - [ ] Plan [[Services That the Business Will Offer|service offerings]]

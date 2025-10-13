@@ -1,4 +1,4 @@
-# 📍 Virtual Tour Business - Master Index
+# Virtual Tour Business - Master Index
 
 > **Quick Navigation:** Complete guide to starting and running a virtual tour business
 

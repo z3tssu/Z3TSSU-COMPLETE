@@ -1,6 +1,6 @@
 # Services That the Business Will Offer
 
-> **Back to:** [[📍 INDEX - Virtual Tour Business|Index]] | [[Virtual Tour Business|Main Overview]]
+> **Back to:** [[INDEX - Virtual Tour Business|Index]] | [[Virtual Tour Business|Main Overview]]
 
 ---
 
@@ -285,7 +285,7 @@ Professional 360° virtual tour services for businesses and properties across mu
 
 **Business:**
 - [[Virtual Tour Business|Main Overview]]
-- [[📍 INDEX - Virtual Tour Business|Master Index]]
+- [[INDEX - Virtual Tour Business|Master Index]]
 
 ---
 

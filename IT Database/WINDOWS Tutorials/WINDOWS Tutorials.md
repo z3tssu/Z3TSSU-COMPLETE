@@ -5,7 +5,7 @@
 
 ---
 
-## 🪟 Windows Setup & Installation
+## Windows Setup & Installation
 
 ### [[Setup Clean Windows Desktop]]
 Complete guide for fresh Windows installation and setup
@@ -14,7 +14,7 @@ Complete guide for fresh Windows installation and setup
 - Essential software
 - Optimization tips
 
-**Difficulty:** ⭐ Beginner  
+**Difficulty:** Beginner  
 **Tags:** #windows #installation #setup #clean-install
 
 ---
@@ -26,12 +26,12 @@ Upgrade from Windows 10 to Windows 11
 - Migration process
 - Post-upgrade optimization
 
-**Difficulty:** ⭐⭐ Intermediate  
+**Difficulty:** Intermediate  
 **Tags:** #windows11 #migration #upgrade
 
 ---
 
-## 🔄 Multi-Boot Configurations
+## Multi-Boot Configurations
 
 ### [[Triple Boot Kali + Windows + Ubuntu]]
 Set up three operating systems on one machine
@@ -40,7 +40,7 @@ Set up three operating systems on one machine
 - Bootloader configuration
 - OS management
 
-**Difficulty:** ⭐⭐⭐⭐ Advanced  
+**Difficulty:** Advanced  
 **Tags:** #dual-boot #multi-boot #kali-linux #ubuntu #advanced
 
 **Related:** [[How to remove Dual Boot|Removal Guide]]
@@ -54,7 +54,7 @@ Remove multi-boot setup and clean up partitions
 - Fix bootloader
 - Reclaim disk space
 
-**Difficulty:** ⭐⭐ Intermediate  
+**Difficulty:** Intermediate  
 **Tags:** #dual-boot #removal #cleanup
 
 ---
@@ -66,12 +66,12 @@ Specifically for removing Linux from dual-boot
 - Extend Windows partition
 - Clean up EFI entries
 
-**Difficulty:** ⭐⭐ Intermediate  
+**Difficulty:** Intermediate  
 **Tags:** #linux #dual-boot #removal #windows
 
 ---
 
-## 🌐 Network & Domain Configuration
+## Network & Domain Configuration
 
 ### [[Putting Users on Domain Windows]]
 Join Windows computers to Active Directory domain
@@ -80,7 +80,7 @@ Join Windows computers to Active Directory domain
 - User account setup
 - Group policy verification
 
-**Difficulty:** ⭐⭐⭐ Intermediate-Advanced  
+**Difficulty:** Intermediate-Advanced  
 **Tags:** #active-directory #domain #networking #enterprise
 
 **Related:** 
@@ -96,14 +96,14 @@ Configure Cloudflare DNS for improved privacy and speed
 - Configuration steps
 - Troubleshooting
 
-**Difficulty:** ⭐ Beginner  
+**Difficulty:** Beginner  
 **Tags:** #dns #cloudflare #networking #privacy
 
 **Related:** [[What is Cloudflare|Cloudflare Explained]]
 
 ---
 
-## 🖥️ Multi-Computer Control
+## Multi-Computer Control
 
 ### [[Barrier - Control Multiple Computers]]
 Use one keyboard and mouse across multiple computers
@@ -115,12 +115,12 @@ Use one keyboard and mouse across multiple computers
 **Resource:** [Barrier GitHub](https://github.com/debauchee/barrier)  
 **Test Date:** July 15, 2025
 
-**Difficulty:** ⭐⭐ Intermediate  
+**Difficulty:** Intermediate  
 **Tags:** #barrier #multi-computer #productivity #kvm
 
 ---
 
-## 🤖 Automation & AI Integration
+## Automation & AI Integration
 
 ### [[Automate Note with Claude and Obsidian]]
 Automate note-taking using AI
@@ -129,7 +129,7 @@ Automate note-taking using AI
 - Automation workflows
 - Use cases
 
-**Difficulty:** ⭐⭐⭐ Intermediate  
+**Difficulty:** Intermediate  
 **Tags:** #automation #ai #obsidian #productivity
 
 ---
@@ -141,36 +141,36 @@ Extended automation guide for Obsidian
 - Template creation
 - Integration tips
 
-**Difficulty:** ⭐⭐⭐ Intermediate  
+**Difficulty:** Intermediate  
 **Tags:** #automation #ai #obsidian #claude
 
 **Related:** [[How To Populate a Word Document Template with Power Automate|Power Automate Guide]]
 
 ---
 
-## 🎯 Quick Task Guides
+## Quick Task Guides
 
 ### New Windows Installation
-1. ✅ [[Setup Clean Windows Desktop|Install Windows]]
-2. ✅ [[Set Cloudflare DNS on Windows|Configure DNS]]
-3. ✅ Install essential software
-4. ✅ Configure security settings
+1. [[Setup Clean Windows Desktop|Install Windows]]
+2. [[Set Cloudflare DNS on Windows|Configure DNS]]
+3. Install essential software
+4. Configure security settings
 
 ### Setting Up Dual Boot
-1. ✅ Backup all data
-2. ✅ [[Triple Boot Kali + Windows + Ubuntu|Follow dual/triple boot guide]]
-3. ✅ Test all operating systems
-4. ✅ Configure bootloader
+1. Backup all data
+2. [[Triple Boot Kali + Windows + Ubuntu|Follow dual/triple boot guide]]
+3. Test all operating systems
+4. Configure bootloader
 
 ### Joining Domain
-1. ✅ [[Setting up an Active Directory Environment|Prepare AD environment]]
-2. ✅ [[Putting Users on Domain Windows|Join computer to domain]]
-3. ✅ Configure group policies
-4. ✅ Test user login
+1. [[Setting up an Active Directory Environment|Prepare AD environment]]
+2. [[Putting Users on Domain Windows|Join computer to domain]]
+3. Configure group policies
+4. Test user login
 
 ---
 
-## 📚 Learning Path
+## Learning Path
 
 ### Beginner Track
 1. [[Setup Clean Windows Desktop]] - Learn clean installation
@@ -192,7 +192,7 @@ Extended automation guide for Obsidian
 
 ---
 
-## 🔗 Related Topics
+## Related Topics
 
 ### Active Directory
 - [[Active Directory Stuff|AD Main Hub]]
@@ -215,7 +215,7 @@ Extended automation guide for Obsidian
 
 ---
 
-## 🛠️ Essential Windows Tools
+## Essential Windows Tools
 
 ### Built-in Tools
 - **Settings** - System configuration
@@ -262,7 +262,7 @@ wuauclt /detectnow /updatenow
 
 ---
 
-## 💡 Best Practices
+## Best Practices
 
 ### Installation
 - Create installation media on USB
@@ -294,7 +294,7 @@ wuauclt /detectnow /updatenow
 
 ---
 
-## 🔧 Troubleshooting Resources
+## Troubleshooting Resources
 
 ### Common Issues
 - Boot problems → Check BIOS/UEFI settings
@@ -314,7 +314,7 @@ wuauclt /detectnow /updatenow
 
 ---
 
-## 📍 Quick Navigation
+## Quick Navigation
 
 **Main Hubs:**
 - [[📍 INDEX - IT Database|Master Index]]
@@ -329,7 +329,7 @@ wuauclt /detectnow /updatenow
 
 ---
 
-## 🌐 External Resources
+## External Resources
 
 **Official Microsoft:**
 - Windows Documentation
@@ -347,5 +347,5 @@ wuauclt /detectnow /updatenow
 
 **Total Tutorials:** 11  
 **Difficulty Range:** Beginner to Advanced  
-**Status:** 📚 Active Learning Resource  
+**Status:** Active Learning Resource  
 **Last Updated:** {{date}}

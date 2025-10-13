@@ -1,6 +1,6 @@
 # Breakdown of How to Do the Virtual Tour Website
 
-> **Back to:** [[📍 INDEX - Virtual Tour Business|Index]] | [[Virtual Tour Business|Main Overview]]
+> **Back to:** [[INDEX - Virtual Tour Business|Index]] | [[Virtual Tour Business|Main Overview]]
 
 ---
 
@@ -223,7 +223,7 @@ This is your master checklist for building and launching your virtual tour busin
 ## 🚀 Quick Reference Links
 
 **Main Documents:**
-- [[📍 INDEX - Virtual Tour Business|Master Index]]
+- [[INDEX - Virtual Tour Business|Master Index]]
 - [[Virtual Tour Business|Business Overview]]
 - [[Services That the Business Will Offer|Service Packages]]
 - [[Creating the Website|Website Guide]]

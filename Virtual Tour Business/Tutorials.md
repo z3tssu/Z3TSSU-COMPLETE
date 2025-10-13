@@ -1,6 +1,6 @@
 # Tutorials - Complete Learning Library
 
-> **Back to:** [[📍 INDEX - Virtual Tour Business|Index]] | [[Virtual Tour Business|Main Overview]]
+> **Back to:** [[INDEX - Virtual Tour Business|Index]] | [[Virtual Tour Business|Main Overview]]
 
 ---
 
@@ -288,7 +288,7 @@ This page contains all essential tutorials organized by topic. Follow the learni
 ## 🔄 Related Documentation
 
 **Core Pages:**
-- [[📍 INDEX - Virtual Tour Business|Master Index]]
+- [[INDEX - Virtual Tour Business|Master Index]]
 - [[Virtual Tour Business|Business Overview]]
 - [[Virtual Tour Software|Software Options]]
 - [[Creating the Website|Website Development]]

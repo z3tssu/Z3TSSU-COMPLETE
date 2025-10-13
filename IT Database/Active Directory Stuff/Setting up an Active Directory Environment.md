@@ -5,7 +5,7 @@
 
 ---
 
-## 🎯 Overview
+## Overview
 
 This guide covers how to create a test Active Directory environment for learning and practice. Perfect for IT professionals wanting to build hands-on skills.
 
@@ -15,7 +15,7 @@ This guide covers how to create a test Active Directory environment for learning
 
 ---
 
-## 📋 What You'll Need
+## What You'll Need
 
 ### Hardware/Virtual Machine
 - **CPU:** 2 cores minimum
@@ -30,7 +30,7 @@ This guide covers how to create a test Active Directory environment for learning
 
 ---
 
-## 🔗 Complete Guide
+## Complete Guide
 
 **Official Tutorial:**  
 [Create Active Directory Test Environment - Active Directory Pro](https://activedirectorypro.com/create-active-directory-test-environment/)
@@ -46,7 +46,7 @@ This comprehensive guide walks you through:
 
 ---
 
-## 📚 Step-by-Step Overview
+## Step-by-Step Overview
 
 ### Phase 1: Server Installation
 1. **Create Virtual Machine**
@@ -127,7 +127,7 @@ This comprehensive guide walks you through:
 
 ---
 
-## 🖥️ Testing Your Environment
+## Testing Your Environment
 
 ### Join a Test Computer
 1. Configure client DNS to point to DC
@@ -145,7 +145,7 @@ This comprehensive guide walks you through:
 
 ---
 
-## 🎓 Learning Exercises
+## Learning Exercises
 
 ### Beginner Tasks
 - [ ] Create 5 user accounts
@@ -170,7 +170,7 @@ This comprehensive guide walks you through:
 
 ---
 
-## 🔧 Troubleshooting
+## Troubleshooting
 
 ### Common Issues
 
@@ -193,7 +193,7 @@ This comprehensive guide walks you through:
 
 ---
 
-## 🛠️ Essential Commands
+## Essential Commands
 
 ### PowerShell Commands
 ```powershell
@@ -233,7 +233,7 @@ repadmin /replsummary
 
 ---
 
-## 💡 Best Practices
+## Best Practices
 
 ### Security
 - Use strong DSRM password
@@ -256,7 +256,7 @@ repadmin /replsummary
 
 ---
 
-## 🔗 Related Resources
+## Related Resources
 
 ### Active Directory Topics
 - [[Active Directory Stuff|AD Main Hub]]
@@ -275,17 +275,17 @@ repadmin /replsummary
 
 ---
 
-## 📍 Next Steps
+## Next Steps
 
 After completing this setup:
-1. ✅ Practice user management with [[Putting Users on Domain Windows]]
-2. ✅ Build production environment with [[Windows Server 2016 - Active Directory Build]]
-3. ✅ Learn advanced topics through [[COURSES & TRAINING]]
-4. ✅ Explore [[IT PROJECTS|other IT projects]]
+1. Practice user management with [[Putting Users on Domain Windows]]
+2. Build production environment with [[Windows Server 2016 - Active Directory Build]]
+3. Learn advanced topics through [[COURSES & TRAINING]]
+4. Explore [[IT PROJECTS|other IT projects]]
 
 ---
 
-## 🌐 External Resources
+## External Resources
 
 **Tutorials:**
 - [Active Directory Pro - Complete Guide](https://activedirectorypro.com/create-active-directory-test-environment/)
@@ -305,7 +305,7 @@ After completing this setup:
 
 ---
 
-**Status:** 🧪 Lab Setup Guide  
+**Status:** Lab Setup Guide  
 **Time Required:** 2-4 hours  
-**Difficulty:** ⭐⭐⭐ (Intermediate)  
+**Difficulty:** Intermediate  
 **Last Updated:** {{date}}

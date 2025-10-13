@@ -5,7 +5,7 @@
 
 ---
 
-## 📖 What is Active Directory?
+## What is Active Directory?
 
 Active Directory (AD) is Microsoft's directory service for Windows domain networks. It stores information about network objects (users, computers, groups) and makes this information available to administrators and users.
 
@@ -18,7 +18,7 @@ Active Directory (AD) is Microsoft's directory service for Windows domain networ
 
 ---
 
-## 📚 Getting Started
+## Getting Started
 
 ### [[Setting up an Active Directory Environment]]
 Learn how to create a test AD environment for learning and experimentation.
@@ -36,7 +36,7 @@ Learn how to create a test AD environment for learning and experimentation.
 
 ---
 
-## 🏗️ Related Projects
+## Related Projects
 
 ### [[Windows Server 2016 - Active Directory Build]]
 Complete project walkthrough for building an AD infrastructure.
@@ -54,7 +54,7 @@ Complete project walkthrough for building an AD infrastructure.
 
 ---
 
-## 👥 User Management
+## User Management
 
 ### [[Putting Users on Domain Windows]]
 Step-by-step guide for adding users to your Active Directory domain.
@@ -74,29 +74,29 @@ Step-by-step guide for adding users to your Active Directory domain.
 
 ---
 
-## 🎓 Learning Path
+## Learning Path
 
 ### Beginner Level
-1. ✅ Understand AD basics (this page)
-2. ✅ [[Setting up an Active Directory Environment|Create test environment]]
-3. ✅ Learn basic user management
-4. ✅ Practice with group policies
+1. Understand AD basics (this page)
+2. [[Setting up an Active Directory Environment|Create test environment]]
+3. Learn basic user management
+4. Practice with group policies
 
 ### Intermediate Level
-1. ✅ [[Windows Server 2016 - Active Directory Build|Build production-ready AD]]
-2. ✅ [[Putting Users on Domain Windows|Deploy domain-joined workstations]]
-3. ✅ Configure advanced group policies
-4. ✅ Implement security best practices
+1. [[Windows Server 2016 - Active Directory Build|Build production-ready AD]]
+2. [[Putting Users on Domain Windows|Deploy domain-joined workstations]]
+3. Configure advanced group policies
+4. Implement security best practices
 
 ### Advanced Level
-1. ✅ Multi-site AD replication
-2. ✅ Federation services (AD FS)
-3. ✅ Azure AD integration
-4. ✅ Disaster recovery planning
+1. Multi-site AD replication
+2. Federation services (AD FS)
+3. Azure AD integration
+4. Disaster recovery planning
 
 ---
 
-## 🔗 Related Topics
+## Related Topics
 
 **Windows Server:**
 - [[WINDOWS Tutorials|Windows Configuration]]
@@ -117,7 +117,7 @@ Step-by-step guide for adding users to your Active Directory domain.
 
 ---
 
-## 📋 Common Tasks
+## Common Tasks
 
 ### Setting Up New AD Environment
 1. Install Windows Server
@@ -140,7 +140,7 @@ Step-by-step guide for adding users to your Active Directory domain.
 
 ---
 
-## 🛠️ Essential Tools
+## Essential Tools
 
 **Built-in Tools:**
 - Active Directory Users and Computers (ADUC)
@@ -156,7 +156,7 @@ Step-by-step guide for adding users to your Active Directory domain.
 
 ---
 
-## 💡 Best Practices
+## Best Practices
 
 **Security:**
 - Use strong passwords
@@ -180,7 +180,7 @@ Step-by-step guide for adding users to your Active Directory domain.
 
 ---
 
-## 🌐 External Resources
+## External Resources
 
 **Official Documentation:**
 - [Microsoft Active Directory Docs](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/)
@@ -193,7 +193,7 @@ Step-by-step guide for adding users to your Active Directory domain.
 
 ---
 
-## 📍 Quick Navigation
+## Quick Navigation
 
 **Main Sections:**
 - [[📍 INDEX - IT Database|Master Index]]
@@ -208,6 +208,6 @@ Step-by-step guide for adding users to your Active Directory domain.
 
 ---
 
-**Status:** 📚 Learning Resource  
+**Status:** Learning Resource  
 **Difficulty:** Beginner to Advanced  
 **Last Updated:** {{date}}

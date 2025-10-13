@@ -1,11 +1,11 @@
 # IT Database
 
-> **📍 See:** [[📍 INDEX - IT Database]] for complete navigation with tags and links  
+> **See:** [[📍 INDEX - IT Database]] for complete navigation with tags and links  
 > Tags: #it-database #main-hub
 
 ---
 
-## 🗂️ Main Categories
+## Main Categories
 
 ### [[Active Directory Stuff]]
 Windows Server, domain management, and enterprise infrastructure
@@ -37,7 +37,7 @@ Curated list of helpful websites and online resources
 
 ---
 
-## 📁 Projects
+## Projects
 
 ### [[IT PROJECTS]]
 Active and planned IT infrastructure projects
@@ -45,7 +45,7 @@ Active and planned IT infrastructure projects
 
 ---
 
-## 🔗 Quick Links
+## Quick Links
 
 **For Beginners:**
 - [[Setup Clean Windows Desktop|Clean Windows Setup]]
@@ -63,7 +63,7 @@ Active and planned IT infrastructure projects
 
 ---
 
-## 📍 Navigation
+## Navigation
 
 **For comprehensive navigation with:**
 - Detailed categorization

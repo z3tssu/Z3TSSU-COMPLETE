@@ -1,25 +1,25 @@
-# 📍 IT Database - Master Index
+# INDEX - IT Database - Master Index
 
 > **Your Complete IT Knowledge Hub**  
 > Tags: #it-database #index #navigation
 
 ---
 
-## 🚀 Quick Access
+## Quick Access
 
 **Jump to Section:**
-- [[#🖥️ Active Directory|Active Directory]]
-- [[#📚 Courses & Training|Learning Resources]]
-- [[#👔 IT Management|IT Director/Manager]]
-- [[#📁 IT Projects|Projects]]
-- [[#🪟 Windows Tutorials|Windows Guides]]
-- [[#🔧 Other IT Notes|Miscellaneous IT]]
-- [[#🧠 Study & Productivity|Study Tools]]
-- [[#🌐 Useful Resources|Websites & Tools]]
+- [[#Active Directory|Active Directory]]
+- [[#Courses & Training|Learning Resources]]
+- [[#IT Management|IT Director/Manager]]
+- [[#IT Projects|Projects]]
+- [[#Windows Tutorials|Windows Guides]]
+- [[#Other IT Notes|Miscellaneous IT]]
+- [[#Study & Productivity|Study Tools]]
+- [[#Useful Resources|Websites & Tools]]
 
 ---
 
-## 🖥️ Active Directory
+## Active Directory
 
 **Main Hub:** [[Active Directory Stuff]]
 
@@ -36,7 +36,7 @@
 
 ---
 
-## 📚 Courses & Training
+## Courses & Training
 
 **Main Hub:** [[COURSES & TRAINING]]
 
@@ -58,7 +58,7 @@
 
 ---
 
-## 👔 IT Management
+## IT Management
 
 **Main Hub:** [[IT Director-Manager]]
 
@@ -80,7 +80,7 @@
 
 ---
 
-## 📁 IT Projects
+## IT Projects
 
 **Main Hub:** [[IT PROJECTS]]
 
@@ -102,7 +102,7 @@
 
 ---
 
-## 🪟 Windows Tutorials
+## Windows Tutorials
 
 **Main Hub:** [[WINDOWS Tutorials]]
 
@@ -132,7 +132,7 @@
 
 ---
 
-## 🔧 Other IT Notes
+## Other IT Notes
 
 **Main Hub:** [[OTHER NOTES]]
 
@@ -156,7 +156,7 @@
 
 ---
 
-## 🧠 Study & Productivity
+## Study & Productivity
 
 **Main Hub:** [[OTHER]]
 
@@ -181,7 +181,7 @@
 
 ---
 
-## 🌐 Useful Resources
+## Useful Resources
 
 **Main Hub:** [[Useful IT Websites]]
 
@@ -204,7 +204,7 @@
 
 ---
 
-## 📊 Knowledge Map
+## Knowledge Map
 
 ### By Technology
 **Windows:** [[WINDOWS Tutorials]] | [[Active Directory Stuff]] | [[IT PROJECTS]]  
@@ -224,7 +224,7 @@
 
 ---
 
-## 🏷️ Tag Directory
+## Tag Directory
 
 ### Infrastructure Tags
 `#active-directory` `#windows-server` `#domain` `#infrastructure` `#deployment`
@@ -243,31 +243,31 @@
 
 ---
 
-## 📂 Folder Structure
+## Folder Structure
 
 ```
 IT Database/
-├── 📍 INDEX - IT Database.md (You are here)
+├── INDEX - IT Database.md (You are here)
 ├── IT Database.md (Legacy index)
 │
-├── 🖥️ Active Directory Stuff/
+├── Active Directory Stuff/
 │   ├── Active Directory Stuff.md
 │   └── Setting up an Active Directory Environment.md
 │
-├── 📚 COURSES & TRAINING/
+├── COURSES & TRAINING/
 │   ├── COURSES & TRAINING.md
 │   ├── Course- IT Manager Fundamentals/
 │   └── Udemy - IT.md
 │
-├── 👔 IT Director-Manager/
+├── IT Director-Manager/
 │   ├── IT Director-Manager.md
 │   └── Director System Support (MIA)/
 │
-├── 📁 IT PROJECTS/
+├── IT PROJECTS/
 │   ├── IT PROJECTS.md
 │   └── Windows Server 2016 - Active Directory Build.md
 │
-├── 🪟 WINDOWS Tutorials/
+├── WINDOWS Tutorials/
 │   ├── WINDOWS Tutorials.md
 │   ├── Setup Clean Windows Desktop/
 │   ├── Automate Note with Claude and Obsidian.md
@@ -278,7 +278,7 @@ IT Database/
 │   ├── Set Cloudflare DNS on Windows.md
 │   └── Triple Boot Kali + Windows + Ubuntu.md
 │
-├── 🔧 OTHER NOTES/
+├── OTHER NOTES/
 │   ├── OTHER NOTES.md
 │   ├── How To Populate a Word Document Template.md
 │   ├── How to study effectively.md
@@ -286,19 +286,19 @@ IT Database/
 │   ├── Penflow - Cyber Mindmap.md
 │   └── What is Cloudflare.md
 │
-├── 🧠 OTHER/
+├── OTHER/
 │   ├── OTHER.md
 │   ├── AI -Study Tools.md
 │   ├── How to Absorb TEXTBOOKS Like a Sponge.md
 │   ├── How to Make Anki Flashcards 10x Faster/
 │   └── Master in Cybersecurity Online.md
 │
-└── 🌐 Useful IT Websites.md
+└── Useful IT Websites.md
 ```
 
 ---
 
-## 🎯 Quick Start Guides
+## Quick Start Guides
 
 ### New to IT?
 1. Start with [[WINDOWS Tutorials|Windows basics]]
@@ -320,7 +320,7 @@ IT Database/
 
 ---
 
-## ✅ Common Tasks
+## Common Tasks
 
 ### Setup New Windows Machine
 → [[Setup Clean Windows Desktop]] → [[Set Cloudflare DNS on Windows]] → [[Putting Users on Domain Windows]]
@@ -336,7 +336,7 @@ IT Database/
 
 ---
 
-## 🔄 Recent Updates
+## Recent Updates
 
 **Last Modified Files:**
 - Check individual pages for latest updates
@@ -349,7 +349,7 @@ IT Database/
 
 ---
 
-## 💡 Tips for Using This Database
+## Tips for Using This Database
 
 1. **Use Tags** - Click any tag to find related notes
 2. **Follow Links** - Build knowledge by connecting topics
@@ -359,7 +359,7 @@ IT Database/
 
 ---
 
-**Status:** 🚀 Active Knowledge Base  
+**Status:** Active Knowledge Base  
 **Last Organized:** {{date}}  
 **Total Categories:** 8  
 **Total Files:** 30+
