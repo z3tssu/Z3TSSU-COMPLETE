@@ -1,15 +1,15 @@
 # Virtual Tour Software Comparison
 
-> **Back to:** [[INDEX - Virtual Tour Business|Index]] | [[Virtual Tour Business|Main Overview]]
+> **Back to:** [[📍 INDEX - Virtual Tour Business|Index]] | [[Virtual Tour Business|Main Overview]]
 
 ---
 
 ## Software Options
 
-### 1. 🎯 **3dVista** (Primary Choice)
+### 1. **3dVista** (Primary Choice)
 **Website:** [3DVista.com](https://www.3dvista.com/en/)
 
-**Why Choose 3DVista:**
+**Why Choose 3dVista:**
 - Industry-leading features
 - Professional-grade output
 - Extensive customization options
@@ -53,11 +53,11 @@
 ## Recommended Choice: 3DVista
 
 For professional virtual tour business, 3DVista offers the best balance of:
-- ✅ Professional features
-- ✅ Reasonable pricing
-- ✅ WordPress integration
-- ✅ Custom branding
-- ✅ Offline and online publishing
+- Professional features
+- Reasonable pricing
+- WordPress integration
+- Custom branding
+- Offline and online publishing
 
 ---
 

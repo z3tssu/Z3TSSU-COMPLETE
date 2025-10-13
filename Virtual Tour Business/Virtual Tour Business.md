@@ -1,6 +1,6 @@
 # Virtual Tour Business
 
-> **📍 See:** [[INDEX - Virtual Tour Business]] for complete navigation
+> **See:** [[📍 INDEX - Virtual Tour Business]] for complete navigation
 
 ---
 
@@ -55,12 +55,12 @@ See detailed breakdown: [[Services That the Business Will Offer]]
 Follow the complete checklist: [[Breakdown of how to do the Virtual Tour Website]]
 
 ### Quick Start Steps:
-1. ✅ Research and plan
-2. 🔄 Acquire equipment (Insta360 X5)
-3. 🔄 Set up software (3DVista)
-4. 🔄 Build website (WordPress + Elementor)
-5. ⏳ Create sample portfolio
-6. ⏳ Launch and market
+1. Research and plan
+2. Acquire equipment (Insta360 X5)
+3. Set up software (3DVista)
+4. Build website (WordPress + Elementor)
+5. Create sample portfolio
+6. Launch and market
 
 ---
 
@@ -98,7 +98,7 @@ Follow the complete checklist: [[Breakdown of how to do the Virtual Tour Website
 
 ## Next Steps
 
-- [ ] Review [[INDEX - Virtual Tour Business|Master Index]]
+- [ ] Review [[📍 INDEX - Virtual Tour Business|Master Index]]
 - [ ] Study [[Virtual Tour Software]] options
 - [ ] Watch [[Tutorials#3DVista Training|essential tutorials]]
 - [ ] Plan [[Services That the Business Will Offer|service offerings]]

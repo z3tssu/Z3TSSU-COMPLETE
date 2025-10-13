@@ -1,10 +1,10 @@
 # Creating the Website
 
-> **Back to:** [[INDEX - Virtual Tour Business|Index]] | [[Virtual Tour Business|Main Overview]]
+> **Back to:** [[📍 INDEX - Virtual Tour Business|Index]] | [[Virtual Tour Business|Main Overview]]
 
 ---
 
-## 🎨 Website Platform
+## Website Platform
 
 ### Primary Tool: Elementor + WordPress
 **[Elementor Website Builder](https://elementor.com/?cxd=216842_1861898&utm_source=elementor&utm_medium=affiliate&utm_campaign=216842&utm_content=cx&affid=216842)**
@@ -18,7 +18,7 @@
 
 ---
 
-## 📋 Planning Phase
+## Planning Phase
 
 ### Design Reference
 **Study:** [TopVirtualTours.com](https://topvirtualtours.com)
@@ -39,7 +39,7 @@
 
 ---
 
-## 🎓 Learning Resources
+## Learning Resources
 
 ### Essential Elementor Training
 **[World's Shortest Elementor Course](https://www.youtube.com/watch?v=MQmVwp-3gKE)**
@@ -56,7 +56,7 @@
 
 ---
 
-## 🎨 Design Resources
+## Design Resources
 
 ### Templates & Assets
 **[Nicolai's Template Club](https://nicolaipalmkvist.com/?utm_source=youtube&utm_medium=subscription&utm_campaign=next-level-video)**
@@ -72,7 +72,7 @@
 
 ---
 
-## 🔌 Embedding Virtual Tours
+## Embedding Virtual Tours
 
 ### Integration Methods
 
@@ -89,7 +89,7 @@
 
 ---
 
-## 📄 Document Hosting
+## Document Hosting
 
 ### Yumpu.com Integration
 **Purpose:** Host client materials online
@@ -108,7 +108,7 @@
 
 ---
 
-## ✅ Website Build Checklist
+## Website Build Checklist
 
 ### Phase 1: Setup
 - [ ] Install WordPress
@@ -137,11 +137,11 @@
 - [ ] SEO optimization
 - [ ] Analytics setup
 - [ ] Backup system
-- [ ] Go live!
+- [ ] Go live
 
 ---
 
-## 🔗 Quick Links
+## Quick Links
 
 **Tutorials:**
 - [[Tutorials#Website Development|All Website Tutorials]]
@@ -156,7 +156,7 @@
 
 ---
 
-## 💡 Pro Tips
+## Pro Tips
 
 1. **Start Simple** - Build basic structure first
 2. **Test Early** - Embed tours in development

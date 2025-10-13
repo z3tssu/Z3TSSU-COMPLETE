@@ -1,16 +1,16 @@
 # Tutorials - Complete Learning Library
 
-> **Back to:** [[INDEX - Virtual Tour Business|Index]] | [[Virtual Tour Business|Main Overview]]
+> **Back to:** [[📍 INDEX - Virtual Tour Business|Index]] | [[Virtual Tour Business|Main Overview]]
 
 ---
 
-## 📚 Learning Path Overview
+## Learning Path Overview
 
 This page contains all essential tutorials organized by topic. Follow the learning path from top to bottom for best results.
 
 ---
 
-## 🎥 3DVista Training
+## 3DVista Training
 
 ### Complete Tutorial Series
 **[3DVista Tutorial Playlist](https://www.youtube.com/watch?v=C0l8V6NZIb4&list=PL9XlSAoFCmllNXAR_2ix4lty6GfAOqTDo)**
@@ -31,7 +31,7 @@ This page contains all essential tutorials organized by topic. Follow the learni
 
 **Duration:** Full tutorial  
 **Level:** Intermediate  
-**Priority:** ⭐⭐⭐
+**Priority:** High
 
 ---
 
@@ -44,7 +44,7 @@ This page contains all essential tutorials organized by topic. Follow the learni
 
 **Duration:** Complete guide  
 **Level:** Beginner  
-**Priority:** ⭐⭐⭐⭐⭐ *START HERE*
+**Priority:** Essential - START HERE
 
 ---
 
@@ -58,7 +58,7 @@ This page contains all essential tutorials organized by topic. Follow the learni
 
 **Duration:** Comprehensive  
 **Level:** Intermediate-Advanced  
-**Priority:** ⭐⭐⭐⭐
+**Priority:** High
 
 ---
 
@@ -72,11 +72,11 @@ This page contains all essential tutorials organized by topic. Follow the learni
 
 **Duration:** Full guide  
 **Level:** All levels  
-**Priority:** ⭐⭐⭐⭐⭐
+**Priority:** Essential
 
 ---
 
-## 📸 Image Processing & Retouching
+## Image Processing & Retouching
 
 ### 360° Image Editing
 **[How to Retouch 360 Images - Insta 360 X4](https://www.youtube.com/watch?v=IABYH4j-NiY)**
@@ -89,11 +89,11 @@ This page contains all essential tutorials organized by topic. Follow the learni
 **Equipment:** Insta360 X4/X5  
 **Software:** Adobe Lightroom/Photoshop  
 **Level:** Intermediate  
-**Priority:** ⭐⭐⭐⭐
+**Priority:** High
 
 ---
 
-## 🌐 Website Development
+## Website Development
 
 ### Elementor Basics
 **[World's Shortest Elementor Course](https://www.youtube.com/watch?v=MQmVwp-3gKE)**
@@ -105,7 +105,7 @@ This page contains all essential tutorials organized by topic. Follow the learni
 
 **Duration:** Short & sweet  
 **Level:** Beginner  
-**Priority:** ⭐⭐⭐⭐
+**Priority:** High
 
 ---
 
@@ -119,7 +119,7 @@ This page contains all essential tutorials organized by topic. Follow the learni
 
 **Duration:** Advanced tutorial  
 **Level:** Advanced  
-**Priority:** ⭐⭐⭐
+**Priority:** Medium
 
 ---
 
@@ -133,11 +133,11 @@ This page contains all essential tutorials organized by topic. Follow the learni
 
 **Duration:** Full guide  
 **Level:** All levels  
-**Priority:** ⭐⭐⭐⭐⭐ *WATCH FIRST*
+**Priority:** Essential - WATCH FIRST
 
 ---
 
-## 🔗 Integration Tutorials
+## Integration Tutorials
 
 ### Embedding Tours
 **[How to Use Virtual Tour on Your Website](https://www.youtube.com/watch?v=I8q68fVIe0E)**
@@ -149,35 +149,35 @@ This page contains all essential tutorials organized by topic. Follow the learni
 
 **Platform:** WordPress  
 **Level:** Intermediate  
-**Priority:** ⭐⭐⭐⭐
+**Priority:** High
 
 ---
 
-## 📋 Recommended Learning Path
+## Recommended Learning Path
 
 ### Week 1: Planning & Basics
-1. ✅ [Website Planning](https://www.youtube.com/watch?v=JPaTiHM8fio)
-2. ✅ [3DVista Basics - Import & Hotspots](https://www.youtube.com/watch?v=6rfVHCp3vU0)
-3. ✅ [Elementor Quick Start](https://www.youtube.com/watch?v=MQmVwp-3gKE)
+1. [Website Planning](https://www.youtube.com/watch?v=JPaTiHM8fio)
+2. [3DVista Basics - Import & Hotspots](https://www.youtube.com/watch?v=6rfVHCp3vU0)
+3. [Elementor Quick Start](https://www.youtube.com/watch?v=MQmVwp-3gKE)
 
 ### Week 2: Core Skills
-4. ✅ [360° Image Retouching](https://www.youtube.com/watch?v=IABYH4j-NiY)
-5. ✅ [Advanced Hotspots & Features](https://www.youtube.com/watch?v=iUnXApqOXsk)
-6. ✅ [Publishing Tours Online](https://www.youtube.com/watch?v=0wzC2GzGktg)
+4. [360° Image Retouching](https://www.youtube.com/watch?v=IABYH4j-NiY)
+5. [Advanced Hotspots & Features](https://www.youtube.com/watch?v=iUnXApqOXsk)
+6. [Publishing Tours Online](https://www.youtube.com/watch?v=0wzC2GzGktg)
 
 ### Week 3: Customization
-7. ✅ [Shell Design & Branding](https://www.youtube.com/watch?v=SNB0sth6-I8)
-8. ✅ [Tour Embedding](https://www.youtube.com/watch?v=I8q68fVIe0E)
-9. ✅ [Advanced Scroll Effects](https://www.youtube.com/watch?v=Zl-MS9TY8_w)
+7. [Shell Design & Branding](https://www.youtube.com/watch?v=SNB0sth6-I8)
+8. [Tour Embedding](https://www.youtube.com/watch?v=I8q68fVIe0E)
+9. [Advanced Scroll Effects](https://www.youtube.com/watch?v=Zl-MS9TY8_w)
 
 ### Week 4: Full Playlist Review
-10. ✅ [Complete 3DVista Playlist](https://www.youtube.com/playlist?list=PL9XlSAoFCmllNXAR_2ix4lty6GfAOqTDo)
+10. [Complete 3DVista Playlist](https://www.youtube.com/playlist?list=PL9XlSAoFCmllNXAR_2ix4lty6GfAOqTDo)
 
 ---
 
-## 📊 Tutorial Tracking
+## Tutorial Tracking
 
-### Completed ✅
+### Completed
 - [ ] Website Planning Fundamentals
 - [ ] 3DVista Import & Hotspots
 - [ ] Elementor Basics
@@ -191,7 +191,7 @@ This page contains all essential tutorials organized by topic. Follow the learni
 
 ---
 
-## 🎯 Skill Development Goals
+## Skill Development Goals
 
 ### Photography Skills
 - [ ] Master 360° shooting techniques
@@ -216,7 +216,7 @@ This page contains all essential tutorials organized by topic. Follow the learni
 
 ---
 
-## 💡 Study Tips
+## Study Tips
 
 **Best Practices:**
 1. **Watch at 1.5x speed** - Save time, stay focused
@@ -233,7 +233,7 @@ This page contains all essential tutorials organized by topic. Follow the learni
 
 ---
 
-## 🔗 External Resources
+## External Resources
 
 ### Official Documentation
 - [3DVista Knowledge Base](https://www.3dvista.com/en/kb/)
@@ -248,7 +248,7 @@ This page contains all essential tutorials organized by topic. Follow the learni
 
 ---
 
-## 📝 Additional Learning Resources
+## Additional Learning Resources
 
 ### Recommended Books
 - WordPress for Beginners
@@ -264,7 +264,7 @@ This page contains all essential tutorials organized by topic. Follow the learni
 
 ---
 
-## 🎬 Quick Reference Guide
+## Quick Reference Guide
 
 ### Most Important Tutorials (If Short on Time)
 
@@ -285,10 +285,10 @@ This page contains all essential tutorials organized by topic. Follow the learni
 
 ---
 
-## 🔄 Related Documentation
+## Related Documentation
 
 **Core Pages:**
-- [[INDEX - Virtual Tour Business|Master Index]]
+- [[📍 INDEX - Virtual Tour Business|Master Index]]
 - [[Virtual Tour Business|Business Overview]]
 - [[Virtual Tour Software|Software Options]]
 - [[Creating the Website|Website Development]]
@@ -305,4 +305,4 @@ This page contains all essential tutorials organized by topic. Follow the learni
 **Last Updated:** {{date}}  
 **Total Tutorials:** 10+  
 **Estimated Learning Time:** 3-4 weeks  
-**Status:** 📚 Ready to Learn
+**Status:** Ready to Learn

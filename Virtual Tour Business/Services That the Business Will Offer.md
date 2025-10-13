@@ -1,18 +1,18 @@
 # Services That the Business Will Offer
 
-> **Back to:** [[INDEX - Virtual Tour Business|Index]] | [[Virtual Tour Business|Main Overview]]
+> **Back to:** [[📍 INDEX - Virtual Tour Business|Index]] | [[Virtual Tour Business|Main Overview]]
 
 ---
 
-## 🎯 Service Overview
+## Service Overview
 
 Professional 360° virtual tour services for businesses and properties across multiple industries.
 
 ---
 
-## 📦 Core Service Packages
+## Core Service Packages
 
-### 🏠 Package 1: Real Estate Virtual Tours
+### Package 1: Real Estate Virtual Tours
 **Target Market:** Real estate agents, property developers, landlords
 
 **What's Included:**
@@ -35,7 +35,7 @@ Professional 360° virtual tour services for businesses and properties across mu
 
 ---
 
-### 🏢 Package 2: Business Showcase Tours
+### Package 2: Business Showcase Tours
 **Target Market:** Restaurants, hotels, retail stores, offices, gyms
 
 **What's Included:**
@@ -58,7 +58,7 @@ Professional 360° virtual tour services for businesses and properties across mu
 
 ---
 
-### 🎓 Package 3: Educational/Cultural Tours
+### Package 3: Educational/Cultural Tours
 **Target Market:** Museums, schools, universities, historical sites
 
 **What's Included:**
@@ -81,7 +81,7 @@ Professional 360° virtual tour services for businesses and properties across mu
 
 ---
 
-### 🏨 Package 4: Hospitality Premium
+### Package 4: Hospitality Premium
 **Target Market:** Hotels, resorts, vacation rentals, event venues
 
 **What's Included:**
@@ -105,7 +105,7 @@ Professional 360° virtual tour services for businesses and properties across mu
 
 ---
 
-### 💼 Package 5: Basic Starter Tour
+### Package 5: Basic Starter Tour
 **Target Market:** Small businesses, startups, budget-conscious clients
 
 **What's Included:**
@@ -127,7 +127,7 @@ Professional 360° virtual tour services for businesses and properties across mu
 
 ---
 
-## 🎨 À La Carte Services
+## À La Carte Services
 
 ### Individual Add-Ons
 | Service | Description | Price Range |
@@ -145,7 +145,7 @@ Professional 360° virtual tour services for businesses and properties across mu
 
 ---
 
-## 🔧 Technical Services
+## Technical Services
 
 ### Setup & Integration
 - **Website Embedding Support** - Help integrate tours into existing websites
@@ -156,7 +156,7 @@ Professional 360° virtual tour services for businesses and properties across mu
 
 ---
 
-## 📊 Service Delivery Process
+## Service Delivery Process
 
 ### Standard Workflow
 
@@ -205,7 +205,7 @@ Professional 360° virtual tour services for businesses and properties across mu
 
 ---
 
-## 🎯 Target Industries
+## Target Industries
 
 ### Primary Markets
 1. **Real Estate** - Residential & commercial properties
@@ -221,7 +221,7 @@ Professional 360° virtual tour services for businesses and properties across mu
 
 ---
 
-## 💡 Unique Selling Points
+## Unique Selling Points
 
 ### Why Choose Our Services?
 
@@ -252,7 +252,7 @@ Professional 360° virtual tour services for businesses and properties across mu
 
 ---
 
-## 📈 Pricing Strategy
+## Pricing Strategy
 
 ### Factors Affecting Price
 - Number of scenes/locations
@@ -272,7 +272,7 @@ Professional 360° virtual tour services for businesses and properties across mu
 
 ---
 
-## 🔗 Related Resources
+## Related Resources
 
 **Setup & Planning:**
 - [[Breakdown of how to do the Virtual Tour Website|Implementation Guide]]
@@ -285,11 +285,11 @@ Professional 360° virtual tour services for businesses and properties across mu
 
 **Business:**
 - [[Virtual Tour Business|Main Overview]]
-- [[INDEX - Virtual Tour Business|Master Index]]
+- [[📍 INDEX - Virtual Tour Business|Master Index]]
 
 ---
 
-## 📝 Service Agreement Template
+## Service Agreement Template
 
 ### What to Include
 - Scope of work
@@ -304,19 +304,19 @@ Professional 360° virtual tour services for businesses and properties across mu
 
 ---
 
-## 🚀 Next Steps
+## Next Steps
 
 ### To Launch Services:
-1. ✅ Complete [[Tutorials|all essential training]]
-2. ✅ Create 3-5 sample tours for portfolio
-3. ✅ Develop service agreement template
-4. ✅ Set up pricing calculator
-5. ✅ Create [[Creating the Website|business website]]
-6. ✅ Prepare marketing materials
-7. ✅ Launch and promote services
+1. Complete [[Tutorials|all essential training]]
+2. Create 3-5 sample tours for portfolio
+3. Develop service agreement template
+4. Set up pricing calculator
+5. Create [[Creating the Website|business website]]
+6. Prepare marketing materials
+7. Launch and promote services
 
 ---
 
-**Status:** 📋 Service Planning  
+**Status:** Service Planning  
 **Last Updated:** {{date}}  
 **Next Review:** Define exact pricing structure
