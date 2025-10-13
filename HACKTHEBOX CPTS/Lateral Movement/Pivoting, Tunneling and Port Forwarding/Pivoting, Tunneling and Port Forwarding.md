@@ -1,4 +1,4 @@
-[[HACKTHEBOX CPTS/Lateral Movement/Pivoting, Tunneling and Port Forwarding/Dynamic Port Forwarding with SSH and SOCKS Tunneling|Dynamic Port Forwarding with SSH and SOCKS Tunneling]]
+[[Dynamic Port Forward SSH-SOCKS Tunnel|Dynamic Port Forward SSH-SOCKS Tunnel]]
 
 [[HACKTHEBOX CPTS/Lateral Movement/Pivoting, Tunneling and Port Forwarding/Remote-Reverse Port Forwarding with SSH]]
 
