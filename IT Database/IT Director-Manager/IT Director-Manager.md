@@ -1,6 +1,6 @@
 # IT Director-Manager
 
-> **Back to:** [[📍 INDEX - IT Database|Index]] | [[IT Database|Main Hub]]  
+> **Back to:** [[INDEX - IT Database|Index]] | [[IT Database|Main Hub]]  
 > Tags: #it-management #leadership #career #director #manager
 
 ---
@@ -384,7 +384,7 @@ Complete course for career transition from technical to managerial roles
 ## 📍 Quick Navigation
 
 **Main Sections:**
-- [[📍 INDEX - IT Database|Master Index]]
+- [[INDEX - IT Database|Master Index]]
 - [[IT Database|Database Home]]
 - [[COURSES & TRAINING|Training Resources]]
 - [[IT PROJECTS|Project Management]]

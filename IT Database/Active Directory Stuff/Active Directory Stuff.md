@@ -1,6 +1,6 @@
 # Active Directory Stuff
 
-> **Back to:** [[📍 INDEX - IT Database|Index]] | [[IT Database|Main Hub]]  
+> **Back to:** [[INDEX - IT Database|Index]] | [[IT Database|Main Hub]]  
 > Tags: #active-directory #windows-server #domain #infrastructure
 
 ---
@@ -196,7 +196,7 @@ Step-by-step guide for adding users to your Active Directory domain.
 ## Quick Navigation
 
 **Main Sections:**
-- [[📍 INDEX - IT Database|Master Index]]
+- [[INDEX - IT Database|Master Index]]
 - [[IT Database|Database Home]]
 - [[IT PROJECTS|View All Projects]]
 - [[WINDOWS Tutorials|Windows Guides]]

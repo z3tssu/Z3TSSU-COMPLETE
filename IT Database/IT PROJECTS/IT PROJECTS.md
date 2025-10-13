@@ -1,6 +1,6 @@
 # IT Projects
 
-> **Back to:** [[📍 INDEX - IT Database|Index]] | [[IT Database|Main Hub]]  
+> **Back to:** [[INDEX - IT Database|Index]] | [[IT Database|Main Hub]]  
 > Tags: #projects #implementation #infrastructure #deployment
 
 ---
@@ -509,7 +509,7 @@ Ongoing maintenance
 ## 📍 Quick Navigation
 
 **Main Hubs:**
-- [[📍 INDEX - IT Database|Master Index]]
+- [[INDEX - IT Database|Master Index]]
 - [[IT Database|Database Home]]
 - [[Active Directory Stuff|Active Directory]]
 - [[WINDOWS Tutorials|Windows Guides]]

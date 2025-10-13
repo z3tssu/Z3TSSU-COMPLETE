@@ -1,6 +1,6 @@
 # Courses & Training
 
-> **Back to:** [[📍 INDEX - IT Database|Index]] | [[IT Database|Main Hub]]  
+> **Back to:** [[INDEX - IT Database|Index]] | [[IT Database|Main Hub]]  
 > Tags: #training #courses #learning #professional-development #education
 
 ---
@@ -352,7 +352,7 @@ Advanced degree programs in cybersecurity
 ## 📍 Quick Navigation
 
 **Main Hubs:**
-- [[📍 INDEX - IT Database|Master Index]]
+- [[INDEX - IT Database|Master Index]]
 - [[IT Database|Database Home]]
 - [[IT Director-Manager|Management Resources]]
 - [[OTHER|Study Tools]]

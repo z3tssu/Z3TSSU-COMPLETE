@@ -1,6 +1,6 @@
 # Useful IT Websites
 
-> **Back to:** [[📍 INDEX - IT Database|Index]] | [[IT Database|Main Hub]]  
+> **Back to:** [[INDEX - IT Database|Index]] | [[IT Database|Main Hub]]  
 > Tags: #resources #websites #tools #links
 
 ---
@@ -347,7 +347,7 @@ Bulk software installer
 ## 📍 Quick Navigation
 
 **Main Hubs:**
-- [[📍 INDEX - IT Database|Master Index]]
+- [[INDEX - IT Database|Master Index]]
 - [[IT Database|Database Home]]
 - [[COURSES & TRAINING|Training]]
 - [[OTHER|Study Tools]]

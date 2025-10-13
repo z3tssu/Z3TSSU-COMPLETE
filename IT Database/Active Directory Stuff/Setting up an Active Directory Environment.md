@@ -1,6 +1,6 @@
 # Setting up an Active Directory Environment
 
-> **Back to:** [[Active Directory Stuff|AD Hub]] | [[📍 INDEX - IT Database|Index]]  
+> **Back to:** [[Active Directory Stuff|AD Hub]] | [[INDEX - IT Database|Index]]  
 > Tags: #active-directory #setup #lab-environment #windows-server #tutorial
 
 ---

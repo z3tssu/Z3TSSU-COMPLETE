@@ -1,6 +1,6 @@
 # Windows Tutorials
 
-> **Back to:** [[📍 INDEX - IT Database|Index]] | [[IT Database|Main Hub]]  
+> **Back to:** [[INDEX - IT Database|Index]] | [[IT Database|Main Hub]]  
 > Tags: #windows #tutorials #setup #configuration #guides
 
 ---
@@ -317,7 +317,7 @@ wuauclt /detectnow /updatenow
 ## Quick Navigation
 
 **Main Hubs:**
-- [[📍 INDEX - IT Database|Master Index]]
+- [[INDEX - IT Database|Master Index]]
 - [[IT Database|Database Home]]
 - [[Active Directory Stuff|Active Directory]]
 - [[IT PROJECTS|Projects]]

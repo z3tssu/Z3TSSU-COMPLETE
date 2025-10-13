@@ -1,6 +1,6 @@
 # IT Database
 
-> **See:** [[📍 INDEX - IT Database]] for complete navigation with tags and links  
+> **See:** [[INDEX - IT Database]] for complete navigation with tags and links  
 > Tags: #it-database #main-hub
 
 ---
@@ -72,7 +72,7 @@ Active and planned IT infrastructure projects
 - Quick start guides
 - Knowledge maps
 
-**Visit:** [[📍 INDEX - IT Database|Master Index]]
+**Visit:** [[INDEX - IT Database|Master Index]]
 
 ---
 

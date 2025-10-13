@@ -1,6 +1,6 @@
 # Study Tools & Productivity
 
-> **Back to:** [[📍 INDEX - IT Database|Index]] | [[IT Database|Main Hub]]  
+> **Back to:** [[INDEX - IT Database|Index]] | [[IT Database|Main Hub]]  
 > Tags: #study #productivity #ai-tools #learning #education
 
 ---
@@ -326,7 +326,7 @@ Information about online cybersecurity master's programs
 ## 📍 Quick Navigation
 
 **Main Sections:**
-- [[📍 INDEX - IT Database|Master Index]]
+- [[INDEX - IT Database|Master Index]]
 - [[IT Database|Database Home]]
 - [[COURSES & TRAINING|Training Hub]]
 - [[OTHER NOTES|IT Productivity]]

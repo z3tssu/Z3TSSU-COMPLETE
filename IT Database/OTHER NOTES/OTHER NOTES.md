@@ -1,6 +1,6 @@
 # Other IT Notes
 
-> **Back to:** [[📍 INDEX - IT Database|Index]] | [[IT Database|Main Hub]]  
+> **Back to:** [[INDEX - IT Database|Index]] | [[IT Database|Main Hub]]  
 > Tags: #networking #automation #productivity #tools #miscellaneous
 
 ---
@@ -277,7 +277,7 @@ ChatGPT-powered study technique for better retention
 ## Quick Navigation
 
 **Main Sections:**
-- [[📍 INDEX - IT Database|Master Index]]
+- [[INDEX - IT Database|Master Index]]
 - [[IT Database|Database Home]]
 - [[WINDOWS Tutorials|Windows Guides]]
 - [[Active Directory Stuff|Active Directory]]
