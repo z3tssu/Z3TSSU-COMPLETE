@@ -145,7 +145,4 @@ use the following command in the shell code on the webserver
 Start-Process "shell_main.exe"
 ```
 
-```
-Get-ChildItem -Path C:\ -Filter "shell_main.exe" -Recurse -ErrorAction SilentlyContinue
-```
 
