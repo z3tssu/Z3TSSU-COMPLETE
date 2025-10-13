@@ -157,4 +157,15 @@ use the following command in the shell code on the webserver
 Start-Process "shell_main.exe"
 ```
 
+OR 
+
+```bash
+.\SHELL.exe
+```
+
+## Shell obtained
+![[Pasted image 20251013225732.png]]
+
+# Priv Esc
+
 
