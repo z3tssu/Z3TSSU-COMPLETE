@@ -1,138 +1,429 @@
-[[Director System Support (MIA)]]
+# IT Director-Manager
 
-  
-
-[https://www.opsreportcard.com/](https://www.opsreportcard.com/)
-
-## IT Manager Checklist
-
-## ✅ **Team Management & Development**
-
-- [ ] **Schedule regular 1-on-1s** with each team member every few weeks. Ask:
-    - What went well?
-    - What didn’t go so well?
-    - What can we do better?
-- [ ] **Document weekly updates** to support performance reviews.
-- [ ] **Assess your team using the 9-box model** to evaluate performance and potential.
-- [ ] **Identify individual career goals** (3–5 year plan) for each team member.
-- [ ] **Assign opportunities** that align with those goals.
-- [ ] **Schedule 2–3 hours biweekly** for each member's **personal development** (training, R&D, etc.).
-- [ ] **Celebrate documentation sign-offs** (e.g. SOPs) with small rewards like gift cards.
+> **Back to:** [[📍 INDEX - IT Database|Index]] | [[IT Database|Main Hub]]  
+> Tags: #it-management #leadership #career #director #manager
 
 ---
 
-## ✅ **Leadership Mindset & Role Clarity**
+## 👔 Overview
 
-- [ ] Understand that you **don’t need to be the technical expert**.
-- [ ] Focus on being the **bridge between business needs and IT delivery**.
-- [ ] Avoid managing both IT operations and cybersecurity – **separate the roles if possible**.
-- [ ] Prioritize **empathy, encouragement, and development**—be the manager you always wanted.
+Resources and guidance for IT professionals in or transitioning to management and director roles.
 
----
-
-## ✅ **Culture, Service & Communication**
-
-- [ ] Reinforce that **IT is a service department**—attitude and responsiveness matter.
-- [ ] Foster a **positive team culture** that reflects professionalism and helpfulness.
-- [ ] **Place IT in strategic discussions** by attending other department meetings regularly.
-- [ ] Frequently ask: _"How can IT help you achieve your goals?"_
+**Key Responsibilities:**
+- Team leadership and development
+- Strategic planning and execution
+- Budget management
+- Vendor relationships
+- Project oversight
+- Infrastructure planning
+- Risk management
+- Stakeholder communication
 
 ---
 
-## ✅ **Documentation & Tools**
+## 📚 Core Resources
 
-- [ ] **Inventory all technologies** under IT's management.
-- [ ] Build a **technical debt matrix** including:
-    - Assigned Subject Matter Experts (SMEs)
-    - Skills gaps
-    - Potential growth areas
-- [ ] Set up a **team documentation platform**:
-    - If lacking tools like Confluence, use alternatives like **Bookstack**.
-- [ ] Ensure key documents are in place:
-    - SOPs
-    - “How-tos”
-    - Onboarding guides
-    - Operational procedures
+### [[Director System Support (MIA)]]
+Management insights and director-level responsibilities
+- Detailed role breakdown
+- Key responsibilities
+- Skills required
+- Career path guidance
+
+**Tags:** #director #system-support #management-role
 
 ---
 
-## ✅ **Task and Project Management**
+### [[Course- IT Manager Fundamentals From IT Tech to IT Manager]]
+Complete course for career transition from technical to managerial roles
 
-- [ ] Categorize all IT work into:
-    - Helpdesk Tickets
-    - Operational Tasks
-    - Projects
-- [ ] **Enforce the rule**: No work outside these categories.
-- [ ] Implement **a helpdesk ticketing system** (if not already in place).
-- [ ] Implement **an asset tracking system** (if not already in place).
-- [ ] Ask your team to list all non-ticketed work and classify into:
-    - Operational tasks (e.g., backups, cert renewals)
-    - Projects (e.g., new systems, upgrades)
-- [ ] Introduce **Kanban methodology**:
-    - Track deliverables and deadlines.
-    - Hold regular Kanban board meetings.
-    - Ask about blockers and delivery risks.
+**Course Modules:**
+1. Leadership fundamentals
+2. Team building and management
+3. Communication strategies
+4. Project management basics
+5. Budget and resource planning
+6. Vendor management
+7. Strategic thinking
+8. Change management
 
----
+**Target Audience:** Technical professionals moving to management  
+**Difficulty:** ⭐⭐⭐ Intermediate-Advanced  
+**Tags:** #career-transition #management-training #leadership
 
-## ✅ **Planning & Strategy**
-
-- [ ] Obtain and review the **current year’s IT budget**.
-- [ ] Start planning for **next year**:
-    - Hardware refresh cycles
-    - Contract renewals
-    - Headcount needs
-    - Cross-departmental projects
-- [ ] Clarify **IT vs Facilities** boundaries and responsibilities.
+**Related:** [[COURSES & TRAINING|All Training Resources]]
 
 ---
 
-## ✅ **Vendor & Finance Collaboration**
+## 🎯 Management Skills Framework
 
-- [ ] Introduce yourself to the **Finance team**.
-- [ ] Request the **last 3 years of OPEX spending**.
-- [ ] Identify active **vendors** and request existing **contracts**.
-- [ ] Track expenditures and compare against current budget.
+### Technical Leadership
+**What You Need:**
+- Deep technical understanding
+- Ability to mentor and guide
+- Stay current with technology
+- Make technical decisions
+- Understand infrastructure
 
----
+**Related Topics:**
+- [[Active Directory Stuff|Infrastructure Knowledge]]
+- [[WINDOWS Tutorials|System Administration]]
+- [[IT PROJECTS|Technical Projects]]
 
-## ✅ **Delegation & Realistic Estimations**
-
-- [ ] Involve your team in **project planning and time estimation**.
-- [ ] Guide them to consider:
-    - Daily task interruptions
-    - Sick days
-    - Other dependencies
-- [ ] Track estimates via the Kanban board.
-
----
-
-## ✅ **Succession Planning**
-
-- [ ] Acknowledge average IT staff tenure (3–5 years).
-- [ ] Plan for turnover by:
-    - Capturing institutional knowledge in documentation
-    - Training juniors to be ready for senior roles
-    - Identifying potential internal replacements
+**Tags:** #technical-leadership #infrastructure #systems
 
 ---
 
-Let me know if you'd like this exported as a PDF, spreadsheet, or printable poster version.
+### People Management
+**Key Skills:**
+- Hiring and onboarding
+- Performance management
+- Conflict resolution
+- Team motivation
+- Career development
+- Succession planning
 
-## IT Management Skills
+**Study Resources:**
+- [[Course- IT Manager Fundamentals From IT Tech to IT Manager|Management Course]]
+- [[How to study effectively|Learning Methods]]
 
-1. Theoretical. This is all about gaining a broader understanding of  
-    leadership: leading with purpose, creating a vision, aligning teams,  
-    etc. For that, I recommend reading Simon Sinek’s books and following him on YouTube. He’s got some really solid content: [https://youtube.com/simonsinek](https://youtube.com/simonsinek)
-2. Practical – This is more focused on day-to-day leadership:  
-    building trust, motivating people, and so on. Sam Levin does a great job covering these topics. Check out his channel here: [https://youtube.com/samlevin-grow](https://youtube.com/samlevin-grow)
+**Tags:** #people-management #hr #team-building
 
-## ISO 21001 Toolkit
+---
 
-[https://www.iseoblue.com/27001-getting-started](https://www.iseoblue.com/27001-getting-started)
+### Project Management
+**Essential Knowledge:**
+- Project planning and scoping
+- Resource allocation
+- Timeline management
+- Risk assessment
+- Stakeholder communication
+- Agile/Scrum methodologies
 
-There's a whole load of guides on ITIL Service Management and how to run IT projects.
+**Practical Application:**
+- [[IT PROJECTS|Review Project Examples]]
+- [[Windows Server 2016 - Active Directory Build|Infrastructure Projects]]
 
-## IT Manager Guidebook
+**Tags:** #project-management #planning #execution
 
-[https://www.amazon.com.au/Managers-Guidebook-Aspiring-Technology-Industry-ebook/dp/B0C5X66PFZ/ref=sr_1_3?crid=AZI98REXKY6J&keywords=it+managers+guidebook&qid=1684905268&sprefix=it+managers+guideboo%2Caps%2C279&sr=8-3](https://www.amazon.com.au/Managers-Guidebook-Aspiring-Technology-Industry-ebook/dp/B0C5X66PFZ/ref=sr_1_3?crid=AZI98REXKY6J&keywords=it+managers+guidebook&qid=1684905268&sprefix=it+managers+guideboo%2Caps%2C279&sr=8-3)
+---
+
+### Budget & Financial Management
+**Responsibilities:**
+- Budget planning and forecasting
+- Cost optimization
+- ROI analysis
+- Vendor negotiations
+- Capital expenditure planning
+- OpEx vs CapEx decisions
+
+**Tags:** #budget #finance #cost-management
+
+---
+
+### Strategic Planning
+**Focus Areas:**
+- IT roadmap development
+- Technology selection
+- Business alignment
+- Risk management
+- Disaster recovery planning
+- Digital transformation
+
+**Tags:** #strategy #planning #transformation
+
+---
+
+## 📈 Career Progression Path
+
+### Level 1: Senior Technician/Engineer (1-3 years)
+**Focus:**
+- Master technical skills
+- Get certifications
+- Lead small projects
+- Mentor junior staff
+
+**Next Step:** Team Lead or Specialist
+
+---
+
+### Level 2: Team Lead/Supervisor (2-4 years)
+**Focus:**
+- Manage small team (2-5 people)
+- Project coordination
+- Technical decisions
+- Begin leadership training
+
+**Next Step:** IT Manager
+
+**Resource:** [[Course- IT Manager Fundamentals From IT Tech to IT Manager|Management Training]]
+
+---
+
+### Level 3: IT Manager (3-5 years)
+**Focus:**
+- Manage department
+- Budget responsibility
+- Strategic input
+- Vendor management
+- Cross-functional collaboration
+
+**Next Step:** Senior Manager or Director
+
+---
+
+### Level 4: IT Director (5+ years)
+**Focus:**
+- Strategic leadership
+- Multiple departments
+- Executive relationships
+- Long-term planning
+- Board presentations
+
+**Next Step:** VP of IT or CIO
+
+**Resource:** [[Director System Support (MIA)|Director Role Details]]
+
+---
+
+### Level 5: VP of IT / CIO (10+ years)
+**Focus:**
+- Executive leadership
+- Company-wide IT strategy
+- Board of directors interaction
+- Digital transformation
+- Enterprise risk management
+
+---
+
+## 💼 Daily Responsibilities
+
+### IT Manager Level
+**Morning:**
+- Check system status and overnight issues
+- Review team priorities
+- Address urgent requests
+- Stand-up meetings
+
+**Midday:**
+- Project status meetings
+- Vendor calls
+- Budget reviews
+- Strategic planning
+
+**Afternoon:**
+- One-on-ones with team members
+- Documentation review
+- Process improvement
+- Planning for next day
+
+---
+
+### IT Director Level
+**Strategic:**
+- Long-term IT roadmap
+- Executive presentations
+- Cross-department collaboration
+- Technology evaluation
+
+**Operational:**
+- Department oversight
+- Budget management
+- Vendor relationships
+- Risk assessment
+
+**People:**
+- Manager development
+- Hiring decisions
+- Performance reviews
+- Culture building
+
+---
+
+## 🛠️ Essential Management Tools
+
+### Communication Tools
+- Microsoft Teams
+- Slack
+- Zoom/WebEx
+- Email management (see [[Outlook Search Queries]])
+
+### Project Management
+- Microsoft Project
+- Jira
+- Asana
+- Monday.com
+- Trello
+
+### Documentation
+- Confluence
+- SharePoint
+- OneNote
+- [[Automate Note with Claude and Obsidian|Obsidian]]
+
+### Monitoring & Reporting
+- Dashboard tools
+- Analytics platforms
+- Reporting software
+- KPI tracking
+
+---
+
+## 📊 Key Performance Indicators (KPIs)
+
+### System Performance
+- Uptime percentage
+- Incident response time
+- Problem resolution time
+- System availability
+
+### Team Performance
+- Project completion rate
+- Team satisfaction scores
+- Training hours per employee
+- Turnover rate
+
+### Financial
+- Budget variance
+- Cost per user
+- ROI on projects
+- Vendor cost optimization
+
+### Strategic
+- Initiative completion rate
+- User satisfaction
+- Technology adoption
+- Innovation metrics
+
+---
+
+## 🔗 Related Resources
+
+### Technical Foundation
+- [[Active Directory Stuff|Active Directory Management]]
+- [[WINDOWS Tutorials|System Administration]]
+- [[IT PROJECTS|Infrastructure Projects]]
+- [[OTHER NOTES|Technical Tools]]
+
+### Learning & Development
+- [[COURSES & TRAINING|Training Programs]]
+- [[How to study effectively|Study Methods]]
+- [[OTHER|Productivity Tools]]
+
+### Practical Application
+- [[IT PROJECTS|Project Examples]]
+- [[Setting up an Active Directory Environment|Lab Projects]]
+- [[Windows Server 2016 - Active Directory Build|Enterprise Builds]]
+
+---
+
+## 💡 Management Best Practices
+
+### Communication
+- Be clear and concise
+- Over-communicate important changes
+- Listen actively to your team
+- Provide regular feedback
+- Keep stakeholders informed
+
+### Leadership
+- Lead by example
+- Be decisive but collaborative
+- Admit mistakes and learn
+- Celebrate team wins
+- Support professional growth
+
+### Decision Making
+- Gather relevant data
+- Consult stakeholders
+- Consider long-term impact
+- Document decisions
+- Be accountable
+
+### Time Management
+- Prioritize ruthlessly
+- Delegate effectively
+- Block focus time
+- Minimize meetings
+- Use [[AI -Study Tools|productivity tools]]
+
+---
+
+## 📋 Manager's Checklist
+
+### Daily
+- [ ] Check system health
+- [ ] Review urgent issues
+- [ ] Touch base with team
+- [ ] Address blocking issues
+- [ ] Update priorities
+
+### Weekly
+- [ ] Team meetings
+- [ ] One-on-ones
+- [ ] Project status reviews
+- [ ] Budget review
+- [ ] Next week planning
+
+### Monthly
+- [ ] Performance reviews
+- [ ] Budget analysis
+- [ ] Strategic planning session
+- [ ] Vendor meetings
+- [ ] Training/development
+
+### Quarterly
+- [ ] Goal setting/review
+- [ ] Budget planning
+- [ ] Technology roadmap update
+- [ ] Team development plans
+- [ ] Executive presentations
+
+---
+
+## 📍 Quick Navigation
+
+**Main Sections:**
+- [[📍 INDEX - IT Database|Master Index]]
+- [[IT Database|Database Home]]
+- [[COURSES & TRAINING|Training Resources]]
+- [[IT PROJECTS|Project Management]]
+
+**Career Development:**
+- [[Course- IT Manager Fundamentals From IT Tech to IT Manager|Management Course]]
+- [[Master in Cybersecurity Online|Advanced Education]]
+- [[Udemy - IT|Online Courses]]
+
+**Technical Skills:**
+- [[Active Directory Stuff|Infrastructure]]
+- [[WINDOWS Tutorials|System Admin]]
+- [[OTHER NOTES|Tools & Automation]]
+
+---
+
+## 🌐 External Resources
+
+**Professional Development:**
+- Harvard Business Review
+- CIO Magazine
+- TechTarget
+- Gartner Research
+
+**Communities:**
+- LinkedIn IT Leadership groups
+- ITIL Community
+- Project Management Institute
+- [[Useful IT Websites|More Resources]]
+
+**Certifications:**
+- PMP (Project Management Professional)
+- ITIL Foundation
+- Certified ScrumMaster
+- MBA programs
+
+---
+
+**Career Level:** Manager to Director  
+**Experience Required:** 5+ years IT  
+**Status:** 🎯 Career Development Hub  
+**Last Updated:** {{date}}
