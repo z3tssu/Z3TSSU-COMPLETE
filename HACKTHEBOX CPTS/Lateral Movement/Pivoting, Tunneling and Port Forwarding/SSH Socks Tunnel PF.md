@@ -1,10 +1,10 @@
----
 
 ### Scanning the Pivot Target
 
-```Shell
+```
 nmap -sT -p22,3306 10.129.202.64
 ```
+
 
 ---
 
