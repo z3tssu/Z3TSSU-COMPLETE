@@ -1,4 +1,4 @@
-# INDEX - IT Database - Master Index
+# IT Database - Master Index
 
 > **Your Complete IT Knowledge Hub**  
 > Tags: #it-database #index #navigation
@@ -248,50 +248,50 @@
 ```
 IT Database/
 ├── INDEX - IT Database.md (You are here)
-├── IT Database.md (Legacy index)
+├── IT Database.md (Main hub)
 │
-├── Active Directory Stuff/
-│   ├── Active Directory Stuff.md
-│   └── Setting up an Active Directory Environment.md
+├── Active Directory/
+│   ├── Active Directory Hub.md
+│   └── Setting up Active Directory Environment.md
 │
-├── COURSES & TRAINING/
-│   ├── COURSES & TRAINING.md
-│   ├── Course- IT Manager Fundamentals/
-│   └── Udemy - IT.md
+├── Courses and Training/
+│   ├── Courses and Training Hub.md
+│   ├── IT Manager Fundamentals Course/
+│   └── Udemy IT Courses.md
 │
-├── IT Director-Manager/
-│   ├── IT Director-Manager.md
-│   └── Director System Support (MIA)/
+├── IT Management/
+│   ├── IT Management Hub.md
+│   └── Director System Support/
 │
-├── IT PROJECTS/
-│   ├── IT PROJECTS.md
-│   └── Windows Server 2016 - Active Directory Build.md
+├── IT Projects/
+│   ├── IT Projects Hub.md
+│   └── Windows Server 2016 AD Build.md
 │
-├── WINDOWS Tutorials/
-│   ├── WINDOWS Tutorials.md
-│   ├── Setup Clean Windows Desktop/
-│   ├── Automate Note with Claude and Obsidian.md
-│   ├── Barrier - Control Multiple Computers.md
-│   ├── How to remove Dual Boot.md
-│   ├── Migrating to Windows 11.md
-│   ├── Putting Users on Domain Windows/
-│   ├── Set Cloudflare DNS on Windows.md
-│   └── Triple Boot Kali + Windows + Ubuntu.md
+├── Windows Tutorials/
+│   ├── Windows Tutorials Hub.md
+│   ├── Setup Clean Windows/
+│   ├── Automate with Claude and Obsidian.md
+│   ├── Barrier Multi-Computer Control.md
+│   ├── Remove Dual Boot.md
+│   ├── Migrate to Windows 11.md
+│   ├── Domain User Management/
+│   ├── Cloudflare DNS Setup.md
+│   └── Triple Boot Setup.md
 │
-├── OTHER NOTES/
-│   ├── OTHER NOTES.md
-│   ├── How To Populate a Word Document Template.md
-│   ├── How to study effectively.md
-│   ├── Outlook Search Queries.md
-│   ├── Penflow - Cyber Mindmap.md
-│   └── What is Cloudflare.md
+├── Other IT Notes/
+│   ├── Other IT Notes Hub.md
+│   ├── Power Automate Document Templates.md
+│   ├── Study Effectively Guide.md
+│   ├── Outlook Search Guide.md
+│   ├── Penflow Cyber Mindmap.md
+│   └── Cloudflare Explanation.md
 │
-├── OTHER/
-│   ├── OTHER.md
-│   ├── AI -Study Tools.md
-│   ├── How to Absorb TEXTBOOKS Like a Sponge.md
-│   ├── How to Make Anki Flashcards 10x Faster/
-│   └── Master in Cybersecurity Online.md
+├── Study and Productivity/
+│   ├── Study and Productivity Hub.md
+│   ├── AI Study Tools List.md
+│   ├── Absorb Textbooks Guide.md
+│   ├── Anki Flashcards with AI/
+│   └── Cybersecurity Masters Programs.md
 │
 └── Useful IT Websites.md
 ```
