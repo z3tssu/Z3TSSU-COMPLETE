@@ -1,1 +1,0 @@
-[https://cryptoinvestigatortraining.learnupon.com/catalog/courses/3264195](https://cryptoinvestigatortraining.learnupon.com/catalog/courses/3264195)

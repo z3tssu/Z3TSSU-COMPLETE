@@ -1,0 +1,710 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>FBI Presentation </title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 10px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.collection-content td {
+	white-space: pre-wrap;
+	word-break: break-word;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+	margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.callout img.notion-static-icon {
+	width: 1em;
+	height: 1em;
+}
+
+.callout p {
+	margin: 0;
+}
+
+.callout h1,
+.callout h2,
+.callout h3 {
+	margin: 0 0 0.6rem;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+blockquote.quote-large {
+	font-size: 1.25em;
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray {
+	color: rgba(134, 131, 126, 1);
+	fill: rgba(134, 131, 126, 1);
+}
+.highlight-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.highlight-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.highlight-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.highlight-blue {
+	color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);
+}
+.highlight-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.highlight-default_background {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray_background {
+	background: rgba(42, 28, 0, 0.07);
+}
+.highlight-brown_background {
+	background: rgba(139, 46, 0, 0.086);
+}
+.highlight-orange_background {
+	background: rgba(224, 101, 1, 0.129);
+}
+.highlight-yellow_background {
+	background: rgba(211, 168, 0, 0.137);
+}
+.highlight-teal_background {
+	background: rgba(0, 100, 45, 0.09);
+}
+.highlight-blue_background {
+	background: rgba(0, 124, 215, 0.094);
+}
+.highlight-purple_background {
+	background: rgba(102, 0, 178, 0.078);
+}
+.highlight-pink_background {
+	background: rgba(197, 0, 93, 0.086);
+}
+.highlight-red_background {
+	background: rgba(223, 22, 0, 0.094);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(134, 131, 126, 1);
+	fill: rgba(134, 131, 126, 1);
+}
+.block-color-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.block-color-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.block-color-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.block-color-blue {
+	color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);
+}
+.block-color-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(240, 239, 237, 1);
+}
+.block-color-brown_background {
+	background: rgba(245, 237, 233, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 235, 222, 1);
+}
+.block-color-yellow_background {
+	background: rgba(249, 243, 220, 1);
+}
+.block-color-teal_background {
+	background: rgba(232, 241, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(229, 242, 252, 1);
+}
+.block-color-purple_background {
+	background: rgba(243, 235, 249, 1);
+}
+.block-color-pink_background {
+	background: rgba(250, 233, 241, 1);
+}
+.block-color-red_background {
+	background: rgba(252, 233, 231, 1);
+}
+.select-value-color-default { background-color: rgba(42, 28, 0, 0.07); }
+.select-value-color-gray { background-color: rgba(28, 19, 1, 0.11); }
+.select-value-color-brown { background-color: rgba(127, 51, 0, 0.156); }
+.select-value-color-orange { background-color: rgba(196, 88, 0, 0.203); }
+.select-value-color-yellow { background-color: rgba(209, 156, 0, 0.282); }
+.select-value-color-green { background-color: rgba(0, 96, 38, 0.156); }
+.select-value-color-blue { background-color: rgba(0, 118, 217, 0.203); }
+.select-value-color-purple { background-color: rgba(92, 0, 163, 0.141); }
+.select-value-color-pink { background-color: rgba(183, 0, 78, 0.152); }
+.select-value-color-red { background-color: rgba(206, 24, 0, 0.164); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="254c8126-a79b-809e-8460-d7dd0b4a320a" class="page sans"><header><h1 class="page-title">FBI Presentation </h1><p class="page-description"></p></header><div class="page-body"><h1 id="254c8126-a79b-80f6-8e2e-fd2700764ded" class="">Intro to Virtual Currency Tracing Investigative Basics and Theory </h1><ol type="1" id="254c8126-a79b-80c9-aaa7-c8b1803d10e8" class="numbered-list" start="1"><li>The US has the <a href="https://www.ic3.gov/">IC3 </a>Database<ol type="a" id="254c8126-a79b-80ab-b4dc-c37482cd59d4" class="numbered-list" start="1"><li>They run it through the database to see what reporting</li></ol></li></ol><hr id="254c8126-a79b-80d9-9185-f0aed50ffb0f"/><h2 id="254c8126-a79b-8064-97e7-c2469c759cb8" class="">Bitcoin Basics</h2><ul id="254c8126-a79b-8017-9f9c-f1c4d85ea228" class="toggle"><li><details open=""><summary>Tracing Bitcoin Basics</summary><ol type="1" id="254c8126-a79b-8015-ba02-f1bb7a8ac085" class="numbered-list" start="1"><li>Change Address Analysis</li></ol><ol type="1" id="254c8126-a79b-8044-80f0-d219df5923cb" class="numbered-list" start="2"><li>Metadata Analysis</li></ol><ol type="1" id="254c8126-a79b-806c-86b6-f7ee51123d07" class="numbered-list" start="3"><li>If you are co-spending then you are owning<ol type="a" id="254c8126-a79b-80e9-86dd-ed4b1435562b" class="numbered-list" start="1"><li>The addresses belong to the same individual</li></ol></li></ol></details></li></ul><ul id="254c8126-a79b-80d6-8969-e69c822ca8c7" class="toggle"><li><details open=""><summary>Example</summary><figure id="254c8126-a79b-80af-b8c6-ece1cb2b02c0" class="image"><a href="FBI%20Presentation%20254c8126a79b809e8460d7dd0b4a320a/IMG_2378.jpeg"><img style="width:600px" src="FBI%20Presentation%20254c8126a79b809e8460d7dd0b4a320a/IMG_2378.jpeg"/></a></figure><figure id="254c8126-a79b-805e-b607-c628c7486ab2" class="image"><a href="FBI%20Presentation%20254c8126a79b809e8460d7dd0b4a320a/IMG_2379.jpeg"><img style="width:600px" src="FBI%20Presentation%20254c8126a79b809e8460d7dd0b4a320a/IMG_2379.jpeg"/></a></figure><ul id="254c8126-a79b-8088-9007-fc442af1e97c" class="toggle"><li><details open=""><summary>Writing Example</summary><figure id="254c8126-a79b-80ba-a587-fa0d1b3b9ccc" class="image"><a href="FBI%20Presentation%20254c8126a79b809e8460d7dd0b4a320a/IMG_2380.jpeg"><img style="width:600px" src="FBI%20Presentation%20254c8126a79b809e8460d7dd0b4a320a/IMG_2380.jpeg"/></a></figure></details></li></ul></details></li></ul><h2 id="254c8126-a79b-80fb-8c9c-d5f44ac3a155" class="">Account Based Blockchains</h2><ol type="1" id="254c8126-a79b-80bc-b668-f3c8c0dce51d" class="numbered-list" start="1"><li>Altcoins (Eth)</li></ol><ol type="1" id="254c8126-a79b-80be-ab98-e6014729584c" class="numbered-list" start="2"><li>Anything not in Bitcoin Blockchain</li></ol><details open=""><summary style="font-weight:600;font-size:1.5em;line-height:1.3;margin:0">Question 1</summary><div class="indented"><ol type="1" id="254c8126-a79b-80f1-8617-e635de60759c" class="numbered-list" start="1"><li>Trace the flow for this transaction Hash</li></ol><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="254c8126-a79b-806f-8872-d0225fdedc0b" class="code code-wrap"><code class="language-Bash" style="white-space:pre-wrap;word-break:break-all">0xb10a8b11a49261a0f8160b594beb572415f27412a5ff5be06c4970d18e3c7f92</code></pre><figure id="254c8126-a79b-807b-b282-f047bfdb599d" class="image"><a href="FBI%20Presentation%20254c8126a79b809e8460d7dd0b4a320a/image.png"><img style="width:306.3125px" src="FBI%20Presentation%20254c8126a79b809e8460d7dd0b4a320a/image.png"/></a></figure><figure id="254c8126-a79b-8061-aed5-d31393b9f059" class="image"><a href="FBI%20Presentation%20254c8126a79b809e8460d7dd0b4a320a/image%201.png"><img style="width:681.9583740234375px" src="FBI%20Presentation%20254c8126a79b809e8460d7dd0b4a320a/image%201.png"/></a></figure><figure id="254c8126-a79b-80e9-b608-e09726fc12bb" class="image"><a href="FBI%20Presentation%20254c8126a79b809e8460d7dd0b4a320a/image%202.png"><img style="width:681.9791870117188px" src="FBI%20Presentation%20254c8126a79b809e8460d7dd0b4a320a/image%202.png"/></a></figure><p id="254c8126-a79b-80fd-9ff8-e97cf59a3ff7" class="">
+</p><p id="254c8126-a79b-803d-b13e-ca9f4a88847f" class="">
+</p><h3 id="254c8126-a79b-80e2-ab12-cb6d93086c36" class="">Documentation</h3><figure id="254c8126-a79b-8063-bf11-f9e409d345f7" class="image"><a href="FBI%20Presentation%20254c8126a79b809e8460d7dd0b4a320a/IMG_2382.jpeg"><img style="width:600px" src="FBI%20Presentation%20254c8126a79b809e8460d7dd0b4a320a/IMG_2382.jpeg"/></a></figure></div></details><p id="254c8126-a79b-8058-a0b6-d7f865546796" class="">
+</p><hr id="254c8126-a79b-80a3-bb7a-e5b6048aeff0"/><h2 id="254c8126-a79b-80ee-baf2-cd7612bdf348" class="">Cryptocurrency Artifacts</h2><figure class="block-color-default_background callout" style="white-space:pre-wrap;display:flex" id="254c8126-a79b-80c3-808a-e2449fe338e4"><div style="font-size:1.5em"><span class="icon">⚠️</span></div><div style="width:100%"><p id="254c8126-a79b-807d-b754-f8ec86877f2d" class="">What to search for during search warrant</p></div></figure><h3 id="254c8126-a79b-80b2-8af7-c90f954eee9e" class="">What are Cryptocurrency Artifacts</h3><p id="254c8126-a79b-802b-b1e0-e8d3cb231fac" class=""><mark class="highlight-yellow_background">(Add the image from photos)</mark></p><h3 id="254c8126-a79b-8013-8292-d0747825c2f7" class="">Cold Storage Devices</h3><p id="254c8126-a79b-80a6-8bf3-d2d0af85b25e" class=""><mark class="highlight-yellow_background">(Search the latest cold storage devices online)</mark></p><h2 id="254c8126-a79b-80c1-8e88-ff7ec7f2b519" class="">Proof of Wallets Being Used</h2><ul id="254c8126-a79b-803e-8982-fa3a5c5d5bbe" class="bulleted-list"><li style="list-style-type:disc">Look for applications on the suspects mobile phone<ul id="254c8126-a79b-80c3-ad99-d7933a5eafd1" class="bulleted-list"><li style="list-style-type:circle">Wallet Applications</li></ul><ul id="254c8126-a79b-80bf-b233-f1bb329c25a2" class="bulleted-list"><li style="list-style-type:circle">CEX Applications</li></ul><ul id="254c8126-a79b-80ed-a36a-ef1c421c2ec0" class="bulleted-list"><li style="list-style-type:circle">DEX Applications</li></ul></li></ul><ul id="254c8126-a79b-804c-9cf0-e1a1c0a6258a" class="bulleted-list"><li style="list-style-type:disc">Desktop Applications</li></ul><ul id="254c8126-a79b-807c-a04d-f42c8bed23f3" class="bulleted-list"><li style="list-style-type:disc">Browser Extensions</li></ul><ul id="254c8126-a79b-80f2-b4a9-d3c8e8b5ad79" class="bulleted-list"><li style="list-style-type:disc">Images of extractions <ul id="254c8126-a79b-80a4-beb3-f8ce09de3d04" class="bulleted-list"><li style="list-style-type:circle">On cloud platforms </li></ul></li></ul><ul id="254c8126-a79b-8030-a82d-f7de8b137f08" class="bulleted-list"><li style="list-style-type:disc">Common File Types<ul id="254c8126-a79b-8031-9072-faabb561946b" class="bulleted-list"><li style="list-style-type:circle">.dat</li></ul><ul id="254c8126-a79b-8047-907c-ec39e9addf62" class="bulleted-list"><li style="list-style-type:circle">.wallet</li></ul><ul id="254c8126-a79b-80c6-a248-c33c8eadecc2" class="bulleted-list"><li style="list-style-type:circle">.JSON</li></ul><ul id="254c8126-a79b-80e3-acec-efb16cf2f145" class="bulleted-list"><li style="list-style-type:circle">.KEYS</li></ul></li></ul><ul id="254c8126-a79b-80c0-88d4-fe1a16adbeae" class="bulleted-list"><li style="list-style-type:disc">Recovery Seed Phrases</li></ul><ul id="254c8126-a79b-8092-ab8f-c1e7b08e3c9c" class="bulleted-list"><li style="list-style-type:disc">Anywhere?<ul id="254c8126-a79b-807c-be76-ecf24b91751b" class="bulleted-list"><li style="list-style-type:circle">Email Accounts</li></ul><ul id="254c8126-a79b-80a8-9c84-dfb5de077860" class="bulleted-list"><li style="list-style-type:circle">Text Files</li></ul><ul id="254c8126-a79b-8032-b1ec-f4718b75f10e" class="bulleted-list"><li style="list-style-type:circle">Pieces of Paper</li></ul></li></ul><ul id="254c8126-a79b-8022-b598-de1cf7e20ccf" class="bulleted-list"><li style="list-style-type:disc">Private Keys<ul id="254c8126-a79b-8093-9cd8-eb3330c40018" class="bulleted-list"><li style="list-style-type:circle">Refer to Investigating Cryptocurrency by Nick</li></ul><ul id="254c8126-a79b-8044-990b-cda7971dc045" class="bulleted-list"><li style="list-style-type:circle">Show how to create a script to search for Cryptocurrency Phrases</li></ul></li></ul><h2 id="254c8126-a79b-80d9-a8d0-ee40409d7cd8" class="">When you find seed phrase, How to recover?</h2><ul id="254c8126-a79b-80cb-b173-f6215c3d20e7" class="bulleted-list"><li style="list-style-type:disc">Chainalysis has a tool to derive the Private key from it</li></ul><ul id="254c8126-a79b-806d-9014-fd56f25ae90e" class="bulleted-list"><li style="list-style-type:disc">There is a free tool capable of identifying it</li></ul><h2 id="254c8126-a79b-8081-a58c-e1a341347e18" class="">Blocking USDC </h2><ul id="254c8126-a79b-8067-bef6-d5ceffa85a67" class="bulleted-list"><li style="list-style-type:disc">Utilize <a href="https://www.circle.com/usdc">CIRCLE</a> </li></ul><ul id="254c8126-a79b-800f-9c09-ca2bf631f8db" class="bulleted-list"><li style="list-style-type:disc">Can consider a Freeze </li></ul><ul id="254c8126-a79b-806b-9c05-da75b5cb9e19" class="bulleted-list"><li style="list-style-type:disc">They will evaluate </li></ul><h2 id="254c8126-a79b-80e4-ae48-c39df6d65d1c" class="">Freezing and Seizes with <a href="https://www.paxos.com/">PAXOS</a></h2><ul id="254c8126-a79b-80eb-9fcf-c7b5cdd4b8b2" class="bulleted-list"><li style="list-style-type:disc">It has the ability to freeze and seize the ERC-20 tokens in manages on the Ethereum blockchain</li></ul><h2 id="254c8126-a79b-8007-9ecb-d22171123765" class="">Where can USDT be Frozen?</h2><p id="254c8126-a79b-803d-96c7-dcb8cbbb9801" class="">(Check images)</p><h2 id="254c8126-a79b-80a8-ad9f-f9af6652335f" class="">US Seizure Warrant + Freeze</h2><ul id="254c8126-a79b-80b5-a047-fb011559168f" class="bulleted-list"><li style="list-style-type:disc">They will freeze with the above services and prepare the Seizure Warrant</li></ul><ul id="254c8126-a79b-800a-a672-f09204a59de1" class="bulleted-list"><li style="list-style-type:disc">They never extend a freeze</li></ul><ul id="254c8126-a79b-8011-acf7-fc2013ba78a3" class="bulleted-list"><li style="list-style-type:disc">(Look up how we can do a seizure warrant)</li></ul><h1 id="254c8126-a79b-807b-9609-f3cb4d0398e3" class="">How to Tether Freeze</h1><ol type="1" id="254c8126-a79b-80d2-a464-d403b9b5b003" class="numbered-list" start="1"><li>We come to an address and it has a Tether value (USDT) and we want to freeze</li></ol><ol type="1" id="254c8126-a79b-803d-8da8-e64477de3f0d" class="numbered-list" start="2"><li>Send TETHER and email and describe the case and what you want to freeze and they can freeze them on the Ethereum blockchain<ol type="a" id="254c8126-a79b-80a3-9c13-fac3282fb7ee" class="numbered-list" start="1"><li>They will freeze</li></ol></li></ol><ol type="1" id="254c8126-a79b-80f0-9ed3-eff6504e5054" class="numbered-list" start="3"><li>Go to <a href="https://dune.com/home">Dune.com</a><ol type="a" id="254c8126-a79b-805f-92d3-d01583bb6f7f" class="numbered-list" start="1"><li>It has the frozen Tether addresses on the ETH blockchain</li></ol><ol type="a" id="254c8126-a79b-8066-b23b-f77ba32940a6" class="numbered-list" start="2"><li>Scroll down and you will see all of the ETH addresses with Tether in them.</li></ol><ol type="a" id="254c8126-a79b-8026-bbcf-ef9e9938137d" class="numbered-list" start="3"><li>You can query them about the addresses also</li></ol></li></ol><h1 id="254c8126-a79b-80bb-820b-eed5808e2488" class="">T3 Private Collaboration</h1><ul id="254c8126-a79b-80b6-bd60-d5ebd776ff5d" class="bulleted-list"><li style="list-style-type:disc">Resource: <a href="https://www.trmlabs.com/resources/blog/t3-financial-crime-unit-marks-enforcement-victory-100-million-in-criminal-assets-frozen-across-five-continents">https://www.trmlabs.com/resources/blog/t3-financial-crime-unit-marks-enforcement-victory-100-million-in-criminal-assets-frozen-across-five-continents</a></li></ul><ul id="254c8126-a79b-80a9-ab2d-d5c68e41f127" class="bulleted-list"><li style="list-style-type:disc">If you need assistance you can send email to: <a href="mailto:T3FCU@trmlabs.com">T3FCU@trmlabs.com</a></li></ul><ul id="254c8126-a79b-809d-ba5d-e9c68a59f769" class="bulleted-list"><li style="list-style-type:disc"><a href="https://www.trmlabs.com/resources/blog/t3-financial-crime-unit-launches-t3-global-collaborator-program-over-250m-in-criminal-assets-frozen-as-binance-becomes-first-member">TRM, TETHER, TRON</a></li></ul><ul id="254c8126-a79b-801e-ba36-cdac6b2f88da" class="bulleted-list"><li style="list-style-type:disc">Private Collaboration</li></ul><ul id="254c8126-a79b-8063-be2f-c0c419c56960" class="bulleted-list"><li style="list-style-type:disc">As Law enforcement we can send leads on addresses that they can freeze </li></ul><h1 id="254c8126-a79b-8051-8891-e8a642f9dc3e" class="">Pre-Seizure Planning</h1><ul id="254c8126-a79b-80ae-aacc-ecd3c82aa238" class="bulleted-list"><li style="list-style-type:disc">To do a day before the seizure </li></ul><ul id="254c8126-a79b-801d-a94f-f3772adbeced" class="bulleted-list"><li style="list-style-type:disc">Typically a day</li></ul><ul id="254c8126-a79b-80d4-ab13-f467828fc399" class="bulleted-list"><li style="list-style-type:disc">(Look at the images)</li></ul><h1 id="254c8126-a79b-8041-9dba-e4caa04ee69e" class="">Seizing from a Private Wallet</h1><p id="254c8126-a79b-8057-bc5b-ee2abbdf9188" class="">(Import Images)</p><h1 id="254c8126-a79b-8009-8d6f-eeba7aa77398" class="">Seizing from an Exchange</h1><p id="254c8126-a79b-802e-9d05-e1820fb57551" class="">(check images)</p><h1 id="254c8126-a79b-8013-99a1-cc0b932d6e5b" class="">Evidence Considerations</h1><p id="254c8126-a79b-803b-b9a0-e3e7477f25d8" class="">(Check Images)</p><p id="254c8126-a79b-80fb-9106-e0f08eb36da7" class="">
+</p></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
