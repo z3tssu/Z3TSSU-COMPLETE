@@ -1,6 +1,6 @@
 The complete course is [[Index |here]]
 # Background
-A team member started an External Penetration Test and was moved to another urgent project before they could finish. The team member was able to find and exploit a file upload vulnerability after performing recon of the externally-facing web server. Before switching projects, our teammate left a password-protected web shell (with the credentials: ***admin:My_W3bsH3ll_P@ssw0rd!)*** in place for us to start from in the /uploads directory. As part of this assessment, our client, Inlanefreight, has authorized us to see how far we can take our foothold and is interested to see what types of high-risk issues exist within the AD environment. Leverage the web shell to gain an initial foothold in the internal network. Enumerate the Active Directory environment looking for flaws and misconfigurations to move laterally and ultimately achieve domain compromise.
+A team member started an External Penetration Test and was moved to another urgent project before they could finish. The team member was able to find and exploit a file upload vulnerability after performing recon of the externally-facing web server. Before switching projects, our teammate left a password-protected web shell (with the credentials: ***admin:My_W3bsH3ll_P@ssw0rd!*** in place for us to start from in the /uploads directory. As part of this assessment, our client, Inlanefreight, has authorized us to see how far we can take our foothold and is interested to see what types of high-risk issues exist within the AD environment. Leverage the web shell to gain an initial foothold in the internal network. Enumerate the Active Directory environment looking for flaws and misconfigurations to move laterally and ultimately achieve domain compromise.
 
 # Submit the contents of the flag.txt file on the administrator Desktop of the web server
 
@@ -30,20 +30,36 @@ PORT    STATE SERVICE
 
 ```
 
-There seems to be a webserver running on port 80, lets check it out
-![[Pasted image 20251014212045.png]]
+## Navigating the Webserver /uploads
+The instructions basically gives us a credential and a URL path to go to
+http://10.129.202.242/uploads/
 
-The webserver allows for file upload, so we can exploit this an gain a reverse shell through the file upload. 
-## Gaining a reverse shell through file upload on webserver
+```
+admin:My_W3bsH3ll_P@ssw0rd!
+```
 
-Basically to gain a shell, we need two things, seen below:
+this seems like a directory of some sort, lets enumerate further
+1. Only the antak.aspx works
 
-1. Create a payload
-2. Setup a listener
+![[Pasted image 20251014213138.png]]
 
-### Creating a Payload 
-I like to use the following website; [Online - Reverse Shell Generator](https://www.revshells.com/)
-![[Pasted image 20251014212732.png]]
-Basically specific the LHOST and LPORT, then it will provide a msfvenom command query and you can copy and past that in the terminal to create the payload
+Once we browse to the antak.aspx, we are greeted with a login page
+
+![[Pasted image 20251014213148.png]]
+
+lets try and use the credentials here
+![[Pasted image 20251014213315.png]]
+
+We have access using the given credentials
+
+## Reading the Flag.txt contents
+```
+cat c:\users\administrator\desktop\flag.txt
+```
+
+![[Pasted image 20251014213814.png]]
+
+
+
 
 
