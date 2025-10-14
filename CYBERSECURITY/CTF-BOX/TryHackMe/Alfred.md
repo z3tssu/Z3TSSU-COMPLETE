@@ -211,4 +211,8 @@ So even though you impersonate a token with higher privileges it does not mean t
 
 ## Read the root.txt file located at C:\Windows\System32\config
 
-`
+```
+more root.txt
+```
+
+![[Pasted image 20251014204000.png]]
