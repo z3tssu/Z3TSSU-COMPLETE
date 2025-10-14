@@ -61,8 +61,21 @@ cat c:\users\administrator\desktop\flag.txt
 
 # Question 2: Kerberoast an account with the SPN MSSQLSvc/SQL01.inlanefreight.local:1433 and submit the account name as your answer
 
-For this we will have to Kerberoast the accounts
-lets try and use either PowerView or Rubeus 
+We will have to elevate our privileges and get a proper shell on the target, lets do so using Meterpreter 
 
 
+
+For this we will have to Kerberoast the accounts, lets try and use either PowerView or Rubeus 
+
+## Download PowerView or Host
+I already have it on my machine, but it can be downloaded here; [PowerTools/PowerView/powerview.ps1 at master · PowerShellEmpire/PowerTools · GitHub](https://github.com/PowerShellEmpire/PowerTools/blob/master/PowerView/powerview.ps1)
+## Host PowerView using a Python Server (attacker Machine)
+```
+python -m http.server 9090 
+```
+
+## Download PowerView from the Target Machine
+```
+
+```
 
