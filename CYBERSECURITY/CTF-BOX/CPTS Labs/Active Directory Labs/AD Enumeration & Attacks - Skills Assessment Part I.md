@@ -4,5 +4,8 @@ A team member started an External Penetration Test and was moved to another urge
 
 # Submit the contents of the flag.txt file on the administrator Desktop of the web server
 
-
+## Nmap Scan
+```
+nmap -p- 10.129.202.242 -T4
+```
 
