@@ -214,4 +214,6 @@ Ethernet adapter Ethernet0:
                                        10.129.0.1
 
 ```
- 
+
+## Lets Pivot through the network
+### Port Forwarding with Windows- Netsh
