@@ -178,6 +178,40 @@ svc_sql:lucky7
 
 # ### Submit the contents of the flag.txt file on the Administrator desktop on MS01
 If we check the current hostname of the PC, we are WEB-WIN01, which is the webserver
-1. We got initial access through the webserver, through the antak powershell thing
+1. We got initial access through the webserver, through the antak PowerShell thing
 2. We elevated our shell with the use of the web_discovery metasploit exploit
 3. We used PowerView to Kerberoast accounts with SPN
+4. We were able to kerberoast the account svc_sql and gain its hash and then crack the hash resulting in the password: luck7
+
+We now have to get access to the Administrator user desktop on MS01
+This indicate that we will have to pivot through the network
+
+## Enumerate the current machine
+1. View the NICs this machine is connected to
+```
+PS C:\Windows\system32> ipconfig                            
+
+Windows IP Configuration
+
+
+Ethernet adapter Ethernet1:
+
+   Connection-specific DNS Suffix  . : 
+   Link-local IPv6 Address . . . . . : fe80::b16e:dcb2:b5b5:90a9%7
+   IPv4 Address. . . . . . . . . . . : 172.16.6.100
+   Subnet Mask . . . . . . . . . . . : 255.255.0.0
+   Default Gateway . . . . . . . . . : 172.16.6.1
+
+Ethernet adapter Ethernet0:
+
+   Connection-specific DNS Suffix  . : .htb
+   IPv6 Address. . . . . . . . . . . : dead:beef::22e
+   IPv6 Address. . . . . . . . . . . : dead:beef::2451:31ec:36cc:2b39
+   Link-local IPv6 Address . . . . . : fe80::2451:31ec:36cc:2b39%3
+   IPv4 Address. . . . . . . . . . . : 10.129.248.11
+   Subnet Mask . . . . . . . . . . . : 255.255.0.0
+   Default Gateway . . . . . . . . . : fe80::250:56ff:feb9:e928%3
+                                       10.129.0.1
+
+```
+ 
