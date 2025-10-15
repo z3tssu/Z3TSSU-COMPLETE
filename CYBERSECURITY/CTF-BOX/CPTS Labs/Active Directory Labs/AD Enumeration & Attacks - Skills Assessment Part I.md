@@ -47,7 +47,7 @@ Once we browse to the antak.aspx, we are greeted with a login page
 
 ![[Pasted image 20251014213148.png]]
 
-lets try and use the credentials here
+lets try and use the credentials here **admin:My_W3bsH3ll_P@ssw0rd!**
 ![[Pasted image 20251014213315.png]]
 
 We have access using the given credentials
