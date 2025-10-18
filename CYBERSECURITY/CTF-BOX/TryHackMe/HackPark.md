@@ -113,3 +113,11 @@ msfconsole -q -x "use multi/handler; set payload windows/x64/meterpreter/reverse
 In meterpreter use the ***sysinfo*** command
 ![[Pasted image 20251018214032.png]]
 
+## Can you spot a _service_ running some automated task that could be easily exploited? What is the **name** of this service?
+We can run the ***PS*** command inside of metepreter to list all running processes on the machine 
+![[Pasted image 20251018214915.png]]
+Immediately, we have at one that stands out, which is the WScheduler.exe, but is that the correct answer? 
+The hint mentions to check out C:\Program Files (x86), so lets try that from the Meterpreter session 
+![[Pasted image 20251018215108.png]]
+We have the SystemScheduler which seems weird to be in the program files, lets check it out further
+
