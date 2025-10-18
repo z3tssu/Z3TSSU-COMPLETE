@@ -70,7 +70,15 @@ How TF are we gonna do this? lol i think we will need to use the exploit that we
 2. Modify the exploit with out IP address and Port
 	![[Pasted image 20251018205300.png]]
 	1. Save it as PostView.ascx
-
 3. Setup a simple listener 
-
- 
+	1. ![[Pasted image 20251018205456.png]]
+4. Modify the post on the website
+	1. ![[Pasted image 20251018205814.png]]
+	2. ![[Pasted image 20251018205925.png]]
+5. Trigger the Exploit
+	1. According to the exploit explanation, to trigger the exploit we need to navigate to the following
+	2. http://10.10.10.10/?theme=../../App_Data/files
+	3. ![[Pasted image 20251018210222.png]]
+	4. We will get a shell back on our Netcat Listener 
+	5. ![[Pasted image 20251018210247.png]]
+# Upgrading the Current 
