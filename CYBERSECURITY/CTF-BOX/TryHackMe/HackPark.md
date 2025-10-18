@@ -67,5 +67,10 @@ Who is the webserver running as?
 How TF are we gonna do this? lol i think we will need to use the exploit that we just found and try to use it in a way to exploit this vulnerable webserver, so lets try our best.
 
 1. Download the Exploit
+2. Modify the exploit with out IP address and Port
+	![[Pasted image 20251018205300.png]]
+	1. Save it as PostView.ascx
+
+3. Setup a simple listener 
 
  
