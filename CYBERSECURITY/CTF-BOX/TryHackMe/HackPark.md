@@ -21,4 +21,13 @@ The login page can be found at the URL: [Title Unavailable \| Site Unreachable](
 
 We have seen that the user "Administrator" created the clown post, so we can assume that that is a user which we can use to log into the website
 Lets give it a try with Hydra
-## 
+## What request type is the Windows website login form using?
+1. We can inspect the login page using the firefox inspect feature of if we used burpsuite to capture the packet
+![[Pasted image 20251018153257.png]]
+
+## Cracking POST Request Login Page with Hydra (http-post-form)
+```
+hydra -l admin -P /usr/share/wordlists/rockyou.txt 10.10.205.233 http-post-form "/:username=^USER^&password=^PASS^:F=incorrect" -V
+
+```
+
