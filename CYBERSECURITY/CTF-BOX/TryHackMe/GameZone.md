@@ -153,6 +153,41 @@ We have notice in the IP tables above that the port 1000 is blocked by a firewal
 Now we browse to localhost:10000
 ![[Pasted image 20251020201309.png]]
 
-The name of the exposed CMS is: webmin
+### The name of the exposed CMS is: webmin
 
-the version of this CMS is: 
+## Finding the CMS Version with Nmap Port Forward Scan
+```
+┌──(root㉿kali)-[/home/z3tssu]
+└─# nmap localhost -p10000 -sV -T5
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2025-10-20 20:19 +04
+Nmap scan report for localhost (127.0.0.1)
+Host is up (0.000032s latency).
+Other addresses for localhost (not scanned): ::1
+
+PORT      STATE SERVICE VERSION
+10000/tcp open  http    MiniServ 1.580 (Webmin httpd)
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 37.32 seconds
+
+```
+
+- Since we have forwarded all traffic of port 10000, we can now perform an nmap scan on this port from out machine 
+
+### What is the CMS Version
+```
+1.580 
+```
+
+---
+# PrivEsc with Metasploit 
+Since we have the CMS version, lets look for an exploit on metasploit
+
+1. Search for the webmin 1.580 in MSFConsole
+![[Pasted image 20251020202548.png]]
+2. Set the options
+![[Pasted image 20251020202854.png]]
+3. Set the Payload and Exploit
+![[Pasted image 20251020202929.png]]
+
+
