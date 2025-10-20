@@ -141,10 +141,18 @@ tcp    LISTEN     0      128                        :::22                       
 ```
 
 ## Viewing a blocked service using port forward
+
+From our Local attacker machine, run the following: 
+
 ```
 ssh -L 10000:localhost:10000 <username>@<ip>
 ```
 
 We have notice in the IP tables above that the port 1000 is blocked by a firewall, we can then forward this traffic to our server that we own
 
+Now we browse to localhost:10000
+![[Pasted image 20251020201309.png]]
 
+The name of the exposed CMS is: webmin
+
+the version of this CMS is: 
