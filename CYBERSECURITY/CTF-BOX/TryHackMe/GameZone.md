@@ -189,5 +189,7 @@ Since we have the CMS version, lets look for an exploit on metasploit
 ![[Pasted image 20251020202854.png]]
 3. Set the Payload and Exploit
 ![[Pasted image 20251020202929.png]]
+4. Find the root flag
+![[Pasted image 20251020203236.png]]
 
 
