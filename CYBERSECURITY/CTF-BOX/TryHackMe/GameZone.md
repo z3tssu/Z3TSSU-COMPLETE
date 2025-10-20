@@ -72,7 +72,44 @@ Save this request into a text file. We can then pass this into SQLMap to use our
 
 ![[Pasted image 20251020193516.png]]
 
+After SQLMAP Finishes 
+![[Pasted image 20251020195149.png]]
 
+## In the users table, what is the hashed password?
+```
+ab5db915fc9cea6c78df88106c6500c57f2b52901ca6c0c6218f04122c3efd14 
+```
+
+## What was the username associated with the hashed password?
+```
+
+```
+
+## What was the other table name?
+```
+post
+```
+
+---
+# Cracking Password with JohnTheRipper
+
+John is a powerful opensource tool also installed on kali Linux, with the ability to crack hashes, similar to hashcat
+
+```bash
+john hash.txt --wordlists=/usr/share/wordlists/rockyou.txt --format=Raw-SHA256
+```
+
+![[Pasted image 20251020195754.png]]
+
+The plaintext password is: videogamer124 
+
+---
+# Gaining Access via SSH
+
+We now have a username and password, lets try and login to the SSH port service we identified earlier using the below command
+```
+ssh agent47@ip_address
+```
 
 
 
