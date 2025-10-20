@@ -111,5 +111,40 @@ We now have a username and password, lets try and login to the SSH port service 
 ssh agent47@ip_address
 ```
 
+![[Pasted image 20251020200137.png]]
+
+***What is the user flag? 649ac17b1480ac13ef1e4fa579dac95c***
+
+---
+# Exposing services with reverse SSH tunnels
+
+Reverse SSH port forwarding specifies that the given port on the remote server host is to be forwarded to the given host and port on the local side.
+
+-L is a local tunnel (YOU <-- CLIENT). If a site was blocked, you can forward the traffic to a server you own and view it. For example, if imgur was blocked at work, you can do ssh -L 9000:imgur.com:80 user@example.com. Going to localhost:9000 on your machine, will load imgur traffic using your other server.
+
+-R is a remote tunnel (YOU --> CLIENT). You forward your traffic to the other server for others to view. Similar to the example above, but in reverse.
+
+## Using ss to investigate sockets running on a host
+We will use a tool called ss to investigate sockets running on a host.
+
+If we run ss -tulpn it will tell us what socket connections are running
+```
+agent47@gamezone:~$ ss -tulpn
+Netid  State      Recv-Q Send-Q          Local Address:Port                         Peer Address:Port              
+udp    UNCONN     0      0                           *:68                                      *:*                  
+udp    UNCONN     0      0                           *:10000                                   *:*                  
+tcp    LISTEN     0      80                  127.0.0.1:3306                                    *:*                  
+tcp    LISTEN     0      128                         *:10000                                   *:*                  
+tcp    LISTEN     0      128                         *:22                                      *:*                  
+tcp    LISTEN     0      128                        :::80                                     :::*                  
+tcp    LISTEN     0      128                        :::22                                     :::*
+```
+
+## Viewing a blocked service using port forward
+```
+ssh -L 10000:localhost:10000 <username>@<ip>
+```
+
+We have notice in the IP tables above that the port 1000 is blocked by a firewall, we can then forward this traffic to our server that we own
 
 
