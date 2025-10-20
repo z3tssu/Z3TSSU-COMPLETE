@@ -61,7 +61,16 @@ and comes preinstall on kali linux
 1. We need to point the SQLMap tool to a input field 
 2. We need to intercept the request with BurpSuite
 
-![[Pasted image 20251020192909.png]]
+![[Pasted image 20251020193317.png]]
+
+Save this request into a text file. We can then pass this into SQLMap to use our authenticated user session.
+![[Pasted image 20251020193413.png]]
+
+- -r uses the intercepted request you saved earlier
+- --dbms tells SQLMap what type of database management system it is
+- --dump attempts to outputs the entire database
+
+![[Pasted image 20251020193516.png]]
 
 
 
