@@ -295,3 +295,12 @@ This seems to provide us with the answer for the question, as it seems to be a d
 Lets navigate to this directory now
 ![[Pasted image 20251021202252.png]]
 
+So what now? 
+
+The questions asks us, what is the vulnerability called when you can include a remote file for malicious purposes, the answer after a quick google search is: Remote File Inclusion.
+
+But what does this mean? It might feel like we are at a dead end now, i have tried accessing the ssh server with no luck on the passwords that was found
+
+I'm assuming it has something to do with the new directory that we have identified, lets try and bruteforce it to see what we can identify further of any sub-directories that may be useful.
+
+
