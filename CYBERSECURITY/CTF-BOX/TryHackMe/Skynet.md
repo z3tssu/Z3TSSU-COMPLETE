@@ -273,7 +273,25 @@ We now have access to this share and can view the contents listed within
 smbget -R smb://ip_address/share_name -U username
 ```
 
-To use this tool, we need to add the ip address to our /etc/hosts file
+okay so the tool did not work, but that's okay lets manually go through and download the files 
+
+I navigate to an interesting directory and found the file important.txt
+![[Pasted image 20251021201856.png]]
+
+I then downloaded this file and viewed the contents of it
+![[Pasted image 20251021201937.png]]
+
+This seems to provide us with the answer for the question, as it seems to be a directory
 ```
+┌──(z3tssu㉿kali)-[~/THM/Skynet]
+└─$ cat important.txt 
+
+1. Add features to beta CMS /45kra24zxs28v3yd
+2. Work on T-800 Model 101 blueprints
+3. Spend more time with my wife
 
 ```
+
+Lets navigate to this directory now
+![[Pasted image 20251021202252.png]]
+
