@@ -258,3 +258,22 @@ smbmap -u milesdyson -p $smb_pass -H 10.10.190.192
 ![[Pasted image 20251021200441.png]]
 
 We have identified some shares, im pretty sure they are the same as before
+# Accessing milesdyson share
+
+Now that we have identified that the milesdyson share is readonly to us, we can access it with smbclient 
+```
+smbclient //ip_address/share_name/ -U username
+```
+
+![[Pasted image 20251021200835.png]]
+
+We now have access to this share and can view the contents listed within
+# Downloading files on the share with smbget
+```
+smbget -R smb://ip_address/share_name -U username
+```
+
+To use this tool, we need to add the ip address to our /etc/hosts file
+```
+
+```
