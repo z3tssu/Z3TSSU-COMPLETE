@@ -185,3 +185,14 @@ I'm thinking we conduct some directory bruteforce on the IP address with gobuste
 gobuster -u http://<ip> -w <wordlist_location> -t 40
 ```
 
+
+After the gobuster we have identified an interesting sub-directory: 
+- /squirrelmail
+
+## Viewing Squirrelmail SubDirectory
+![[Pasted image 20251021194440.png]]
+
+We now have a login page to try and bruteforce the username and password list.
+
+Let us use Hydra to do this
+### 
