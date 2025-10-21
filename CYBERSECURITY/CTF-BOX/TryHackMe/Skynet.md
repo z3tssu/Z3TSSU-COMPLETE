@@ -173,13 +173,15 @@ terminator13
 
 ```
 
-Seems to be some sort of password list that must have been used on the server, so im guessing we will use this to bruteforce a login. Let us try this next.
+Seems to be some sort of password list that must have been used on the server, so im guessing we will use this to bruteforce a login.
 
-# Bruteforcing Using the Password list
-1. We have the username: milesdyson
-2. We have a password list: log1.txt
+Lets leave this for now until we can identify something to bruteforce, I was thinking ssh, but typically you don't bruteforce SSH at first, so there must be another entry
 
-The question as us for the password of Miles email, so im guessing we try and bruteforce the open service which was pop3.
+---
 
-Lets try SSH
-``
+## Directory Enumeration
+I'm thinking we conduct some directory bruteforce on the IP address with gobuster, to see what we can identify 
+```bash
+gobuster -u http://<ip> -w <wordlist_location> -t 40
+```
+
