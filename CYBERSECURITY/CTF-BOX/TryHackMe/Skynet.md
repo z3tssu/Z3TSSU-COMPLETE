@@ -130,4 +130,56 @@ smb: \>
 
 ```
 
+### Download the files 
+Since we have seen there are some files we can have access to, lets download it to our attacker machine with the command "get file_name.txt", we can also browse to the log directory to see what we get
+```
+get attention.txt
+```
 
+### Viewing the contents of attention.txt
+```
+┌──(z3tssu㉿kali)-[~/THM/Skynet]
+└─$ cat attention.txt 
+A recent system malfunction has caused various passwords to be changed. All skynet employees are required to change their password after seeing this.
+-Miles Dyson
+
+```
+### Getting the files in the log directory
+```
+smb: \logs\> get log1.txt
+getting file \logs\log1.txt of size 471 as log1.txt (0.3 KiloBytes/sec) (average 0.2 KiloBytes/sec)
+smb: \logs\> get log2.txt
+getting file \logs\log2.txt of size 0 as log2.txt (0.0 KiloBytes/sec) (average 0.1 KiloBytes/sec)
+smb: \logs\> get log3.txt
+getting file \logs\log3.txt of size 0 as log3.txt (0.0 KiloBytes/sec) (average 0.1 KiloBytes/sec)
+smb: \logs\> 
+
+```
+
+### Viewing the contents of the log files
+```
+┌──(z3tssu㉿kali)-[~/THM/Skynet]
+└─$ cat log1.txt     
+cyborg007haloterminator
+terminator22596
+terminator219
+terminator20
+terminator1989
+terminator1988
+terminator168
+terminator16
+terminator143
+terminator13
+
+```
+
+Seems to be some sort of password list that must have been used on the server, so im guessing we will use this to bruteforce a login. Let us try this next.
+
+# Bruteforcing Using the Password list
+1. We have the username: milesdyson
+2. We have a password list: log1.txt
+
+The question as us for the password of Miles email, so im guessing we try and bruteforce the open service which was pop3.
+
+Lets try SSH
+``
