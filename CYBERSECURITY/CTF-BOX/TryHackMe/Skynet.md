@@ -82,5 +82,52 @@ Nmap done: 1 IP address (1 host up) scanned in 37.59 seconds
 
 ```
 
+## Port 80 Webserver
+![[Pasted image 20251021185658.png]]
+nothing to special there
+
+## Enumerate SMB 
+Lets try and list the shares on this server
+```
+smbclient -L \\\\10.10.190.192\\
+```
+```
+Password for [WORKGROUP\root]:
+
+        Sharename       Type      Comment
+        ---------       ----      -------
+        print$          Disk      Printer Drivers
+        anonymous       Disk      Skynet Anonymous Share
+        milesdyson      Disk      Miles Dyson Personal Share
+        IPC$            IPC       IPC Service (skynet server (Samba, Ubuntu))
+
+```
+![[Pasted image 20251021185940.png]]
+
+We see there is an anonymous share and the milsdyson share which looks interesting, lets see if we can access it
+
+1. milesdyson
+```
+┌──(root㉿kali)-[/home/z3tssu/THM/Skynet]
+└─# smbclient \\\\10.10.190.192\\milesdyson -N
+tree connect failed: NT_STATUS_ACCESS_DENIED
+
+```
+![[Pasted image 20251021190219.png]]
+2. anonymous 
+```
+┌──(root㉿kali)-[/home/z3tssu/THM/Skynet]
+└─# smbclient \\\\10.10.190.192\\anonymous -N 
+Try "help" to get a list of possible commands.
+smb: \> ls
+  .                                   D        0  Thu Nov 26 20:04:00 2020
+  ..                                  D        0  Tue Sep 17 11:20:17 2019
+  attention.txt                       N      163  Wed Sep 18 07:04:59 2019
+  logs                                D        0  Wed Sep 18 08:42:16 2019
+
+                9204224 blocks of size 1024. 5831500 blocks available
+smb: \> 
+
+```
 
 
