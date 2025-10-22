@@ -292,7 +292,7 @@ This seems to provide us with the answer for the question, as it seems to be a d
 
 ```
 
-Lets navigate to this directory now
+# Lets navigate to new directory 
 ![[Pasted image 20251021202252.png]]
 
 So what now? 
@@ -302,5 +302,46 @@ The questions asks us, what is the vulnerability called when you can include a r
 But what does this mean? It might feel like we are at a dead end now, i have tried accessing the ssh server with no luck on the passwords that was found
 
 I'm assuming it has something to do with the new directory that we have identified, lets try and bruteforce it to see what we can identify further of any sub-directories that may be useful.
+# Directory Bruteforce 
+```bash
+                                                                                                                    
+┌──(root㉿kali)-[/home/z3tssu/THM/Skynet]
+└─# gobuster dir -u http://$ip/45kra24zxs28v3yd/ -w /usr/share/wordlists/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt
+===============================================================
+Gobuster v3.8
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://10.10.116.36/45kra24zxs28v3yd/
+[+] Method:                  GET
+[+] Threads:                 10
+[+] Wordlist:                /usr/share/wordlists/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.8
+[+] Timeout:                 10s
+===============================================================
+Starting gobuster in directory enumeration mode
+===============================================================
+/administrator        (Status: 301) [Size: 337] [--> http://10.10.116.36/45kra24zxs28v3yd/administrator/]
+Progress: 8543 / 220558 (3.87%)^
+```
 
+## Viewing the discovered directory
+![[Pasted image 20251022192021.png]]
+
+We now have our next attack point, this is a login page for the Cuppa CMS
+1. We could explore default credentials
+2. We could try bruteforce the login 
+
+## Searchsploit
+Lets use searchsploit to try and find some vulnerabilities on this CMS
+```bash
+└─# searchsploit cuppa          
+---------------------------------------------------------------------------------- ---------------------------------
+ Exploit Title                                                                    |  Path
+---------------------------------------------------------------------------------- ---------------------------------
+Cuppa CMS - '/alertConfigField.php' Local/Remote File Inclusion                   | php/webapps/25971.txt
+---------------------------------------------------------------------------------- ---------------------------------
+Shellcodes: No Results
+
+```
 
