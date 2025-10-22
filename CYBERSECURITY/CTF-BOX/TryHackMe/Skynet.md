@@ -345,3 +345,13 @@ Shellcodes: No Results
 
 ```
 
+## Examining the Exploit through exploitdb
+Navigate to the location of the exploit with
+```
+cat /usr/share/exploitdb/exploits/exploit_path.txt
+```
+![[Pasted image 20251022192842.png]]
+![[Pasted image 20251022193334.png]]
+
+# Exploitin 
+We are going to exploit the file inclusion vulnerability and to 
