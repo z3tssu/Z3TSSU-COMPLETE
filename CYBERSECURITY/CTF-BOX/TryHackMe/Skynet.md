@@ -403,5 +403,8 @@ Immediately after running the exploit in the browser URL, we get a reverse shell
 After browsing through the webserver, we identify the home directory and the user milesdyson, we can now view the contents of the directory and we identify the user.txt
 ![[Pasted image 20251022194716.png]]
 
-# Getting Root
-How 
+# Privilege Escalation on Linux 
+We can use two useful scripts for Linux Priv Esc
+
+[Fetching Title#6esi](https://github.com/peass-ng/PEASS-ng/releases/download/20251017-d864f4c3/linpeas.sh)
+[GitHub - rebootuser/LinEnum: Scripted Local Linux Enumeration & Privilege Escalation Checks](https://github.com/rebootuser/LinEnum)
